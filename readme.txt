@@ -1,5 +1,5 @@
-=== WP Twitter ===
-Plugin Name: WP Twitter
+=== WP Mobile Edition ===
+Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
 Tags: Sitemap, iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize
