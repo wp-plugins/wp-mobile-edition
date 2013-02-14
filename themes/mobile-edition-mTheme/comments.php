@@ -1,0 +1,68 @@
+<a name="comments" id="comments"></a>
+<?php if ( post_password_required() ) : ?>
+       <div class="ot_comments_container">
+    <strong><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyeleven' ); ?>  </strong>
+        </div>
+<?php
+return;
+		endif;
+?>
+
+<?php if ( have_comments() ) : ?>
+
+               <div class="rack1"></div>
+             <div class="ot_comments_respond">
+           	<?php
+				printf('&ldquo;%2$s&rdquo; Comment', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentyeleven' ,
+					number_format_i18n( get_comments_number() ));
+			?>
+          <?php if ( ! comments_open()) : ?>  <?php else: ?> <a class="ot_join_in" href="#ot_reply">join in</a> <?php endif; ?>
+            </div>
+             <div id="respond">
+        <div class="ot_comments_container" style=" padding: 0; border: 0">
+
+
+        <div class="ot_comments" id="comments">
+		<ol>
+		<?php wp_list_comments( array( 'callback' => 'fdx_comment' ) );?>
+		</ol>
+        </div>
+
+
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+    	<div class="ot_comments_container">
+		 	<div style="float: left" class="pages_count"><?php previous_comments_link( __( '&larr; Older Comments', 'fdx-lang' ) ); ?></div>
+			<div style="float: right" class="pages_count"><?php next_comments_link( __( 'Newer Comments &rarr;', 'fdx-lang' ) ); ?></div>
+
+        <div class="ot_clear"></div>
+         </div>
+		<?php endif; // check for comment navigation ?>
+
+
+       </div>
+      </div>
+
+<?php endif; // have_comments() ?>
+
+<?php if ( ! comments_open()) : ?>
+<!-- Comments are closed -->
+<?php else: ?>
+<div class="rack1"></div>
+ <a id="ot_reply" name="ot_reply"></a>
+<div class="ot_comments_respond">Leave a Comment </div>
+<div class="ot_comments_container">
+ <?php comment_form(array(
+        'title_reply' => '',
+		'cancel_reply_link' => __('Cancel reply', 'fdx-lang'),
+		'label_submit' => __( 'Post Comment', 'fdx-lang'),
+        'author' => '<label for="author">' . __('Name1') . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '<input class="ot_commentform_input" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="22" />',
+	    'email' => '<label for="email">' . __( 'Email' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '<input class="ot_commentform_input" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="22" />',
+	    'url' => '<label for="url">' . __( 'Website' ) . '</label>' . '<input class="ot_commentform_input" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="22" />',
+        'comment_field' => '<label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea class="ot_commentform_textarea" name="comment" cols="100" rows="10" aria-required="true"></textarea>',
+        'comment_notes_after' => '',
+        'comment_notes_before' => '',
+        'must_log_in' => '<p>' .  sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'fdx-lang'), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>'
+     )); ?>
+</div>
+
+ <?php endif; ?>
