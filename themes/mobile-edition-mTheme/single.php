@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 <div class="ot_article_pagination">
-<div class="ot_date_link"><?php the_time( get_option('date_format') ); ?></div> <?php next_post_link( '%link', '<span class="ot_next">'.__('next', 'fdx-lang').' &rsaquo;</span>' ); ?> <?php previous_post_link( '%link', '<span class="ot_prev">&lsaquo; '.__('prev', 'fdx-lang').'</span>' ); ?>
+<div class="ot_date_link"><?php
+$arc_year = get_the_time('Y');
+$arc_month = get_the_time('m');
+$arc_day = get_the_time('d');
+?><a href="<?php echo get_day_link($arc_year, $arc_month, $arc_day); ?>"><?php the_time( get_option('date_format') ); ?></a></div> <?php next_post_link( '%link', '<span class="ot_next">'.__('next', 'fdx-lang').' &rsaquo;</span>' ); ?> <?php previous_post_link( '%link', '<span class="ot_prev">&lsaquo; '.__('prev', 'fdx-lang').'</span>' ); ?>
 </div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="ot_content ot_page">

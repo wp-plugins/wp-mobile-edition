@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="ot_topheading">Blog</div>
+<div class="ot_topheading"><?php _e('Index', 'fdx-lang') ?></div>
 
 <div class="ot_content">
 
@@ -36,14 +36,5 @@ if ('ot_odd' == @$odd_or_even){
 
 
           </div><!-- ot_content -->
-<div class="ot_postfooter">
-
-		<div class="ot_top_arrow"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/top_arrow.png" alt=""/></div>
-		 <?php previous_posts_link( __( '<span class="ot_prev">&lsaquo; anterior</span>') ); ?>   <?php next_posts_link( __( '<span class="ot_next">pr&oacute;ximo &rsaquo;</span>') ); ?> <div class="ot_top"><span class="ot_topicon"><a class="backToTop" href="#top">topo</a></span></div>
-
-
-<div class="ot_clear"></div>
-</div>
-<div class="ot_clear"></div>
 
 <?php get_footer(); ?>

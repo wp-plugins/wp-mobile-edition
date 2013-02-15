@@ -3,22 +3,26 @@
 function fdx_body_result_text() {
 	global $is_ajax; if (!$is_ajax) {
 			if (is_search()) {
-				echo sprintf( __('results for &rsaquo; %s', 'fdx-lang'), get_search_query() );
+				echo __('Results for', 'fdx-lang') . ' &rsaquo; ' . get_search_query();
 			} if (is_category()) {
-				echo sprintf( __('Se&ccedil;&atilde;o &rsaquo; %s', 'fdx-lang'), single_cat_title('', false));
+                echo __('Category', 'fdx-lang') . ' &rsaquo; ' . single_cat_title('', false);
 			} elseif (is_tag()) {
-				echo sprintf( __('Tags &rsaquo; %s', 'fdx-lang'), single_tag_title('', false));
+                echo __('Tag', 'fdx-lang') . ' &rsaquo; ' . single_tag_title('', false);
 			} elseif (is_day()) {
-				echo sprintf( __('Arquivo &rsaquo; %s', 'fdx-lang'),  get_the_time('F jS, Y'));
+                echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('F jS, Y');
 			} elseif (is_month()) {
-				echo sprintf( __('Arquivo &rsaquo; %s', 'fdx-lang'),  get_the_time('F, Y'));
+                echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('F, Y');
 			} elseif (is_year()) {
-				echo sprintf( __('Arquivo &rsaquo; %s', 'fdx-lang'),  get_the_time('Y'));
+			   echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('Y');
+            } elseif (is_author()) {
+               global $author;
+               $userdata = get_userdata($author);
+			   echo __('Author', 'fdx-lang') . ' &rsaquo; ' . $userdata->display_name;
 		}
 	}
 }
 // **************************************************************************
-// S.E.O
+// S.E.O Archive
 // **************************************************************************
 function csv_tags_m() {
 	$posttags = get_the_tags();
@@ -88,7 +92,7 @@ function fdx_comment( $comment, $args, $depth ) {
 	?>
 
 <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		<p><?php _e( 'Pingback:', 'twentytwelve' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'fdx-lang' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'fdx-lang' ), '<span class="edit-link">', '</span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -108,22 +112,22 @@ function fdx_comment( $comment, $args, $depth ) {
 					printf( '<div class="ot_comments_author_date"><a href="%1$s">%3$s</a></div><br />',
 						esc_url( get_comment_link( $comment->comment_ID ) ),
 						get_comment_time( 'c' ),
-						sprintf( __( '%1$s at %2$s', 'twentytwelve' ), get_comment_date(), get_comment_time() )
+						sprintf( __( '%1$s at %2$s', 'fdx-lang' ), get_comment_date(), get_comment_time() )
 					);
 				?>
 			</div>
 
 			<?php if ( '0' == $comment->comment_approved ) : ?>
-				<?php _e( 'Your comment is awaiting moderation.', 'twentytwelve' ); ?>
+				<?php _e( 'Your comment is awaiting moderation.', 'fdx-lang' ); ?>
 			<?php endif; ?>
 
 			<div class="ot_comments_body">
 				<?php comment_text(); ?>
-				<?php edit_comment_link( __( 'Edit', 'twentytwelve' ), '<p class="edit-link">', '</p>' ); ?>
+				<?php edit_comment_link( __( 'Edit', 'fdx-lang' ), '<p class="edit-link">', '</p>' ); ?>
 			</div>
 
 				<div class="ot_comments_reply">
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'twentytwelve' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'fdx-lang' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div>
 
     </div>

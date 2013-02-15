@@ -1,7 +1,6 @@
 <div class="ot_postfooter">
 <div class="ot_top_arrow"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/top_arrow.png" alt=""/></div>
-<?php $options = get_option('fdx3_updater_options');
-if ( $options['fdx_index_home'] == "index" ) { previous_posts_link( __( '<span class="ot_prev">&lsaquo; '.__('prev', 'fdx-lang').'</span>') ); next_posts_link( __( '<span class="ot_next">'.__('next', 'fdx-lang').' &rsaquo;</span>') );}; ?> <div class="ot_top"><span class="ot_topicon"><a class="backToTop" href="#top"><?php _e('top', 'fdx-lang') ?></a></span></div>
+<?php previous_posts_link( __( '<span class="ot_prev">&lsaquo; '.__('prev', 'fdx-lang').'</span>') ); next_posts_link( __( '<span class="ot_next">'.__('next', 'fdx-lang').' &rsaquo;</span>') ); ?> <div class="ot_top"><span class="ot_topicon"><a class="backToTop" href="#top"><?php _e('top', 'fdx-lang') ?></a></span></div>
 </div>
 <div class="ot_clear"></div>
 <?php

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Sitemap, iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -29,6 +29,8 @@ The pack contains the following functionality:
 * was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, categories, tags, comments etc.
 
 * Device adaptation, including the rescaling of images, intelligent splitting of articles and posts into multiple pages, the simplifaction styles, and the removal of non-supported media.
+
+* Full Comments System: Default wordpressor or DISQUS
 
 * Equipped with a mobile ad, you can put any ads scripts and it will appear on your mobile version.
 
@@ -78,9 +80,9 @@ When you create a subdomain, you will need two things, the domain the subdomain 
 
 Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
 
-To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com`
+To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
 
-= TESTING YOUR INSTALLATION =
+= TESTING YOUR INSTALLATION (after enable the plugin) =
 Ideally, use a real mobile device to access your (public) site address and check that the switching and theme work correctly. 
 
 In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
@@ -102,6 +104,8 @@ You can find the `msitemap.xml` file in your blog's root folder.
 It implies that you don't have write permissions on your blog's root folder.  Please use chmod or your FTP manager to set the necessary permissions to 0666.
 
 == Changelog ==
+* 1.1
+    * Minor bug fixes
 
 * 1.0
     * Initial release

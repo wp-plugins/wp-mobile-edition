@@ -1,9 +1,9 @@
  /*
 Theme Name: WP Mobile Edition - mTheme
-Theme URI:http://fabrix.net/fdx
-Description: Tema padrão fabrix com fdx framework
-Version:1.5
-Author:Fabrix
+Theme URI: http://fabrix.net/wp-mobile-edition/
+Description: Default Mobile Theme for the plugin WP Mobile Edition
+Version: 1.0
+Author:Fabrix DoRoMo
 Author URI:http://fabrix.net
 */
 
@@ -73,8 +73,12 @@ Author URI:http://fabrix.net
 
 .ot_snippet {position:relative;height:80px;max-height:80px;overflow:hidden;}
 
-
+.ot_searchbar { padding-left: 5px !important; }
 
 .rack1 {clear:both;height:8px;}
+
+/* wp default css */
+.comment-form-author, .comment-form-email, .comment-form-url { margin-top: 10px !important}
+.comment-form-author input, .comment-form-email input, .comment-form-url input { float: right;  }
 
 
