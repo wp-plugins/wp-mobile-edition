@@ -60,7 +60,7 @@ We'd love for you to get involved. Whatever your level of skill or however much 
 == Screenshots ==
 1. Basic Settings
 2. mTheme options
-3. Front end (16 theme options)
+3. Front end: 16 theme options
 
 
 == Installation ==
