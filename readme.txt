@@ -2,16 +2,16 @@
 Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
-Tags: Sitemap, iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize
+Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
 
 == Description ==
-The pack contains the following functionality:
+Fully optimized for the best performance on smartphones, compatible with: iPhone, Android, Windows Phone, Blackberry. Simple and easy to use: An Intuitive setting page gives you complete control. The pack contains the following functionality:
 
 = Mobile switcher =
 * The mobile switcher automatically detects whether the visitor to the site is mobile or not, and switches between the primary WordPress theme (for desktop users) or loads a mobile theme. 
@@ -22,20 +22,32 @@ The pack contains the following functionality:
 
 = Mobile XML Sitemap Generator =
 
-* It will create a mobile xml sitemap, to maximize the mobile version in mobile search engines like google, Bing, and other. 
+* It will create a mobile xml sitemap, to maximize the mobile version in mobile search engines like google, Bing, and other.
 
 
 = A standard mobile theme = 
-* was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, categories, tags, comments etc.
+* Was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, categories, tags, comments etc.
 
 * Device adaptation, including the rescaling of images, intelligent splitting of articles and posts into multiple pages, the simplifaction styles, and the removal of non-supported media.
 
+* Smart Formatting: It doesn't matter whether users are viewing your site horizontally or vertically, mTheme will re-position all media on the fly.
+
 * Full Comments System: Default wordpressor or DISQUS
 
-* Equipped with a mobile ad, you can put any ads scripts and it will appear on your mobile version.
+* You can choose from 16 different color schemes in the settings panel.
+
+* Easily customize your mobile theme logo with our easy uploader.
+
+* No SEO Knowledge Needed: mTheme will automatically optimize your site for SEO. You don't need to touch a button, just sit back and watch your rankings rise.
+
+* Equipped with a mobile ad, you can put any ads scripts (Adsense, admob, or banner ads of your own) and it will appear on your mobile version.
 
 * Mobile-friendly: an extensible theme that is ready for display on mobile devices. The theme is XHTML-MP compliant and scores highly on [W3C mobileOK Checker](http://validator.w3.org/mobile/). 
 
+= DEMO =
+* To see mTheme in action visit [http://mdemo.fabrix.net](http://mdemo.fabrix.net) on your mobile device.
+
+* Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
 
 
 = Used With Subdomain =
@@ -47,20 +59,11 @@ The pack contains the following functionality:
 
 > Companies such as : `m.yahoo.com`, `m.twitter.com`, `m.google.com`, `m.youtube.com`, `m.facebook.com`, have adopted this method. 
 
-= Languages Available =
-* English (default)
-
-= How To Contribute =
-We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
-
-* **Users** - download the latest development version of the plugin, and submit bug/feature requests. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
-* **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface - no technical knowledge required ([how to](http://translate.fabrix.net/projects/wp-mobile-edition)).
-* **Developers** - Fork the development version and submit a pull request, especially for any known issues. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
 
 == Screenshots ==
-1. Basic Settings
-2. mTheme options
-3. Front end: 16 theme options
+1. mTheme options
+2. Basic Settings
+3. Front end (16 theme options)
 
 
 == Installation ==
@@ -104,6 +107,10 @@ You can find the `msitemap.xml` file in your blog's root folder.
 It implies that you don't have write permissions on your blog's root folder.  Please use chmod or your FTP manager to set the necessary permissions to 0666.
 
 == Changelog ==
+
+* 1.2
+    * Minor bug fixes
+
 * 1.1
     * Minor bug fixes
 

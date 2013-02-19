@@ -34,8 +34,7 @@ Author URI:http://fabrix.net
 	padding: auto;
 	margin: auto;
 	width: 90% !important;
-    max-width: 130px !important;
-	height: auto;
+  	height: auto;
 }
 
 .icoprev {background:url(images/icons/prev.png) no-repeat 0 0; padding: 11px 24px 0 0  }
@@ -43,6 +42,8 @@ Author URI:http://fabrix.net
 
 .commentbuble2 a {text-decoration:none;font-size:11px;color:#000 !important;border-radius:10px;padding:2px 4px 3px 4px;border:1px solid #b0b0b0; background: #FFFFFF; font-weight: bold;}
 .commentbuble2{ float: left; position: absolute;z-index: 10000; margin-left: -5px; margin-top: 3px  }
+
+#searchsubmit {border-radius:8px !important ;padding:3px 4px 4px 4px !important;border:1px solid #b0b0b0 !important}
 
 /* coment form hack */
 .form-submit { text-align: center; }

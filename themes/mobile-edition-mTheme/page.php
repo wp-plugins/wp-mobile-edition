@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="ot_article_pagination" style="padding-left:12px;">
+<div class="ot_article_pagination" style="padding-left:7px;">
 <?php the_title(); ?>
 </div>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

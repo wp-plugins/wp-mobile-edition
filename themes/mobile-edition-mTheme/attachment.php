@@ -1,12 +1,11 @@
 <?php get_header(); ?>
-<div class="ot_article_pagination">
-<?php previous_post_link( '%link', '<span class="ot_prev">&lsaquo; '.__('return', 'fdx-lang').'</span>' ); ?>	<div class="ot_date_link"><?php the_time('j/m/y'); ?></div>
-<div class="ot_clear"></div>
+<div class="ot_article_pagination" style="padding-left:7px;">
+<?php previous_post_link( '%link', '<span class="ot_prev">&lsaquo; '.__('return', 'fdx-lang').'</span>' ); ?>	<?php the_title(); ?>
+
 </div>
-<div class="ot_article_data"><?php the_title(); ?></div>
 <div class="ot_content ot_page">
-<div class="ot_article">
-<?php echo wp_get_attachment_image( $post->ID, 'full' ); ?>
+<div class="ot_article"><div align="center">
+<?php echo wp_get_attachment_image( $post->ID, 'full' ); ?></div>
 </div>
 <div class="ot_clear"></div>
 <div align="center" style="margin-bottom: 2px; margin-top: 5px">
