@@ -61,9 +61,9 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 
 == Screenshots ==
-1. mTheme options
-2. Basic Settings
-3. Front end (16 theme options)
+1. URL Shortener Account Settings
+2. ShareThis Button Integration
+3. Widget Real-time Settings
 
 
 == Installation ==
