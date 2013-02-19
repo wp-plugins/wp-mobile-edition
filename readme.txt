@@ -79,6 +79,24 @@ We'd love for you to get involved. Whatever your level of skill or however much 
 > You can install **WP Mobile Edition** directly from the WordPress admin! Visit the Plugins - > Add New page and search for **WP Mobile Edition**. Click to install.
 
 
+= SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
+You need to create a CName, and unfortunately the way you do this differs from one host to another, with some it's a drop down box and it takes two seconds to do, with others the process will be a little bit more complicated.
+
+If you use an external host somewhere there will be a section where you can edit your DNS details - if your service doesn't allow it then it's probably time to move to another host.
+
+When you create a subdomain, you will need two things, the domain the subdomain is for and the location from which the new subdomain will load it's content.
+
+Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
+
+To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
+
+= TESTING YOUR INSTALLATION (after enable the plugin) =
+Ideally, use a real mobile device to access your (public) site address and check that the switching and theme work correctly. 
+
+In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
+
+You can also download a number of mobile emulators that can run on a desktop PC and simulate mobile devices. 
+
 == Screenshots ==
 1. Basic Settings
 2. mTheme options
