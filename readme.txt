@@ -60,18 +60,18 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 > Companies such as : `m.yahoo.com`, `m.twitter.com`, `m.google.com`, `m.youtube.com`, `m.facebook.com`, have adopted this method. 
 
 
-== Screenshots ==
-1. URL Shortener Account Settings
-2. ShareThis Button Integration
-3. Widget Real-time Settings
-
-
 == Installation ==
 1. Upload the `wp-mobile-edition` folder to your `/wp-content/plugins/` directory
 1. Activate the `WP Mobile Edition` plugin in your WordPress admin `Plugins`
 1. Submit your subdomain, e select o Mobile Theme (mTheme) Done!
 
 > You can install **WP Mobile Edition** directly from the WordPress admin! Visit the Plugins - > Add New page and search for **WP Mobile Edition**. Click to install.
+
+
+== Screenshots ==
+1. Basic Settings
+2. mTheme options
+3. Front end: 16 theme options
 
 
 = SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
