@@ -49,23 +49,25 @@ function fdx_mobileedition_upgrade($data, $keys, $values) {
 }
 
 function fdx_3_options() {
+
 	$wp_admin = substr_count($_SERVER['REQUEST_URI'], '/wp-admin/');
 	$wp_login = substr_count($_SERVER['REQUEST_URI'], '/wp-login.php');
-	if ($wp_login > 0 || $wp_admin > 0) { //Always create a cookie
-		if (FDXMOBILE_STATUS == true) {
-			header ('location:'.FDX_SITEURL.'/wp-login.php');
-			die();
-		}
-	}
+    if ($wp_login > 0 && FDXMOBILE_STATUS == true) {
+	     include_once('pages/mobile_login.php');
+	     exit;
+    }
+    if ($wp_admin > 0 && FDXMOBILE_STATUS == true) {
+         include_once('pages/mobile_admin.php');
+	     exit;
+    }
 
-	if (FDXMOBILE_INSTALLED == true) {
+if (FDXMOBILE_INSTALLED == true) {
 		if ($_SERVER['SERVER_NAME'] == FDX_DESKTOP) {
 //-----------------------------------------------------
 $get = get_option('fdx_db_options');
 $go = str_replace(FDX_DESKTOP, $get['domain'], FDX_SITEURL);
 $mlink = $go . $_SERVER['REQUEST_URI'];
 define ('FDX_MLINK',  $mlink);
-if( ! is_admin() ) {
 // set a cookie
 if(isset($_GET['switch'])){
 setcookie('switch',$_GET['switch']);
@@ -77,7 +79,6 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 if ($deviceType == "phone"){header('Location: '.$mlink);exit;}
 if ($deviceType == "tablet"){header('Location: '.$mlink);exit;}
      }
-} //is_admin
 //-----------------------------------------------------
 }
 }
@@ -142,11 +143,10 @@ function fdx_mobileedition_admin(){
 										$go = str_replace(FDX_DESKTOP, $get['domain'], FDX_SITEURL);
 									    echo '<h3>You mobile site: <a href="'.$go.'" target="_blank">'.$go.'</a></h3>';
                                         } else {
-										echo '<p style="color:#FF0000"><strong>README FIRST!</strong></p><p><strong>Have you created your mobile subdomain?</strong></p>
-                                        <p>Setting up a subdomain is done through your hosting provider.</p>
-										<p>if you have not created yet, create subdomain from your domain control panel, point your subdomain document root into the root of wordpress installation or if you don\'t know what to do, contact your hosting provider.</p>
-                                        <p>To confirm that the process was performed correctly visit your full site in <strong><em>http://m.domain.com</em></strong></p>';
-									}
+										echo '<p style="color:#FF0000"><strong>'. __('README FIRST', 'fdx-lang') .'!</strong></p><p><strong>'. __('Have you created your mobile subdomain?', 'fdx-lang') .'</strong></p>
+                                        <p>'. __('Setting up a subdomain is done through your hosting provider.', 'fdx-lang') .'</p>
+										<p>'. __('if you have not created yet, create subdomain from your domain control panel, point your subdomain document root into the root of wordpress installation or if you don\'t know what to do, contact your hosting provider.', 'fdx-lang') .'</p>';
+                                    }
 							 ?>
 </p>
 </div></div>
@@ -162,28 +162,28 @@ function fdx_mobileedition_admin(){
 												if (is_writable(ABSPATH .'msitemap.xml')) {
 													$time = get_option('fdx_sitemap_time');
 													if ($time) {
-														echo '<p>Your sitemap was last built on ' . $time . '</p><p><strong>Tell Google about your sitemap by joining <a target="_blank" href="http://www.google.com/webmasters/tools/">Google Webmaster Tools</a>.</strong></p><p>If you add a new post or remove it, you should update the sitemap manually, and notify Google about your updates by <a href="http://www.google.com/webmasters/tools/ping?sitemap='.$go.'/msitemap.xml" target="_blank">pinging it</a></strong></p>';
+														echo '<p>'. __('Your sitemap was last built on', 'fdx-lang') .': <code>'. $time . '</code></p><p><strong>'. __('Tell Google about your sitemap by joining', 'fdx-lang') .' (<a target="_blank" href="http://www.google.com/webmasters/tools/">Google Webmaster</a>).</strong></p><p>'. __('If you add a new post or remove it, you should update the sitemap manually, and notify Google about your updates by', 'fdx-lang') .' <a href="http://www.google.com/webmasters/tools/ping?sitemap='.$go.'/msitemap.xml" target="_blank"><strong>'. __('pinging it', 'fdx-lang') .'</a></strong></p>';
 													} else {
-														echo '<p>You need to update Mobile Domain first</p>';
+														echo '<p>'. __('You need to update Mobile Domain first', 'fdx-lang') .'</p>';
 													}
 												} else {
-													echo '<p style="color:#FF0000"><strong>File Permissions needed, please fix this error, then update your sitemap.</strong></p>
+													echo '<p style="color:#FF0000"><strong>'. __('File Permissions needed, please fix this error, then update your sitemap.', 'fdx-lang') .'</strong></p>
 													<p>Ensure that your <a href="'.$go.'/msitemap.xml" target=_new>sitemap file</a> has appropriate <a href="http://codex.wordpress.org/Changing_File_Permissions" target="_blank">write permissions</a>.</p><p>You can use FTP Manager to change the permission of the sitemap file to 0666 and then try updating the sitemap again.</p>';
 												}
 												echo '<form method="post" action="options-general.php?page='.FDX3_PLUGIN_P1.'&fdx_action=update-sitemap">
 															<div class="submit">
-																<input type="submit" name="update-sitemap" class="button" value="Update Mobile Sitemap" />
+																<input type="submit" name="update-sitemap" class="button" value="'. __('Update Mobile Sitemap', 'fdx-lang') .'" />
 															</div>
 														</form>';
-												echo '<p>Sitemap : <a href="'.$go.'/msitemap.xml" target=_new>'.$go.'/msitemap.xml</a></p>';
+												echo __('Your Mobile Sitemap', 'fdx-lang') .': <code><a href="'.$go.'/msitemap.xml" target=_new>'.$go.'/msitemap.xml</a></code>';
 											}	else {
-												echo '<p>You need to create Mobile Domain first</p>';
+												echo '<p>'. __('You need to create Mobile Domain first', 'fdx-lang') .'</p>';
 											}
 										} else {
-												echo '<strong>Create Mobile XML Sitemap</strong>';
+												echo '<strong>'. __('Create Mobile XML Sitemap', 'fdx-lang') .'</strong>';
 												echo '<form method="post" action="options-general.php?page='.FDX3_PLUGIN_P1.'&fdx_action=create-sitemap">
 													<div class="submit">
-														<input type="submit" name="create-sitemap" class="button" value="Generate Mobile XML Sitemap" />
+														<input type="submit" name="create-sitemap" class="button" value="'. __('Generate Mobile XML Sitemap', 'fdx-lang') .'" />
 													</div>
 												</form>';
 											}
@@ -200,7 +200,7 @@ function fdx_mobileedition_admin(){
  <thead><tr><th><?php _e('Mobile Subdomain', 'fdx-lang') ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <p>
-<strong><?php _e('Subdomain for your mobile site', 'fdx-lang') ?>: </strong> <input type="text" name="domain" id="domain" value="<?php echo $get['domain'] ?>" class="regular-text"> <span class="description">(i.e. <strong>m.domain.com</strong>)</span>
+<strong><?php _e('Subdomain for your mobile site', 'fdx-lang') ?>: </strong> <input type="text" name="domain" id="domain" value="<?php echo $get['domain'] ?>" class="regular-text"> <span class="description">( <strong>m.domain.com</strong> )</span>
 </p>
 </td>
  </tr>

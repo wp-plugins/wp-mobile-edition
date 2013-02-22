@@ -16,7 +16,7 @@ return;
 				printf('&ldquo;%2$s&rdquo; Comment', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'fdx-lang' ,
 					number_format_i18n( get_comments_number() ));
 			?>
-          <?php if ( ! comments_open()) : ?>  <?php else: ?> <a class="ot_join_in" href="#ot_reply"><?php _e('join in', 'fdx-lang') ?></a> <?php endif; ?>
+          <?php if ( ! comments_open()) : ?> <div style="float: right; margin-top: 5px; margin-right: 5px"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/comment-no.png" width="20" height="20" border="0" alt="" /></div> <?php else: ?> <div style="float: right; margin-top: 5px; margin-right: 5px"><a href="#ot_reply"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/comment-yes.png" width="20" height="20" border="0" alt="" /></a></div> <?php endif; ?>
             </div>
              <div id="respond">
         <div class="ot_comments_container" style=" padding: 0; border: 0">

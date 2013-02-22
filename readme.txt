@@ -2,10 +2,10 @@
 Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
-Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit
+Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -46,6 +46,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 = DEMO =
 * To see mTheme in action visit [http://mdemo.fabrix.net](http://mdemo.fabrix.net) on your mobile device.
+
 * Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
 
 
@@ -59,16 +60,10 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 > Companies such as : `m.yahoo.com`, `m.twitter.com`, `m.google.com`, `m.youtube.com`, `m.facebook.com`, have adopted this method. 
 
 
-= Languages Available =
-* English (default)
-
-
-= How To Contribute =
-We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
-
-* **Users** - download the latest development version of the plugin, and submit bug/feature requests. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
-* **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface - no technical knowledge required ([how to](http://translate.fabrix.net/projects/wp-mobile-edition)).
-* **Developers** - Fork the development version and submit a pull request, especially for any known issues. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
+== Screenshots ==
+1. mTheme options
+2. Basic Settings
+3. Front end (16 theme options)
 
 
 == Installation ==
@@ -77,30 +72,6 @@ We'd love for you to get involved. Whatever your level of skill or however much 
 1. Submit your subdomain, e select o Mobile Theme (mTheme) Done!
 
 > You can install **WP Mobile Edition** directly from the WordPress admin! Visit the Plugins - > Add New page and search for **WP Mobile Edition**. Click to install.
-
-
-= SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
-You need to create a CName, and unfortunately the way you do this differs from one host to another, with some it's a drop down box and it takes two seconds to do, with others the process will be a little bit more complicated.
-
-If you use an external host somewhere there will be a section where you can edit your DNS details - if your service doesn't allow it then it's probably time to move to another host.
-
-When you create a subdomain, you will need two things, the domain the subdomain is for and the location from which the new subdomain will load it's content.
-
-Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
-
-To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
-
-= TESTING YOUR INSTALLATION (after enable the plugin) =
-Ideally, use a real mobile device to access your (public) site address and check that the switching and theme work correctly. 
-
-In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
-
-You can also download a number of mobile emulators that can run on a desktop PC and simulate mobile devices. 
-
-== Screenshots ==
-1. Basic Settings
-2. mTheme options
-3. Front end: 16 theme options
 
 
 = SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
@@ -136,6 +107,8 @@ You can find the `msitemap.xml` file in your blog's root folder.
 It implies that you don't have write permissions on your blog's root folder.  Please use chmod or your FTP manager to set the necessary permissions to 0666.
 
 == Changelog ==
+* 1.3
+    * Added the login page and control panel basics.
 
 * 1.2
     * Minor bug fixes

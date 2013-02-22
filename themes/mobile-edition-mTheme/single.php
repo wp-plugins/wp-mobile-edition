@@ -42,7 +42,7 @@ $nextPost = get_next_post(); if ($nextPost) { ?>
 </div>
 <?php if(function_exists('dsq_options')) { ?>
 <div class="rack1"></div> 
-<div class="ot_comments_respond">Comentarios</div>
+<div class="ot_comments_respond"><?php _e('comments', 'fdx-lang') ?></div>
 <div class="ot_comments_container">
 <?php comments_template('',true); ?>
 </div>

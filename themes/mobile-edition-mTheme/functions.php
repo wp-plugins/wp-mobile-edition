@@ -1,4 +1,10 @@
 <?php
+$currentLocale = get_locale();
+			if(!empty($currentLocale)) {
+				$moFile = FDX3_PLUGIN_URL . "/languages/".FDX3_PLUGIN_P1."-" . $currentLocale . ".mo";
+				if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('fdx-lang', $moFile);
+}
+
 // categoria etc tag
 function fdx_body_result_text() {
 	global $is_ajax; if (!$is_ajax) {

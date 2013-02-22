@@ -1,6 +1,4 @@
 <div class="ot_postfooter">
-<div class="ot_top_arrow"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/top_arrow.png" alt=""/></div>
-<div class="ot_top"><span class="ot_topicon"><a class="backToTop" href="#top"><?php _e('top', 'fdx-lang') ?></a></span></div>
 </div>
 <div class="ot_clear"></div>
 <?php
