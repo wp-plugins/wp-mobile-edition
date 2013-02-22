@@ -46,7 +46,6 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 = DEMO =
 * To see mTheme in action visit [http://mdemo.fabrix.net](http://mdemo.fabrix.net) on your mobile device.
-
 * Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
 
 
@@ -58,6 +57,18 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * **Best cache support:** Compatible with all caching plugins. (separately cache: `domain.com/post1/` for dektop and `m.domain.com/post1/` for mobile devices)
 
 > Companies such as : `m.yahoo.com`, `m.twitter.com`, `m.google.com`, `m.youtube.com`, `m.facebook.com`, have adopted this method. 
+
+
+= Languages Available =
+* English (default)
+
+
+= How To Contribute =
+We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
+
+* **Users** - download the latest development version of the plugin, and submit bug/feature requests. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
+* **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface - no technical knowledge required ([how to](http://translate.fabrix.net/projects/wp-mobile-edition)).
+* **Developers** - Fork the development version and submit a pull request, especially for any known issues. ([GitHub](https://github.com/fabrix/wp-mobile-edition))
 
 
 == Screenshots ==
