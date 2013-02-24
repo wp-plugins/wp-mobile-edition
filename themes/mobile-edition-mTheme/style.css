@@ -1,0 +1,91 @@
+ /*
+Theme Name: WP Mobile Edition - mTheme
+Theme URI: http://fabrix.net/wp-mobile-edition/
+Description: Default Mobile Theme for the plugin WP Mobile Edition
+Version: 1.0
+Author:Fabrix DoRoMo
+Author URI:http://fabrix.net
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+
+
+
+.fdx_container {width:auto !important; margin:10px 5px auto 5px; min-width: 310px !important; }
+
+
+
+/* After Build Bug Fixes */
+.fdx_categories ul li ul{display:none;}
+.fdx_article iframe{min-width: 310px}
+.fdx_article object, .fdx_article embed {min-width: 310px}
+
+.fdx_catlink, .fdx_searchlink,.fdx_contactlink {padding-left:10px;background:url(images/topnavsep.png) no-repeat right 4px;}
+
+
+.fdx_copyright {vertical-align:middle;}
+
+
+.fdx_topnav .fdx_home2 {padding:3px 13px 5px 15px;}
+.fdx_topnav .fdx_home2:hover {opacity:0.8;filter:alpha(opacity=80);}
+
+
+.fdx_social {width:145px!important; min-width:145px!important }
+.fdx_logo {width:170px !important;height:30px;max-width:170px !important;display:table-cell;vertical-align:middle;}
+
+.gallery dl.gallery-item img.attachment-thumbnail {
+	padding: auto;
+	margin: auto;
+	width: 90% !important;
+  	height: auto;
+}
+
+.icoprev {background:url(images/icons/prev.png) no-repeat 0 0; padding: 11px 24px 0 0  }
+.iconext {background:url(images/icons/next.png) no-repeat 0 0; padding: 11px 24px 0 0  }
+
+.commentbuble2 a {text-decoration:none;font-size:11px;color:#000 !important;border-radius:10px;padding:2px 4px 3px 4px;border:1px solid #b0b0b0; background: #FFFFFF; font-weight: bold;}
+.commentbuble2{ float: left; position: absolute;z-index: 10000; margin-left: -5px; margin-top: 3px  }
+
+#searchsubmit {border-radius:8px !important ;padding:3px 4px 4px 4px !important;border:1px solid #b0b0b0 !important; width: 18% !important}
+
+/* coment form hack */
+.form-submit { text-align: center; }
+.fdx_comments_author_date {font-size:9px; font-style: italic; }
+.fdx_comments_author_date a { text-decoration: none;  }
+.fdx_comments .children li {  margin: 10px}
+
+.fdx_comments {border-bottom:0;border-top:0;margin:0;padding:0;}
+.fdx_comments_info {padding:4px;}
+
+.fdx_comments_body {margin-top:0;padding:5px;font-size:13px;}
+.fdx_comments_body p {margin:0 0 8px 0;}
+
+.pages_count  a{text-decoration:none;font-size:11px;padding:3px 6px;}
+.fdx_comments_reply a {margin-right: 5px}
+
+
+.fdx_article_intro .fdx_article_title_text { font-weight: bold;display:table-cell;vertical-align:middle;height:60px !important; }
+
+
+.fdx_article_intro .fdx_thumb { margin-left: 8px; }
+
+.fdx_thumb { position:relative; height:80px; width:63px; float:left; margin-right:3px; background:url(images/full_page.png) no-repeat center center;}
+.fdx_thumb_link img {border:0;position:absolute;z-index:99;width:62px;top:8px;left:0;height:63px;}
+.fdx_frame {width:62px;height:63px;background:url(images/thumbframe.png) no-repeat center center;position:absolute;z-index:98;top:8px;left:0px;}
+.fdx_thumbimg img {width:60px;height:60px;padding:1px;margin:8px 0 0 0;}
+.fdx_thumb:hover {opacity:0.7;filter:alpha(opacity=70);}
+
+.fdx_snippet {position:relative;height:80px;max-height:80px;overflow:hidden;}
+
+.fdx_searchbar { padding-left: 5px !important; }
+
+.rack1 {clear:both;height:8px;}
+
+/* wp default css */
+.comment-form-author, .comment-form-email, .comment-form-url { margin-top: 15px !important; padding: 0 0 35px 0}
+
+
+
+
+ .fdx_topnav ul {margin:0;padding:0;list-style:none;width:233px !important;}
+
