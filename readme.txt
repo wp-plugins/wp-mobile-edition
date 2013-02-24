@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -84,6 +84,7 @@ We'd love for you to get involved. Whatever your level of skill or however much 
 
 > You can install **WP Mobile Edition** directly from the WordPress admin! Visit the Plugins - > Add New page and search for **WP Mobile Edition**. Click to install.
 
+> After upgrade, disable and enable the plugin to update the files of mobile theme (mTheme).
 
 = SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
 You need to create a CName, and unfortunately the way you do this differs from one host to another, with some it's a drop down box and it takes two seconds to do, with others the process will be a little bit more complicated.
@@ -117,7 +118,13 @@ You can find the `msitemap.xml` file in your blog's root folder.
 = I am getting Permission Denied like errors =
 It implies that you don't have write permissions on your blog's root folder.  Please use chmod or your FTP manager to set the necessary permissions to 0666.
 
+
 == Changelog ==
+* 1.4
+    * Minor bug fixes
+    * Various cosmetic fixes
+    * Improvement of performance
+
 * 1.3
     * Added the login page and control panel basics.
 
@@ -129,3 +136,8 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 * 1.0
     * Initial release
+
+== Upgrade Notice ==
+
+= 1.4 =
+After upgrade, disable and enable the plugin to update the files of mobile theme (mTheme).

@@ -98,7 +98,7 @@ function fdx_comment( $comment, $args, $depth ) {
 	?>
 
 <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		<p><?php _e( 'Pingback:', 'fdx-lang' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'fdx-lang' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'fdx-lang' ); ?> <?php comment_author_link(); ?></p>
 	<?php
 			break;
 		default :
@@ -109,13 +109,13 @@ function fdx_comment( $comment, $args, $depth ) {
 <li <?php comment_class(); ?> id="li-<?php comment_ID(); ?>">
 
     <div id="<?php comment_ID(); ?>">
-			<div class="ot_comments_info">
+			<div class="fdx_comments_info">
 				<?php
-                    echo '<div class="ot_comments_author">';
+                    echo '<div class="fdx_comments_author">';
 					echo get_avatar( $comment, 40 );
                     echo '</div>';
-					printf( '<div class="ot_comments_author_name">%1$s</div>',get_comment_author_link());
-					printf( '<div class="ot_comments_author_date"><a href="%1$s">%3$s</a></div><br />',
+					printf( '<div class="fdx_comments_author_name">%1$s</div>',get_comment_author_link());
+					printf( '<div class="fdx_comments_author_date"><a href="%1$s">%3$s</a></div><br />',
 						esc_url( get_comment_link( $comment->comment_ID ) ),
 						get_comment_time( 'c' ),
 						sprintf( __( '%1$s at %2$s', 'fdx-lang' ), get_comment_date(), get_comment_time() )
@@ -127,12 +127,11 @@ function fdx_comment( $comment, $args, $depth ) {
 				<?php _e( 'Your comment is awaiting moderation.', 'fdx-lang' ); ?>
 			<?php endif; ?>
 
-			<div class="ot_comments_body">
+			<div class="fdx_comments_body">
 				<?php comment_text(); ?>
-				<?php edit_comment_link( __( 'Edit', 'fdx-lang' ), '<p class="edit-link">', '</p>' ); ?>
 			</div>
 
-				<div class="ot_comments_reply">
+				<div class="fdx_comments_reply">
 				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'fdx-lang' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div>
 

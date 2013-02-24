@@ -43,16 +43,16 @@
         /*<![CDATA[*/
        jQuery(document).ready(function($) {
     	 // Init the header
-	 $('.ot_catlink > a').click(function() {
+	 $('.fdx_catlink > a').click(function() {
 
-		$('.ot_categories2').slideToggle(function () {
-			if ($('.ot_categories2').is(":visible")) {
-				$('.ot_catlink').css(
+		$('.fdx_categories2').slideToggle(function () {
+			if ($('.fdx_categories2').is(":visible")) {
+				$('.fdx_catlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/icons/tick.png) no-repeat right center'
 				);
 			}
 			else {
-				$('.ot_catlink').css(
+				$('.fdx_catlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/topnavsep.png) no-repeat right 6px'
 				);
 			}
@@ -60,16 +60,16 @@
 
 	});
 
-	$('.ot_searchlink > a').click(function() {
+	$('.fdx_searchlink > a').click(function() {
 
-		$('.ot_search').slideToggle(function () {
-			if ($('.ot_search').is(":visible")) {
-				$('.ot_searchlink').css(
+		$('.fdx_search').slideToggle(function () {
+			if ($('.fdx_search').is(":visible")) {
+				$('.fdx_searchlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/icons/tick.png) no-repeat right center'
 				);
 			}
 			else {
-				$('.ot_searchlink').css(
+				$('.fdx_searchlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/topnavsep.png) no-repeat right 6px'
 				);
 			}
@@ -77,17 +77,17 @@
 
 	});
 
-	$('.ot_contactlink > a').click(function() {
+	$('.fdx_contactlink > a').click(function() {
 
-		$('.ot_contact').slideToggle(function () {
-			if ($('.ot_contact').is(":visible")) {
+		$('.fdx_contact').slideToggle(function () {
+			if ($('.fdx_contact').is(":visible")) {
 
-				$('.ot_contactlink').css(
+				$('.fdx_contactlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/icons/tick.png) no-repeat right center'
 				);
 			}
             else {
-				$('.ot_contactlink').css(
+				$('.fdx_contactlink').css(
 					'background', 'url(<?php bloginfo('stylesheet_directory'); ?>/images/topnavsep.png) no-repeat right 6px'
 				);
 			}
@@ -114,16 +114,16 @@ echo stripslashes($options['fdx_text_head']) . "\n";
 </head>
 <body onLoad="document.getElementById('siteLoader').style.display = 'none';">
 <a name="top" id="top"></a>
-<div class="ot_container">
+<div class="fdx_container">
 
-<div class="ot_header">
-<div class="ot_logo">
+<div class="fdx_header">
+<div class="fdx_logo">
 <?php $options = get_option('fdx3_updater_options');
 if ( $options['fdx_logo_url'] <> "" ) { echo '<a href="'.get_bloginfo('url').'"><img alt="*" border="0" width="170" height="30" src="'.$options['fdx_logo_url'].'" /></a>';}
 ?>
 </div>
 
-<div class="ot_social">
+<div class="fdx_social">
 <?php $options = get_option('fdx3_updater_options');
 if ( $options['fdx_google_url'] <> "" ) { echo '<a href="'.$options['fdx_google_url'].'"><img alt="*" border="0" width="24" height="24" src="'. get_template_directory_uri(). '/images/icons/google.png" /></a>';}
 if ( $options['fdx_ink_url'] <> "" ) { echo '<a href="'.$options['fdx_ink_url'].'"><img alt="*" border="0" width="24" height="24" src="'. get_template_directory_uri(). '/images/icons/in.png" /></a>';}
@@ -134,34 +134,35 @@ if ( $options['fdx_feed_url'] <> "" ) { echo '<a href="'.$options['fdx_feed_url'
 </div>
 </div>
 
-<div class="ot_topnav">
+<div class="fdx_topnav" align="center">
 <ul>
-<li class="ot_contactlink"><a href="#"><?php _e('Menu', 'fdx-lang') ?></a></li>
-<li class="ot_catlink"><a href="#"><?php _e('Categories', 'fdx-lang') ?></a></li>
-<li class="ot_searchlink"><a href="#"><?php _e('Search', 'fdx-lang') ?></a></li>
-<li class="ot_home2"><a href="/contact/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/mail.png" border="0" alt="" width="21" height="16"/></a></li>
+<li class="fdx_home"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/home.png" border="0" alt="" width="17" height="16"/></a></li>
+<li class="fdx_contactlink" style="padding-top: 6px"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/menu.png" border="0" alt="" width="20" height="20"/></a></li>
+<li class="fdx_catlink" style="padding-top: 6px"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/cat.png" border="0" alt="" width="22" height="20"/></a></li>
+<li class="fdx_searchlink" style="padding-top: 6px"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/search.png" border="0" alt="" width="20" height="20"/></a></li>
+<li class="fdx_home2"><a href="/contact/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/mail.png" border="0" alt="" width="21" height="16"/></a></li>
 </ul>
 </div>
 
-<div class="ot_search">
+<div class="fdx_search" align="center">
 <form role="search" method="get" action="<?php bloginfo('url'); ?>">
-<input name="s" id="s" value="<?php _e('Enter text here', 'fdx-lang') ?>..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="ot_searchbar"/>
+<input name="s" id="s" value="<?php _e('Enter text here', 'fdx-lang') ?>..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="fdx_searchbar"/>
 <input type="submit" id="searchsubmit" value="<?php _e('Search', 'fdx-lang') ?>" />
 </form>
 </div>
 
 <div style="clear:both;height:8px;"></div>
 
-<div class="ot_categories ot_categories2">
-<div class="ot_topheading"><?php _e('Categories', 'fdx-lang') ?></div>
+<div class="fdx_categories fdx_categories2">
+<div class="fdx_topheading"><?php _e('Categories', 'fdx-lang') ?></div>
 <ul>
 <?php wp_list_categories('orderby=name&title_li=&depth=4'); ?>
 </ul>
 </div>
 
-<div class="ot_contact">
-<div class="ot_topheading"><?php _e('Menu', 'fdx-lang') ?></div>
-<div class="ot_categories" style="display: inline !important">
+<div class="fdx_contact">
+<div class="fdx_topheading"><?php _e('Menu', 'fdx-lang') ?></div>
+<div class="fdx_categories" style="display: inline !important">
 <ul>
 <?php wp_nav_menu( array( 'menu' => 'fdx-menu', 'link_before' => '<div class="togle">', 'link_after' => '</div>', 'items_wrap' => '%3$s', 'depth' => '1' ) ); ?>
 </ul>
