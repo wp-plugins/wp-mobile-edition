@@ -30,7 +30,8 @@ $arc_day = get_the_time('d');
 <?php the_tags( '<span class="tags">', '</span><span class="tags">', '</span>'); ?>
 <div class="fdx_clear"></div>
 </div>
-<div align="center" style="margin-bottom: 2px; margin-top: 5px">
+
+<div align="center" class="sharenav">
 <?php $prevPost = get_previous_post(); if ($prevPost) { ?>
 <a href="<?php $prevPost = get_previous_post(false); $prevURL = get_permalink($prevPost->ID); echo $prevURL; ?>" title="<?php _e('prev', 'fdx-lang') ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/prev.png" width="24" height="24" border="0" alt="&laquo;" /></a>
 <?php }
@@ -39,6 +40,7 @@ $nextPost = get_next_post(); if ($nextPost) { ?>
 <a href="<?php $nextPost = get_next_post(false); $nextURL = get_permalink($nextPost->ID); echo $nextURL; ?>" title="<?php _e('next', 'fdx-lang') ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/next.png" width="24" height="24" border="0" alt="&raquo;" /></a>
 <?php } ?>
 </div>
+
 </div>
 <?php if(function_exists('dsq_options')) { ?>
 <div class="rack1"></div> 

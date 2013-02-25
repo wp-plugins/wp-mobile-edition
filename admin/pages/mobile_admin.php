@@ -14,8 +14,8 @@ if(current_user_can('manage_options')) {
     $base = get_option('home');
     global $current_user;
     get_currentuserinfo();
-    echo '<div class="ot_article_pagination" style="padding-left:7px;"><a href="'.$base.'/">' . __('Return to the site', 'fdx-lang') . '</a><span class="ot_next"><a href="'. wp_logout_url() .'">' . __('Logout', 'fdx-lang') . '</a></span></div>';
-    echo '<div class="ot_article ot_page">';
+    echo '<div class="fdx_article_pagination" style="padding-left:7px;"><a href="'.$base.'/">' . __('Return to the site', 'fdx-lang') . '</a><span class="fdx_next"><a href="'. wp_logout_url( get_permalink() ) .'">' . __('Logout', 'fdx-lang') . '</a></span></div>';
+    echo '<div class="fdx_article fdx_page">';
     echo '<div align="center">' . get_avatar(get_the_author_meta(), 96) . '</div>';
     echo '<blockquote>'.__('Display name', 'fdx-lang') . ': <strong>' . $current_user->display_name . '</strong><br />';
     echo __('Email', 'fdx-lang') . ': <strong>' . $current_user->user_email . '</strong><br />';
@@ -31,8 +31,8 @@ if(current_user_can('manage_options')) {
     $base = get_option('home');
     global $current_user;
     get_currentuserinfo();
-    echo '<div class="ot_article_pagination" style="padding-left:7px;"><a href="'.$base.'/">' . __('Return to the site', 'fdx-lang') . '</a><span class="ot_next"><a href="'. wp_logout_url() .'">' . __('Logout', 'fdx-lang') . '</a></span></div>';
-    echo '<div class="ot_article ot_page">';
+    echo '<div class="fdx_article_pagination" style="padding-left:7px;"><a href="'.$base.'/">' . __('Return to the site', 'fdx-lang') . '</a><span class="fdx_next"><a href="'. wp_logout_url( get_permalink() ) .'">' . __('Logout', 'fdx-lang') . '</a></span></div>';
+    echo '<div class="fdx_article fdx_page">';
     echo '<div align="center">' . get_avatar(get_the_author_meta(), 96) . '</div>';
     echo '<blockquote>'.__('Display name', 'fdx-lang') . ': <strong>' . $current_user->display_name . '</strong><br />';
     echo __('Email', 'fdx-lang') . ': <strong>' . $current_user->user_email . '</strong><br />';

@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -120,6 +120,9 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 
 == Changelog ==
+* 1.5
+    * mTheme - Various cosmetic fixes
+
 * 1.4
     * Minor bug fixes
     * Various cosmetic fixes
@@ -139,5 +142,5 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 == Upgrade Notice ==
 
-= 1.4 =
+= 1.5 =
 After upgrade, disable and enable the plugin to update the files of mobile theme (mTheme).

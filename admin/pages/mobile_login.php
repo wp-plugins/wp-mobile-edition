@@ -4,8 +4,8 @@ function wpmp_switcher_login_header($wp_error = '') {
 
 
 get_header();
-echo '<div class="ot_article_pagination" style="padding-left:7px;">'. __('Login', 'fdx-lang').'</div>';
-echo '<div class="ot_article ot_page">';
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Login', 'fdx-lang').'</div>';
+echo '<div class="fdx_article fdx_page">';
 
 
 //erro mesages
@@ -16,7 +16,7 @@ echo '<div class="ot_article ot_page">';
                    	$errors .= $error ;
 
 		if ( !empty($errors) )
-			echo '<code>' . apply_filters('login_errors', $errors) . "</code>\n";
+			echo '<div align="center"><code>' . apply_filters('login_errors', $errors) . "</code></div>\n";
 	}
 }
 
@@ -31,6 +31,21 @@ if ( isset($_GET['key']) )
 $http_post = ('POST' == $_SERVER['REQUEST_METHOD']);
 switch ($action) {
 
+case 'postpass' :
+	if ( empty( $wp_hasher ) ) {
+		require_once( ABSPATH . 'wp-includes/class-phpass.php' );
+		// By default, use the portable hash from phpass
+		$wp_hasher = new PasswordHash(8, true);
+	}
+
+	// 10 days
+	setcookie( 'wp-postpass_' . COOKIEHASH, $wp_hasher->HashPassword( stripslashes( $_POST['post_password'] ) ), time() + 10 * DAY_IN_SECONDS, COOKIEPATH );
+
+	wp_safe_redirect( wp_get_referer() );
+	exit();
+
+break;
+
 case 'logout' :
 
 	wp_logout();
@@ -43,6 +58,28 @@ case 'logout' :
 	exit();
 
 break;
+
+case 'lostpassword' :
+case 'retrievepassword' :
+case 'resetpass' :
+case 'rp' :
+
+get_header();
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Lost Password / Reset Password', 'fdx-lang').'</div>';
+echo '<div class="fdx_article fdx_page">';
+echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'fdx-lang') . '. <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'fdx-lang').'</strong></a></blockquote></p>';
+
+break;
+
+case 'register' :
+
+get_header();
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Register', 'fdx-lang').'</div>';
+echo '<div class="fdx_article fdx_page">';
+echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'fdx-lang') . '.  <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'fdx-lang').'</strong></a></blockquote></p>';
+
+break;
+
 
 case 'login' :
 default:
@@ -69,23 +106,26 @@ default:
 	wpmp_switcher_login_header($errors);
 ?>
 
-<form name="loginform" id="loginform" action="wp-login.php" method="post">
 
-	<p>
-		<label><?php _e('Username', 'fdx-lang') ?><br />
-		<input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr(stripslashes(@$user_login)); ?>" size="20" tabindex="10" /></label>
-	</p>
-	<p>
-		<label><?php _e('Password', 'fdx-lang') ?><br />
-		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="20" /></label>
-	</p>
+
+<form name="loginform" id="loginform" action="wp-login.php" method="post">
+      <fieldset style="width: 160px">
+           <legend>	<?php _e('Login', 'fdx-lang') ?></legend>
+
+		<?php _e('Username', 'fdx-lang') ?><br />
+		<input type="text" name="log" id="user_login" class="fdx_commentform_input" value="<?php echo esc_attr(stripslashes(@$user_login)); ?>" size="20" tabindex="10" />
+           <br />
+
+		<?php _e('Password', 'fdx-lang') ?><br />
+		<input type="password" name="pwd" id="user_pass" class="fdx_commentform_input" value="" size="20" tabindex="20" />
+
 <?php do_action('login_form'); ?>
-	<p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> <?php _e('Remember Me', 'fdx-lang'); ?></label></p>
-	<p class="submit">
+	<br /><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> <em><?php _e('Remember Me', 'fdx-lang'); ?> </em>
+	<div align="center" style="margin-top: 5px">
 		<input type="submit" name="wp-submit" id="searchsubmit" value="<?php _e('Login', 'fdx-lang'); ?>" tabindex="100" />
 		<input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
-	</p>
-
+	</div>
+    </fieldset>
 </form>
 
 <?php

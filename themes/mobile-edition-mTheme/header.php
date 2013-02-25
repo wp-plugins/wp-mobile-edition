@@ -29,9 +29,10 @@
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
    <?php $options = get_option('fdx3_updater_options');
-   echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.$options['fdx_color'].'-'.$options['dark_clean'].'.css" type="text/css" media="screen" />';
+   echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.$options['dark_clean'].'.css" type="text/css" />'."\n";
+   echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.$options['fdx_color'].'/style-c.css" type="text/css" />';
    ?>
 
 <?php /* http://code.google.com/intl/pt-BR/apis/libraries/devguide.html */  ?>
@@ -144,11 +145,20 @@ if ( $options['fdx_feed_url'] <> "" ) { echo '<a href="'.$options['fdx_feed_url'
 </ul>
 </div>
 
-<div class="fdx_search" align="center">
+<div class="fdx_search">
+<div style="clear:both;height:8px;"></div>
+
+<div class="fdx_topheading"><?php _e('Search', 'fdx-lang') ?></div>
+ <div class="fdx_article fdx_page">
+  <fieldset style="width: 275px"><legend><?php _e('Search for', 'fdx-lang') ?></legend>
+
 <form role="search" method="get" action="<?php bloginfo('url'); ?>">
 <input name="s" id="s" value="<?php _e('Enter text here', 'fdx-lang') ?>..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="fdx_searchbar"/>
 <input type="submit" id="searchsubmit" value="<?php _e('Search', 'fdx-lang') ?>" />
 </form>
+</fieldset>
+  </div> 
+
 </div>
 
 <div style="clear:both;height:8px;"></div>
