@@ -76,7 +76,7 @@ return;
 <!-- no-log --><fieldset style="width: 275px"><legend><?php comment_form_title( 'Leave a Comment', 'Leave a Reply to %s' ); ?> <?php cancel_comment_reply_link(); ?></legend>
 
 <p><?php _e( 'Name', 'fdx-lang' ); ?><?php if ($req) { ?>*<?php } ?>:<br /><input type="text" name="author" id="author" class="fdx_commentform_input" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1"  /> </p>
-<p<?php _e( '>Email', 'fdx-lang' ); ?><?php if ($req) { ?>* <?php } ?>:<br /><input type="text" name="email" id="email" class="fdx_commentform_input" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" /></p>
+<p<?php _e( 'Email', 'fdx-lang' ); ?><?php if ($req) { ?>*<?php } ?>:<br /><input type="text" name="email" id="email" class="fdx_commentform_input" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" /></p>
 <p><?php _e( 'Website', 'fdx-lang' ); ?>:<br /><input type="text" name="url" id="url" class="fdx_commentform_input" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3"/> </p>
 
 <?php endif; ?>

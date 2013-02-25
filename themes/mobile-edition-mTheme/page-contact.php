@@ -54,7 +54,7 @@ if(isset($_POST['submitted'])) {
             $urlsend = $_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"];
 		    $ip = $_SERVER['REMOTE_ADDR']; //ip
             $data = date('d/m/Y H:i:s'); //data
-            $subject = 'My Mobile Site Form~' .$assunto;
+            $subject = '[WP Mobile Edition]~' .$assunto;
 			$body = "NAME: $name <p>EMAIL: $email </p><p>SUBJECT: $assunto </p><p>MESSAGE: $comments </p>-------------------------------------------<br /><small>IP: $ip | $data(gmt)<br /> $urlsend </small>";
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=utf-8" . "\r\n";
