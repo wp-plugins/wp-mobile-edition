@@ -18,8 +18,6 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 * Includes the ability for visitors to switch between mobile view and your site's regular theme (and remembers their choice).
 
-* Switching algorithms lightweight, open source, powered by [Mobile Detect](http://mobiledetect.net/).
-
 = Mobile XML Sitemap Generator =
 
 * It will create a mobile xml sitemap, to maximize the mobile version in mobile search engines like google, Bing, and other.
