@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Mobile Edition
 Description: Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
-Version: 1.6
+Version: 1.7
 Author: Fabrix DoRoMo
 Author URI: http://fabrix.net
 Plugin URI: http://fabrix.net/wp-mobile-edition
@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*********************************************************************************/
 define('FDX3_PLUGIN_NAME', 'WP Mobile Edition' );
-define('FDX3_PLUGIN_VERSION', '1.6' );
+define('FDX3_PLUGIN_VERSION', '1.7' );
 define('FDX3_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 define('FDX3_WPPAGE', 'http://wordpress.org/extend/plugins/wp-mobile-edition');
@@ -37,22 +37,18 @@ define('FDX3_DONATELINK', 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&h
 define('FDX3_PLUGIN_P1', 'wp-mobile-edition' ); //link1, plugin prefix (.mo)
 define('FDX3_PLUGIN_P2', 'wp-mobile-ed-mtheme' ); //link2
 
-/*
+/* Locale, menu,...
 *------------------------------------------------------------*/
-$currentLocale = get_locale();
-			if(!empty($currentLocale)) {
-				$moFile = dirname(__FILE__) . "/languages/".FDX3_PLUGIN_P1."-" . $currentLocale . ".mo";
-				if(@file_exists($moFile) && is_readable($moFile)) load_textdomain('fdx-lang', $moFile);
+function fdx3_lang_init(){
+load_plugin_textdomain('fdx-lang', false, dirname(plugin_basename( __FILE__ )).'/languages');
 }
 
-/* menu,
-*------------------------------------------------------------*/
 register_nav_menu( 'fdx-menu', FDX3_PLUGIN_NAME);
-
 
 add_image_size( 'cat-thumb', 60, 60, true );
 
-
+/*
+*------------------------------------------------------------*/
 function fdx_3_init() {
     if (is_admin() && current_user_can('administrator')) {
       add_action( 'admin_menu', 'fdx3_admin_add_page' );
@@ -203,17 +199,11 @@ function fdx_3_directory_copy_themes($source_dir, $destination_dir, $benign=true
 }
 
 
-/* clean-up when deactivated
+/*
 *------------------------------------------------------------*/
-function fdx_3_deactivate() {
-delete_option('fdx3_updater_options');
-delete_option('fdx_db_options');
-delete_option('fdx_sitemap_time');
-}
-
 add_action('init', 'fdx_3_init');
 add_action('init', 'fdx_3_options');
+add_action('init', 'fdx3_lang_init');
 
 register_activation_hook('wp-mobile-edition/wp-mobile-edition.php', 'fdx_3_pack_activate');
-register_deactivation_hook( __FILE__, 'fdx_3_deactivate'); // when deativated clean up 
 ?>
