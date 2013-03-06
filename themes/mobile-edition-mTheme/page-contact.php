@@ -67,13 +67,13 @@ if(isset($_POST['submitted'])) {
 }
 ?>
 <?php get_header(); ?>
-<div class="fdx_topheading"><?php _e('Contact', 'fdx-lang') ?></div>
+<div class="fdx_topheading"><?php _e('Contact', 'wp-mobile-edition') ?></div>
 <div class="fdx_content" style="padding: 10px">
  <?php if(isset($emailSent) && $emailSent == true) { ?>
 
 	<div class="thanks">
-		<h1><?php _e('Thanks', 'fdx-lang') ?>, <?=$name;?></h1>
-		<p><?php _e('Your message has been sent successfully', 'fdx-lang') ?>!</p>
+		<h1><?php _e('Thanks', 'wp-mobile-edition') ?>, <?=$name;?></h1>
+		<p><?php _e('Your message has been sent successfully', 'wp-mobile-edition') ?>!</p>
 	</div>
 
 <?php } else { ?>
@@ -82,17 +82,17 @@ if(isset($_POST['submitted'])) {
 
 
 <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
-<?php _e('Name', 'fdx-lang') ?>:<br />
+<?php _e('Name', 'wp-mobile-edition') ?>:<br />
 <input name="contactName" id="contactName" size="22" tabindex="1" type="text" class="fdx_commentform_input" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" <?php if(@$nameError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>> <br />
-<?php _e('Email', 'fdx-lang') ?>: <br />
+<?php _e('Email', 'wp-mobile-edition') ?>: <br />
 <input type="text" name="email" id="email" class="fdx_commentform_input" value="<?php if(isset($_POST['email']))  echo $_POST['email'];?>" <?php if(@$emailError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>/>
-<?php _e('Subject', 'fdx-lang') ?>:<br />
+<?php _e('Subject', 'wp-mobile-edition') ?>:<br />
 <input type="text" name="assunto" id="assunto" class="fdx_commentform_input" value="<?php if(isset($_POST['assunto'])) echo $_POST['assunto'];?>" <?php if(@$assuntoError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>/>
-<?php _e('Message', 'fdx-lang') ?>:<br />
+<?php _e('Message', 'wp-mobile-edition') ?>:<br />
 <textarea name="comments" id="commentsText" cols="100" rows="10" class="fdx_commentform_textarea" <?php if(@$commentError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo stripslashes($_POST['comments']); } else { echo $_POST['comments']; } } ?></textarea>
-<input type="text" name="checking" class="darkform" id="checking" size="7" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" <?php if(@$captchaError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>/> <span style="font-size: 10px">&larr; <?php _e('Anti-Spam, leave this field blank', 'fdx-lang') ?>.</span>
+<input type="text" name="checking" class="darkform" id="checking" size="7" value="<?php if(isset($_POST['checking']))  echo $_POST['checking'];?>" <?php if(@$captchaError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?>/> <span style="font-size: 10px">&larr; <?php _e('Anti-Spam, leave this field blank', 'wp-mobile-edition') ?>.</span>
 <input type="hidden" name="submitted" id="submitted" value="true" />
-<p align="center" style="margin-top: 10px"><button type="submit" name="submit" id="submit" class="fdx_commentform_send"><?php _e('Send message', 'fdx-lang') ?></button></p>
+<p align="center" style="margin-top: 10px"><button type="submit" name="submit" id="submit" class="fdx_commentform_send"><?php _e('Send message', 'wp-mobile-edition') ?></button></p>
 </form>
 
 

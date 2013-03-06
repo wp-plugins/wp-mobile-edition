@@ -10,7 +10,7 @@ echo "</div> \n";
 }
 ?>
 <div class="fdx_switch">
-<div class="fdx_switch_text"><?php _e('Mobile Version', 'fdx-lang') ?> | <a href="<?php echo FDX_SITEURL.$_SERVER['REQUEST_URI'].'?switch=0'; ?>"><?php _e('Desktop Version', 'fdx-lang') ?></a></div>
+<div class="fdx_switch_text"><?php _e('Mobile Version', 'wp-mobile-edition') ?> | <a href="<?php echo FDX_SITEURL.$_SERVER['REQUEST_URI'].'?switch=0'; ?>"><?php _e('Desktop Version', 'wp-mobile-edition') ?></a></div>
 <div class="fdx_switch_checkbox"></div>
 <div class="fdx_clear"></div>
 </div>

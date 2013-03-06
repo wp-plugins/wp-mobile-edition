@@ -4,7 +4,7 @@ function wpmp_switcher_login_header($wp_error = '') {
 
 
 get_header();
-echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Login', 'fdx-lang').'</div>';
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Login', 'wp-mobile-edition').'</div>';
 echo '<div class="fdx_article fdx_page">';
 
 
@@ -65,18 +65,18 @@ case 'resetpass' :
 case 'rp' :
 
 get_header();
-echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Lost Password / Reset Password', 'fdx-lang').'</div>';
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Lost Password / Reset Password', 'wp-mobile-edition').'</div>';
 echo '<div class="fdx_article fdx_page">';
-echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'fdx-lang') . '. <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'fdx-lang').'</strong></a></blockquote></p>';
+echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'wp-mobile-edition') . '. <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'wp-mobile-edition').'</strong></a></blockquote></p>';
 
 break;
 
 case 'register' :
 
 get_header();
-echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Register', 'fdx-lang').'</div>';
+echo '<div class="fdx_article_pagination" style="padding-left:7px;">'. __('Register', 'wp-mobile-edition').'</div>';
 echo '<div class="fdx_article fdx_page">';
-echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'fdx-lang') . '.  <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'fdx-lang').'</strong></a></blockquote></p>';
+echo '<p> <blockquote>' . __('This function is disabled in the mobile version, please access the desktop version', 'wp-mobile-edition') . '.  <a href="'.wp_login_url( get_permalink() ).'"> <strong>'. __('Login', 'wp-mobile-edition').'</strong></a></blockquote></p>';
 
 break;
 
@@ -110,19 +110,19 @@ default:
 
 <form name="loginform" id="loginform" action="wp-login.php" method="post">
       <fieldset style="width: 160px">
-           <legend>	<?php _e('Login', 'fdx-lang') ?></legend>
+           <legend>	<?php _e('Login', 'wp-mobile-edition') ?></legend>
 
-		<?php _e('Username', 'fdx-lang') ?><br />
+		<?php _e('Username', 'wp-mobile-edition') ?><br />
 		<input type="text" name="log" id="user_login" class="fdx_commentform_input" value="<?php echo esc_attr(stripslashes(@$user_login)); ?>" size="20" tabindex="10" />
            <br />
 
-		<?php _e('Password', 'fdx-lang') ?><br />
+		<?php _e('Password', 'wp-mobile-edition') ?><br />
 		<input type="password" name="pwd" id="user_pass" class="fdx_commentform_input" value="" size="20" tabindex="20" />
 
 <?php do_action('login_form'); ?>
-	<br /><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> <em><?php _e('Remember Me', 'fdx-lang'); ?> </em>
+	<br /><input name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="90" /> <em><?php _e('Remember Me', 'wp-mobile-edition'); ?> </em>
 	<div align="center" style="margin-top: 5px">
-		<input type="submit" name="wp-submit" id="searchsubmit" value="<?php _e('Login', 'fdx-lang'); ?>" tabindex="100" />
+		<input type="submit" name="wp-submit" id="searchsubmit" value="<?php _e('Login', 'wp-mobile-edition'); ?>" tabindex="100" />
 		<input type="hidden" name="redirect_to" value="<?php echo esc_attr($redirect_to); ?>" />
 	</div>
     </fieldset>

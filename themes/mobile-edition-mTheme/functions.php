@@ -3,21 +3,21 @@
 function fdx_body_result_text() {
 	global $is_ajax; if (!$is_ajax) {
 			if (is_search()) {
-				echo __('Results for', 'fdx-lang') . ' &rsaquo; ' . get_search_query();
+				echo __('Results for', 'wp-mobile-edition') . ' &rsaquo; ' . get_search_query();
 			} if (is_category()) {
-                echo __('Category', 'fdx-lang') . ' &rsaquo; ' . single_cat_title('', false);
+                echo __('Category', 'wp-mobile-edition') . ' &rsaquo; ' . single_cat_title('', false);
 			} elseif (is_tag()) {
-                echo __('Tag', 'fdx-lang') . ' &rsaquo; ' . single_tag_title('', false);
+                echo __('Tag', 'wp-mobile-edition') . ' &rsaquo; ' . single_tag_title('', false);
 			} elseif (is_day()) {
-                echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('F jS, Y');
+                echo __('Archive', 'wp-mobile-edition') . ' &rsaquo; ' . get_the_time('F jS, Y');
 			} elseif (is_month()) {
-                echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('F, Y');
+                echo __('Archive', 'wp-mobile-edition') . ' &rsaquo; ' . get_the_time('F, Y');
 			} elseif (is_year()) {
-			   echo __('Archive', 'fdx-lang') . ' &rsaquo; ' . get_the_time('Y');
+			   echo __('Archive', 'wp-mobile-edition') . ' &rsaquo; ' . get_the_time('Y');
             } elseif (is_author()) {
                global $author;
                $userdata = get_userdata($author);
-			   echo __('Author', 'fdx-lang') . ' &rsaquo; ' . $userdata->display_name;
+			   echo __('Author', 'wp-mobile-edition') . ' &rsaquo; ' . $userdata->display_name;
 		}
 	}
 }
@@ -92,7 +92,7 @@ function fdx_comment( $comment, $args, $depth ) {
 	?>
 
 <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		<p><?php _e( 'Pingback:', 'fdx-lang' ); ?> <?php comment_author_link(); ?></p>
+		<p><?php _e( 'Pingback:', 'wp-mobile-edition' ); ?> <?php comment_author_link(); ?></p>
 	<?php
 			break;
 		default :
@@ -112,13 +112,13 @@ function fdx_comment( $comment, $args, $depth ) {
 					printf( '<div class="fdx_comments_author_date"><a href="%1$s">%3$s</a></div><br />',
 						esc_url( get_comment_link( $comment->comment_ID ) ),
 						get_comment_time( 'c' ),
-						sprintf( __( '%1$s at %2$s', 'fdx-lang' ), get_comment_date(), get_comment_time() )
+						sprintf( __( '%1$s at %2$s', 'wp-mobile-edition' ), get_comment_date(), get_comment_time() )
 					);
 				?>
 			</div>
 
 			<?php if ( '0' == $comment->comment_approved ) : ?>
-				<?php _e( 'Your comment is awaiting moderation.', 'fdx-lang' ); ?>
+				<?php _e( 'Your comment is awaiting moderation.', 'wp-mobile-edition' ); ?>
 			<?php endif; ?>
 
 			<div class="fdx_comments_body">
@@ -126,7 +126,7 @@ function fdx_comment( $comment, $args, $depth ) {
 			</div>
 
 				<div class="fdx_comments_reply">
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'fdx-lang' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'wp-mobile-edition' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</div>
 
     </div>

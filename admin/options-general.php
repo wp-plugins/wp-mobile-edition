@@ -18,13 +18,16 @@ if (!empty($yfdx_check)) {
 
 	$fdx_get = get_option('fdx_db_options');
 	if ($fdx_get) {
-		if ($_SERVER['SERVER_NAME'] == $fdx_get['domain']) {
-			add_filter('option_template', 'fdx_mobileedition_template');
-			add_filter('option_stylesheet', 'fdx_mobileedition_template');
+          	fdx_mobileedition_upgrade($fdx_get['text'], 'text', '');   // , '', 'default value'
+
+        	if ($_SERVER['SERVER_NAME'] == $fdx_get['domain']) {
+		  	add_filter('option_template', 'fdx_mobileedition_template');
+		 	add_filter('option_stylesheet', 'fdx_mobileedition_template');
 			add_filter('option_home', 'fdx_mobileedition_siteurl',1);
 			add_filter('option_siteurl', 'fdx_mobileedition_siteurl',1);
 			define ('FDXMOBILE_THEME', $fdx_get['theme']);
 			define ('FDXMOBILE_STATUS', true);
+            define ('FDXMOBILE_TEXT', $fdx_get['text']);
 
 		} else {
 			define ('FDXMOBILE_STATUS', false);
@@ -92,9 +95,10 @@ function fdx_mobileedition_admin(){
 				$domain = array (
 					'domain' => $subdomain,
 					'theme' => $_POST['theme'],
+                    'text' => $_POST['text'],
 				);
 				update_option('fdx_db_options', $domain);
-				echo '<div class="updated fade"><p><strong>' . __( 'Settings updated', 'fdx-lang' ) . '</strong></p></div>';
+				echo '<div class="updated fade"><p><strong>' . __( 'Settings updated', 'wp-mobile-edition' ) . '</strong></p></div>';
 			} else echo '<div class="error settings-error" id="setting-error-invalid_home"><p>Please enter subdomain for your mobile site.</p></div>';
 		}
 		if ($_GET['fdx_action'] == 'create-sitemap') {
@@ -104,10 +108,8 @@ function fdx_mobileedition_admin(){
 					if ($cek)
 						echo '<div class="updated"><p>Mobile XML Sitemap Created</p></div>';
 					else
-						echo '<div class="error settings-error" id="setting-error-invalid_home"><p>Has not been possible create the sitemap file automatically, some hostings provider did this for any reason. Please upload a sitemap file named <code>msitemap.xml</code> to your wordpress root directory manually, you can use FTP Manager to upload it and change the file permissions of a sitemap file to 0666 and try to generate a sitemap again.
-
-						</p></div>';
-				}	else echo '<div class="error settings-error" id="setting-error-invalid_home"><p>Please enter subdomain for your mobile site.</p></div>';
+						echo '<div class="error settings-error" id="setting-error-invalid_home"><p>' . __( 'Has not been possible create the sitemap file automatically, some hostings provider did this for any reason. Please upload a sitemap file named <code>msitemap.xml</code> to your wordpress root directory manually, you can use FTP Manager to upload it and change the file permissions of a sitemap file to 0666 and try to generate a sitemap again.', 'wp-mobile-edition' ) . '</p></div>';
+				}	else echo '<div class="error settings-error" id="setting-error-invalid_home"><p>' . __( 'Please enter subdomain for your mobile site.', 'wp-mobile-edition' ) . '</p></div>';
 			}
 		}
 		if ($_GET['fdx_action'] == 'update-sitemap') {
@@ -124,7 +126,7 @@ function fdx_mobileedition_admin(){
 ?>
 
  <div class="wrap"><?php echo get_screen_icon('fdx-lock');?>
-<h2><?php echo FDX3_PLUGIN_NAME;?>: <?php _e('Settings', 'fdx-lang') ?></h2>
+<h2><?php echo FDX3_PLUGIN_NAME;?>: <?php _e('Settings', 'wp-mobile-edition') ?></h2>
 <div id="poststuff">
 <div id="post-body" class="metabox-holder columns-2">
 
@@ -134,7 +136,7 @@ function fdx_mobileedition_admin(){
 <div class="meta-box-sortables">
 
 <div class="postbox" >
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Mobile Site', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Mobile Site', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 <p>
                                  <?php
@@ -143,15 +145,15 @@ function fdx_mobileedition_admin(){
 										$go = str_replace(FDX_DESKTOP, $get['domain'], FDX_SITEURL);
 									    echo '<h3>You mobile site: <a href="'.$go.'" target="_blank">'.$go.'</a></h3>';
                                         } else {
-										echo '<p style="color:#FF0000"><strong>'. __('README FIRST', 'fdx-lang') .'!</strong></p><p><strong>'. __('Have you created your mobile subdomain?', 'fdx-lang') .'</strong></p>
-                                        <p>'. __('Setting up a subdomain is done through your hosting provider.', 'fdx-lang') .'</p>
-										<p>'. __('if you have not created yet, create subdomain from your domain control panel, point your subdomain document root into the root of wordpress installation or if you don\'t know what to do, contact your hosting provider.', 'fdx-lang') .'</p>';
+										echo '<p style="color:#FF0000"><strong>'. __('README FIRST', 'wp-mobile-edition') .'!</strong></p><p><strong>'. __('Have you created your mobile subdomain?', 'wp-mobile-edition') .'</strong></p>
+                                        <p>'. __('Setting up a subdomain is done through your hosting provider.', 'wp-mobile-edition') .'</p>
+										<p>'. __('if you have not created yet, create subdomain from your domain control panel, point your subdomain document root into the root of wordpress installation or if you don\'t know what to do, contact your hosting provider.', 'wp-mobile-edition') .'</p>';
                                     }
 							 ?>
 </p>
 </div></div>
 <div class="postbox" >
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Mobile XML Sitemap', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Mobile XML Sitemap', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 <ul><li>
                                      <?php
@@ -162,28 +164,32 @@ function fdx_mobileedition_admin(){
 												if (is_writable(ABSPATH .'msitemap.xml')) {
 													$time = get_option('fdx_sitemap_time');
 													if ($time) {
-														echo '<p>'. __('Your sitemap was last built on', 'fdx-lang') .': <code>'. $time . '</code></p><p><strong>'. __('Tell Google about your sitemap by joining', 'fdx-lang') .' (<a target="_blank" href="http://www.google.com/webmasters/tools/">Google Webmaster</a>).</strong></p><p>'. __('If you add a new post or remove it, you should update the sitemap manually, and notify Google about your updates by', 'fdx-lang') .' <a href="http://www.google.com/webmasters/tools/ping?sitemap='.$go.'/msitemap.xml" target="_blank"><strong>'. __('pinging it', 'fdx-lang') .'</a></strong></p>';
+														echo '<p>'. __('Your sitemap was last built on', 'wp-mobile-edition') .': <code>'. $time . '</code></p><p><strong>'. __('Tell Google about your sitemap by joining', 'wp-mobile-edition') .' (<a target="_blank" href="http://www.google.com/webmasters/tools/">Google Webmaster</a>).</strong></p><p>'. __('If you add a new post or remove it, you should update the sitemap manually, and notify Google about your updates by', 'wp-mobile-edition') .' <a href="http://www.google.com/webmasters/tools/ping?sitemap='.$go.'/msitemap.xml" target="_blank"><strong>'. __('pinging it', 'wp-mobile-edition') .'</a></strong></p>';
 													} else {
-														echo '<p>'. __('You need to update Mobile Domain first', 'fdx-lang') .'</p>';
+														echo '<p>'. __('You need to update Mobile Domain first', 'wp-mobile-edition') .'</p>';
 													}
 												} else {
-													echo '<p style="color:#FF0000"><strong>'. __('File Permissions needed, please fix this error, then update your sitemap.', 'fdx-lang') .'</strong></p>
-													<p>Ensure that your <a href="'.$go.'/msitemap.xml" target=_new>sitemap file</a> has appropriate <a href="http://codex.wordpress.org/Changing_File_Permissions" target="_blank">write permissions</a>.</p><p>You can use FTP Manager to change the permission of the sitemap file to 0666 and then try updating the sitemap again.</p>';
+													echo '<p style="color:#FF0000"><strong>'. __('File Permissions needed, please fix this error, then update your sitemap.', 'wp-mobile-edition') .'</strong></p>
+													<p>'. __('Ensure that your sitemap file has appropriate write permissions. You can use FTP Manager to change the permission of the sitemap file to 0666 and then try updating the sitemap again.', 'wp-mobile-edition') .'</p>';
 												}
 												echo '<form method="post" action="options-general.php?page='.FDX3_PLUGIN_P1.'&fdx_action=update-sitemap">
 															<div class="submit">
-																<input type="submit" name="update-sitemap" class="button" value="'. __('Update Mobile Sitemap', 'fdx-lang') .'" />
+																<input type="submit" name="update-sitemap" class="button" value="'. __('Update Mobile Sitemap', 'wp-mobile-edition') .'" />
 															</div>
 														</form>';
-												echo __('Your Mobile Sitemap', 'fdx-lang') .': <code><a href="'.$go.'/msitemap.xml" target=_new>'.$go.'/msitemap.xml</a></code>';
-											}	else {
-												echo '<p>'. __('You need to create Mobile Domain first', 'fdx-lang') .'</p>';
+                                                if ($_POST['text'] <> '') {
+                                                echo __('Your Mobile Sitemap', 'wp-mobile-edition') .': <code><a href="'. $go .'/'. $_POST['text'].'/msitemap.xml" target=_new>'. $go .'/'. $_POST['text'] . '/msitemap.xml</a></code>';
+                                                  } else {
+                                                echo __('Your Mobile Sitemap', 'wp-mobile-edition') .': <code><a href="'.$go.'/msitemap.xml" target=_new>'.$go.'/msitemap.xml</a></code>';
+                                                  }
+                                        }	else {
+												echo '<p>'. __('You need to create Mobile Domain first', 'wp-mobile-edition') .'</p>';
 											}
 										} else {
-												echo '<strong>'. __('Create Mobile XML Sitemap', 'fdx-lang') .'</strong>';
+												echo '<strong>'. __('Create Mobile XML Sitemap', 'wp-mobile-edition') .'</strong>';
 												echo '<form method="post" action="options-general.php?page='.FDX3_PLUGIN_P1.'&fdx_action=create-sitemap">
 													<div class="submit">
-														<input type="submit" name="create-sitemap" class="button" value="'. __('Generate Mobile XML Sitemap', 'fdx-lang') .'" />
+														<input type="submit" name="create-sitemap" class="button" value="'. __('Generate Mobile XML Sitemap', 'wp-mobile-edition') .'" />
 													</div>
 												</form>';
 											}
@@ -192,28 +198,18 @@ function fdx_mobileedition_admin(){
 </div></div>
 <form method="post" action="options-general.php?page=<?php echo FDX3_PLUGIN_P1 ?>&fdx_action=add-domain">
 <div class="postbox" >
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Subdomain and Mobile Theme Settings', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Subdomain and Mobile Theme Settings', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 
-   <br />
- <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Mobile Subdomain', 'fdx-lang') ?></th> </tr></thead>
-<tbody><tr class="alternate"><td>
-<p>
-<strong><?php _e('Subdomain for your mobile site', 'fdx-lang') ?>: </strong> <input type="text" name="domain" id="domain" value="<?php echo $get['domain'] ?>" class="regular-text"> <span class="description">( <strong>m.domain.com</strong> )</span>
-</p>
-</td>
- </tr>
- </tbody>
- </table>
-
-   <br />
- <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Mobile Theme', 'fdx-lang') ?></th> </tr></thead>
-<tbody><tr class="alternate"><td>
-<p>
-<strong><?php _e('Select mobile theme ', 'fdx-lang') ?>: </strong>
-<select name="theme" id="theme" class="postform"><option value=""></option>
+<table>
+<tr>
+<td valign="top"><?php _e('Subdomain for your mobile site', 'wp-mobile-edition') ?>:</td>
+<td valign="top"><input type="text" name="domain" id="domain" style="width: 200px" value="<?php echo $get['domain'] ?>" /> <span class="description"><em>(m.domain.com)</em></span> </td>
+</tr>
+<tr><td><br /></td></tr>
+<tr>
+<td valign="top"><?php _e('Select mobile theme ', 'wp-mobile-edition') ?>:</td>
+<td valign="top"><select name="theme" id="theme" class="postform" style="width: 200px"><option value=""></option>
                                                      <?php
                                                     $themes = get_themes();
 													foreach($themes as $theme) {
@@ -224,24 +220,35 @@ function fdx_mobileedition_admin(){
                                                         echo '<option value="'.$theme["Template"].'">'.$theme["Name"].'</option>';
                                                            }
 													}
-
-
                                                     ?>
-												   </select>
-
-                                                    <span class="description"><em> (<?php _e('Select', 'fdx-lang') ?>: WP Mobile Edition - <a href="<?php echo admin_url('admin.php?page='.FDX3_PLUGIN_P2);?>">mTheme</a>)</em></span>
-
-                                                   </p>
+</select></td>
+</tr>
+</table>
 
 
- </td>
- </tr>
- </tbody>
- </table>
+</div></div>
 
 
- </div></div>
-                                   <div align="center"> 	<input type="submit" name="submit" class="button-primary" value="<?php _e('Save All Options', 'fdx-lang') ?>" /> </div>
+
+
+
+
+
+ <div class="postbox closed">
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Advanced Settings', 'wp-mobile-edition') ?></span></h3>
+<div class="inside">
+
+ <table>
+<tr>
+<td valign="top"><?php _e('Custom location of WP Core', 'wp-mobile-edition') ?>:</td>
+<td valign="top"><input type="text" name="text" id="text" value="<?php echo $get['text'] ?>" /> <span class="description">(<?php _e('Leave blank if you do not know what that is!', 'wp-mobile-edition') ?>)</span><br /><em>root/<code>--?--</code>/wp-admin/</em><br /><em>root/<code>--?--</code>/wp-content/</em><br /><em>root/<code>--?--</code>/wp-includes/</em></td>
+
+
+</tr>
+</table>
+</div></div>
+
+<div align="center"> 	<input type="submit" name="submit" class="button-primary" value="<?php _e('Save All Options', 'wp-mobile-edition') ?>" /> </div>
 										</form>
 
 

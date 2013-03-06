@@ -1,6 +1,6 @@
 <div class="fdx_postfooter">
 <div class="fdx_top_arrow"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/top_arrow.png" alt=""/></div>
-<?php previous_posts_link( __( '<span class="fdx_prev">&lsaquo; '.__('prev', 'fdx-lang').'</span>') ); next_posts_link( __( '<span class="fdx_next">'.__('next', 'fdx-lang').' &rsaquo;</span>') ); ?> <div class="fdx_top"><span class="fdx_topicon"><a class="backToTop" href="#top"><?php _e('top', 'fdx-lang') ?></a></span></div>
+<?php previous_posts_link( __( '<span class="fdx_prev">&lsaquo; '.__('prev', 'wp-mobile-edition').'</span>') ); next_posts_link( __( '<span class="fdx_next">'.__('next', 'wp-mobile-edition').' &rsaquo;</span>') ); ?> <div class="fdx_top"><span class="fdx_topicon"><a class="backToTop" href="#top"><?php _e('top', 'wp-mobile-edition') ?></a></span></div>
 </div>
 <div class="fdx_clear"></div>
 <?php
@@ -12,7 +12,7 @@ echo "</div> \n";
 }
 ?>
 <div class="fdx_switch">
-<div class="fdx_switch_text"><?php _e('Mobile Version', 'fdx-lang') ?> | <a href="<?php echo FDX_SITEURL.$_SERVER['REQUEST_URI'].'?switch=0'; ?>"><?php _e('Desktop Version', 'fdx-lang') ?></a></div>
+<div class="fdx_switch_text"><?php _e('Mobile Version', 'wp-mobile-edition') ?> | <a href="<?php echo FDX_SITEURL.$_SERVER['REQUEST_URI'].'?switch=0'; ?>"><?php _e('Desktop Version', 'wp-mobile-edition') ?></a></div>
 <div class="fdx_switch_checkbox"></div>
 <div class="fdx_clear"></div>
 </div>

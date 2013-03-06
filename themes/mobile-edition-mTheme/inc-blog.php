@@ -10,7 +10,7 @@ if ('fdx_odd' == @$odd_or_even){
 <!-- Start posts -->
 <div id="post-<?php the_ID(); ?>" class="fdx_snippet <?php echo $odd_or_even; ?>" >
 <div class="fdx_thumb">
-<div class="commentbuble2"><a href="<?php the_permalink(); ?>#comments" title="<?php _e('comments', 'fdx-lang') ?>"><?php $commentscount = get_comments_number(); echo $commentscount; ?></a></div>
+<div class="commentbuble2"><a href="<?php the_permalink(); ?>#comments" title="<?php _e('comments', 'wp-mobile-edition') ?>"><?php $commentscount = get_comments_number(); echo $commentscount; ?></a></div>
 <div class="fdx_thumb_link"><a href="<?php the_permalink() ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/spaceball.gif" alt="" border="0" width="1" height="1" /></a></div>
 <div class="fdx_thumbimg">  <?php  if ( has_post_thumbnail()) {
                 echo the_post_thumbnail('cat-thumb', (array('title' => ''.esc_attr($post->post_title).'')));

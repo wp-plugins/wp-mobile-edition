@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="fdx_article_pagination" style="padding-left:7px;">
-<?php previous_post_link( '%link', '<span class="fdx_prev">&lsaquo; '.__('return', 'fdx-lang').'</span>' ); ?>	<?php the_title(); ?>
+<?php previous_post_link( '%link', '<span class="fdx_prev">&lsaquo; '.__('return', 'wp-mobile-edition').'</span>' ); ?>	<?php the_title(); ?>
 
 </div>
 <div class="fdx_content fdx_page">

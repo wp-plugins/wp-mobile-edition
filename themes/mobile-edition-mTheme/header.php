@@ -22,7 +22,7 @@
 <meta name="description" content="<?php if(function_exists('head_meta_desc_m')) { head_meta_desc_m(); } ?>" />
 <?php } elseif(is_home()) { // home ?>
 <meta name="keywords" content="mobile, celular," />
-<meta name="description" content="<?php bloginfo('description'); ?>  (<?php _e('Mobile version', 'fdx-lang') ?>)" />
+<meta name="description" content="<?php bloginfo('description'); ?>  (<?php _e('Mobile version', 'wp-mobile-edition') ?>)" />
 <?php } else { //todas as outras ?>
 <meta name="robots" content="noindex,nofollow" />
 <?php }?>
@@ -148,13 +148,13 @@ if ( $options['fdx_feed_url'] <> "" ) { echo '<a href="'.$options['fdx_feed_url'
 <div class="fdx_search">
 <div style="clear:both;height:8px;"></div>
 
-<div class="fdx_topheading"><?php _e('Search', 'fdx-lang') ?></div>
+<div class="fdx_topheading"><?php _e('Search', 'wp-mobile-edition') ?></div>
  <div class="fdx_article fdx_page">
-  <fieldset style="width: 275px"><legend><?php _e('Search for', 'fdx-lang') ?></legend>
+  <fieldset style="width: 275px"><legend><?php _e('Search for', 'wp-mobile-edition') ?></legend>
 
 <form role="search" method="get" action="<?php bloginfo('url'); ?>">
-<input name="s" id="s" value="<?php _e('Enter text here', 'fdx-lang') ?>..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="fdx_searchbar"/>
-<input type="submit" id="searchsubmit" value="<?php _e('Search', 'fdx-lang') ?>" />
+<input name="s" id="s" value="<?php _e('Enter text here', 'wp-mobile-edition') ?>..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="fdx_searchbar"/>
+<input type="submit" id="searchsubmit" value="<?php _e('Search', 'wp-mobile-edition') ?>" />
 </form>
 </fieldset>
   </div> 
@@ -164,14 +164,14 @@ if ( $options['fdx_feed_url'] <> "" ) { echo '<a href="'.$options['fdx_feed_url'
 <div style="clear:both;height:8px;"></div>
 
 <div class="fdx_categories fdx_categories2">
-<div class="fdx_topheading"><?php _e('Categories', 'fdx-lang') ?></div>
+<div class="fdx_topheading"><?php _e('Categories', 'wp-mobile-edition') ?></div>
 <ul>
 <?php wp_list_categories('orderby=name&title_li=&depth=4'); ?>
 </ul>
 </div>
 
 <div class="fdx_contact">
-<div class="fdx_topheading"><?php _e('Menu', 'fdx-lang') ?></div>
+<div class="fdx_topheading"><?php _e('Menu', 'wp-mobile-edition') ?></div>
 <div class="fdx_categories" style="display: inline !important">
 <ul>
 <?php wp_nav_menu( array( 'menu' => 'fdx-menu', 'link_before' => '<div class="togle">', 'link_after' => '</div>', 'items_wrap' => '%3$s', 'depth' => '1' ) ); ?>

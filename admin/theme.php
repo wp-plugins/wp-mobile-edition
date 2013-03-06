@@ -32,10 +32,10 @@ $options = get_option('fdx3_updater_options');
 
 ?>
 <div class="wrap"><?php echo get_screen_icon('fdx-lock');?>
-<h2><?php echo FDX3_PLUGIN_NAME;?>: <?php _e('mTheme', 'fdx-lang') ?></h2>
+<h2><?php echo FDX3_PLUGIN_NAME;?>: <?php _e('mTheme', 'wp-mobile-edition') ?></h2>
 <?php
 if ( ( isset( $_GET['updated'] ) && $_GET['updated'] == 'true' ) || ( isset( $_GET['settings-updated'] ) && $_GET['settings-updated'] == 'true' ) ) {
-echo '<div class="updated fade"><p><strong>' . __( 'Settings updated', 'fdx-lang' ) . '</strong></p></div>';
+echo '<div class="updated fade"><p><strong>' . __( 'Settings updated', 'wp-mobile-edition' ) . '</strong></p></div>';
 }
 ?>
 <div id="poststuff">
@@ -49,7 +49,7 @@ echo '<div class="updated fade"><p><strong>' . __( 'Settings updated', 'fdx-lang
 <form action="options.php" method="post">
 <?php settings_fields('fdx3_updater_options'); ?>
 <div class="postbox" >
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Basic Settings', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Basic Settings', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 <!-- ############################################################################################################### -->
 <?php
@@ -70,9 +70,9 @@ echo '<br />';
 
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Logo', 'fdx-lang') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Logo', 'wp-mobile-edition') ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
-<p><strong><?php _e('Enter your Logo URL', 'fdx-lang') ?> </strong> <span class="description">(PNG, GIF, JPG: 170x30px)</span></p>
+<p><strong><?php _e('Enter your Logo URL', 'wp-mobile-edition') ?> </strong> <span class="description">(PNG, GIF, JPG: 170x30px)</span></p>
 <?php
 $options = get_option('fdx3_updater_options');
 echo "<p> <input id='upload_image' type='text' size='60' maxlength='100' name='fdx3_updater_options[fdx_logo_url]' value='{$options['fdx_logo_url']}' /> <input id=\"upload_image_button\" type=\"button\" value=\"Upload\" class=\"button\" /></p>";
@@ -87,7 +87,7 @@ echo "<p> <input id='upload_image' type='text' size='60' maxlength='100' name='f
 
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Theme Choices', 'fdx-lang') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Theme Choices', 'wp-mobile-edition') ?></th> </tr></thead>
 <tbody><tr class="alternate">
 <td>
 <?php
@@ -95,51 +95,51 @@ $options = get_option('fdx3_updater_options');
 
 	echo "<p><input id='dark_clean_id' type='radio' name='fdx3_updater_options[dark_clean]' value='dark'";
 	if( $options['dark_clean'] == 'dark') { echo " checked='true'"; };
-	echo " />&nbsp;".__('Theme Dark', 'fdx-lang')."</p>";
+	echo " />&nbsp;".__('Theme Dark', 'wp-mobile-edition')."</p>";
 
 	echo "<p><input id='dark_clean_id' type='radio' name='fdx3_updater_options[dark_clean]' value='clean'";
 	if( $options['dark_clean'] == 'clean') { echo " checked='true'"; };
-	echo " />&nbsp;".__('Theme Light', 'fdx-lang')."</p>";
+	echo " />&nbsp;".__('Theme Light', 'wp-mobile-edition')."</p>";
  ?>
 
 </td>
 </tr><tr class="alternate">
 <td>
- <p><strong><?php _e('Secondary Color', 'fdx-lang') ?>:&nbsp;&nbsp;&nbsp; </strong>
+ <p><strong><?php _e('Secondary Color', 'wp-mobile-edition') ?>:&nbsp;&nbsp;&nbsp; </strong>
 <?php
 $options = get_option('fdx3_updater_options');
 
 	echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='black'";
 	if( $options['fdx_color'] == 'black') { echo " checked='true'"; };
-	echo " /><strong style='color: black;margin-left: 5px; margin-right: 10px'>".__('Black', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: black;margin-left: 5px; margin-right: 10px'>".__('Black', 'wp-mobile-edition')."</strong>";
 
 	echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='blue'";
 	if( $options['fdx_color'] == 'blue') { echo " checked='true'"; };
-	echo " /><strong style='color: blue;margin-left: 5px; margin-right: 10px'>".__('Blue', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: blue;margin-left: 5px; margin-right: 10px'>".__('Blue', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='brown'";
 	if( $options['fdx_color'] == 'brown') { echo " checked='true'"; };
-	echo " /><strong style='color: brown;margin-left: 5px; margin-right: 10px'>".__('Brown', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: brown;margin-left: 5px; margin-right: 10px'>".__('Brown', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='green'";
 	if( $options['fdx_color'] == 'green') { echo " checked='true'"; };
-	echo " /><strong style='color: green;margin-left: 5px; margin-right: 10px'>".__('Green', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: green;margin-left: 5px; margin-right: 10px'>".__('Green', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='grey'";
 	if( $options['fdx_color'] == 'grey') { echo " checked='true'"; };
-	echo " /><strong style='color: grey;margin-left: 5px; margin-right: 10px'>".__('Grey', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: grey;margin-left: 5px; margin-right: 10px'>".__('Grey', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='pink'";
 	if( $options['fdx_color'] == 'pink') { echo " checked='true'"; };
-	echo " /><strong style='color: pink;margin-left: 5px; margin-right: 10px'>".__('Pink', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: pink;margin-left: 5px; margin-right: 10px'>".__('Pink', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='red'";
 	if( $options['fdx_color'] == 'red') { echo " checked='true'"; };
-	echo " /><strong style='color: red;margin-left: 5px; margin-right: 10px'>".__('Red', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: red;margin-left: 5px; margin-right: 10px'>".__('Red', 'wp-mobile-edition')."</strong>";
 
     echo "<input id='fdx_color_id' type='radio' name='fdx3_updater_options[fdx_color]' value='teal'";
 	if( $options['fdx_color'] == 'teal') { echo " checked='true'"; };
-	echo " /><strong style='color: teal;margin-left: 5px; margin-right: 10px'>".__('Teal', 'fdx-lang')."</strong>";
+	echo " /><strong style='color: teal;margin-left: 5px; margin-right: 10px'>".__('Teal', 'wp-mobile-edition')."</strong>";
 
 ?>
 </p>
@@ -153,7 +153,7 @@ $options = get_option('fdx3_updater_options');
   <br />
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Front page displays', 'fdx-lang') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Front page displays', 'wp-mobile-edition') ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
 
 <?php
@@ -161,13 +161,13 @@ $options = get_option('fdx3_updater_options');
 
 	echo "<p><input id='fdx-index-home_id' type='radio' name='fdx3_updater_options[fdx_index_home]' value='index'";
 	if( $options['fdx_index_home'] == 'index') { echo " checked='true'"; };
-	echo " />&nbsp;<strong>".__('Your latest posts', 'fdx-lang')."</strong></p>";
+	echo " />&nbsp;<strong>".__('Your latest posts', 'wp-mobile-edition')."</strong></p>";
 
 	echo "<p><input id='fdx-index-home_id' type='radio' name='fdx3_updater_options[fdx_index_home]' value='menu'";
 	if( $options['fdx_index_home'] == 'menu' ) { echo " checked='true'"; };
-	echo " />&nbsp;<a href='". admin_url('nav-menus.php')."'><strong>".__('Custom navigation menus', 'fdx-lang')."</strong></a> <em>(".FDX3_PLUGIN_NAME.")</em></p>";
+	echo " />&nbsp;<a href='". admin_url('nav-menus.php')."'><strong>".__('Custom navigation menus', 'wp-mobile-edition')."</strong></a> <em>(".FDX3_PLUGIN_NAME.")</em></p>";
  ?>
-<p><strong><?php _e('Tip', 'fdx-lang') ?>:</strong> <?php _e('Create a blank page named Index (slug = index) and add in your custom menu for show latest posts', 'fdx-lang') ?> </p>
+<p><strong><?php _e('Tip', 'wp-mobile-edition') ?>:</strong> <?php _e('Create a blank page named Index (slug = index) and add in your custom menu for show latest posts', 'wp-mobile-edition') ?> </p>
 
 
 
@@ -179,9 +179,9 @@ $options = get_option('fdx3_updater_options');
   <br />
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Social and Feed', 'fdx-lang') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Social and Feed', 'wp-mobile-edition') ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
-<p><?php _e('Enter your URL if you have one. (include http://)', 'fdx-lang') ?>. <strong><?php _e('Leave blank to disable', 'fdx-lang') ?></strong></p>
+<p><?php _e('Enter your URL if you have one. (include http://)', 'wp-mobile-edition') ?>. <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong></p>
 <?php
 $options = get_option('fdx3_updater_options');
 echo "<p> <input id='fdx_feed_url_id' type='text' size='60' maxlength='100' name='fdx3_updater_options[fdx_feed_url]' value='{$options['fdx_feed_url']}' /> &larr;Feed</p>";
@@ -202,12 +202,12 @@ echo "<p> <input id='fdx_ink_url_id' type='text' size='60' maxlength='100' name=
   <br />
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Email Address', 'fdx-lang') ?>:</th> </tr></thead>
+ <thead><tr><th><?php _e('Email Address', 'wp-mobile-edition') ?>:</th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <p><?php
 $options = get_option('fdx3_updater_options');
 echo "<input id='fdx_email_contato_id' type='text' size='50' maxlength='100' name='fdx3_updater_options[fdx_email_contato]' value='{$options['fdx_email_contato']}' /> ";
-_e('Enter your Email Address to activate your theme\'s contact form.', 'fdx-lang') ?>
+_e('Enter your Email Address to activate your theme\'s contact form.', 'wp-mobile-edition') ?>
 </p>
 
 
@@ -221,10 +221,10 @@ _e('Enter your Email Address to activate your theme\'s contact form.', 'fdx-lang
 </div>
 </div>
  <div class="postbox closed">
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Bottom Advertisement', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Bottom Advertisement', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 <!-- ############################################################################################################### -->
-<strong><?php _e('Tip', 'fdx-lang') ?>:</strong> <?php _e('You can enter your Mobile AdSense here or insert your own banner ad code. These boxes accept both javascript & html. We suggest sizing ads either 298x70px or below. ', 'fdx-lang') ?> <strong><?php _e('Leave blank to disable', 'fdx-lang') ?></strong>.
+<strong><?php _e('Tip', 'wp-mobile-edition') ?>:</strong> <?php _e('You can enter your Mobile AdSense here or insert your own banner ad code. These boxes accept both javascript & html. We suggest sizing ads either 298x70px or below. ', 'wp-mobile-edition') ?> <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong>.
  <div align="center">
 <p>
 <?php
@@ -245,14 +245,14 @@ echo "</textarea>";
 
 
 <div class="postbox closed">
-<div class="handlediv" title="<?php _e('Click to toggle', 'fdx-lang') ?>"><br /></div><h3 class='hndle'><span><?php _e('Custom and Tracking code', 'fdx-lang') ?></span></h3>
+<div class="handlediv" title="<?php _e('Click to toggle', 'wp-mobile-edition') ?>"><br /></div><h3 class='hndle'><span><?php _e('Custom and Tracking code', 'wp-mobile-edition') ?></span></h3>
 <div class="inside">
 <!-- ############################################################################################################### -->
-<strong><?php _e('Tip', 'fdx-lang') ?>:</strong> <?php _e('Enter your Google Analytics or Statcounter code above. This is a handy way of tracking your mobile visitors seperately from your main visitors', 'fdx-lang') ?>. <strong><?php _e('Leave blank to disable', 'fdx-lang') ?></strong>.
+<strong><?php _e('Tip', 'wp-mobile-edition') ?>:</strong> <?php _e('Enter your Google Analytics or Statcounter code above. This is a handy way of tracking your mobile visitors seperately from your main visitors', 'wp-mobile-edition') ?>. <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong>.
 
 
 <div align="center">
-<strong><?php _e('End of', 'fdx-lang') ?> "head"</strong>
+<strong><?php _e('End of', 'wp-mobile-edition') ?> "head"</strong>
 <p>
 <?php
 $options = get_option('fdx3_updater_options');
@@ -265,7 +265,7 @@ echo "</textarea>";
 <br />
 
 <div align="center">
-<strong><?php _e('End of', 'fdx-lang') ?> "body"</strong>
+<strong><?php _e('End of', 'wp-mobile-edition') ?> "body"</strong>
 <p>
 <?php
 $options = get_option('fdx3_updater_options');
@@ -279,7 +279,7 @@ echo "</textarea>";
 </div>
 </div>
 
-<div align="center"><input name="Submit" class="button-primary" type="submit" value="<?php _e('Save All Options', 'fdx-lang') ?>" /></div>
+<div align="center"><input name="Submit" class="button-primary" type="submit" value="<?php _e('Save All Options', 'wp-mobile-edition') ?>" /></div>
 </form>
 </div> <!-- /postbox-container -->
 </div><!-- /meta-box-sortables -->
