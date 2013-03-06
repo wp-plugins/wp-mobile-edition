@@ -241,7 +241,7 @@ function fdx_mobileedition_admin(){
  <table>
 <tr>
 <td valign="top"><?php _e('Custom location of WP Core', 'wp-mobile-edition') ?>:</td>
-<td valign="top"><input type="text" name="text" id="text" value="<?php echo $get['text'] ?>" /> <span class="description">(<?php _e('Leave blank if you do not know what that is!', 'wp-mobile-edition') ?>)</span><br /><em>root/<code>--?--</code>/wp-admin/</em><br /><em>root/<code>--?--</code>/wp-content/</em><br /><em>root/<code>--?--</code>/wp-includes/</em></td>
+<td valign="top"><input type="text" name="text" id="text" value="<?php echo $get['text'] ?>" /> <span class="description">(<?php _e('Leave blank if you don\'t know what that is!', 'wp-mobile-edition') ?>)</span><br /><em>root/<code>--?--</code>/wp-admin/</em><br /><em>root/<code>--?--</code>/wp-content/</em><br /><em>root/<code>--?--</code>/wp-includes/</em></td>
 
 
 </tr>
