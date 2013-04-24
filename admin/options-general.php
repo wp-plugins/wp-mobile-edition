@@ -52,16 +52,13 @@ function fdx_mobileedition_upgrade($data, $keys, $values) {
 }
 
 function fdx_3_options() {
-
-	$wp_admin = substr_count($_SERVER['REQUEST_URI'], '/wp-admin/');
-	$wp_login = substr_count($_SERVER['REQUEST_URI'], '/wp-login.php');
-    if ($wp_login > 0 && FDXMOBILE_STATUS == true) {
-	     include_once('pages/mobile_login.php');
-	     exit;
+    if (strpos(strtolower($_SERVER['REQUEST_URI']), '/wp-login.php')!==false && FDXMOBILE_STATUS == true) {
+    include_once('pages/mobile_login.php');
+	exit;
     }
-    if ($wp_admin > 0 && FDXMOBILE_STATUS == true) {
-         include_once('pages/mobile_admin.php');
-	     exit;
+    if (strpos(strtolower($_SERVER['REQUEST_URI']), '/wp-admin/')!==false && FDXMOBILE_STATUS == true) {
+    include_once('pages/mobile_admin.php');
+	exit;
     }
 
 if (FDXMOBILE_INSTALLED == true) {

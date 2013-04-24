@@ -3,7 +3,7 @@
     $base = get_option('home');
 
     if (($user = wp_get_current_user())==null || $user->ID==0) {
-      header("Location: $base/wp-login.php?redirect_to=" . urlencode($base) . "%2Fwp-admin%2F");
+      header("Location: $base/wp-login.php");
     }
 
 
@@ -49,17 +49,5 @@ if(current_user_can('manage_options')) {
   }
 
   fdx_mobile_admin();
-
-  function wpmp_msma_check_referer() {
-    $base = get_option('home');
-    $admin = "$base/wp-admin";
-    $referer = $_SERVER['HTTP_REFERER'];
-    if (substr($referer, 0, strlen($admin)) != $admin) {
-      print __("You may only originate this action from the admin pages", 'wp-mobile-edition');
-      return false;
-    }
-    return true;
-  }
-
 
 ?>
