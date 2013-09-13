@@ -30,7 +30,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 * Smart Formatting: It doesn't matter whether users are viewing your site horizontally or vertically, mTheme will re-position all media on the fly.
 
-* Full Comments System: Default wordpressor or DISQUS
+* Full Comments System: Default wordpressor or DISQUS.
 
 * You can choose from 16 different color schemes in the settings panel.
 
