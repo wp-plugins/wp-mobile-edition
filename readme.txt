@@ -30,7 +30,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 * Smart Formatting: It doesn't matter whether users are viewing your site horizontally or vertically, mTheme will re-position all media on the fly.
 
-* Full Comments System: Default wordpressor or DISQUS
+* Full Comments System: Default wordpressor or DISQUS.
 
 * You can choose from 16 different color schemes in the settings panel.
 
@@ -43,7 +43,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * Mobile-friendly: an extensible theme that is ready for display on mobile devices. The theme is XHTML-MP compliant and scores highly on [W3C mobileOK Checker](http://validator.w3.org/mobile/). 
 
 = DEMO =
-* To see mTheme in action visit [http://mdemo.fabrix.net](http://mdemo.fabrix.net) on your mobile device.
+* To see mTheme in action visit [http://m.webmais.com](http://m.webmais.com) on your mobile device.
 * Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
 
 
