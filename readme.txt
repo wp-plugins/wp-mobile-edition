@@ -1,11 +1,11 @@
-=== WP Mobile Edition ===
+﻿=== WP Mobile Edition ===
 Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
 Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
-Tested up to: 3.5.1
-Stable tag: 1.9.1
+Tested up to: 3.8
+Stable tag: 1.9.2
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -61,7 +61,10 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * English (default)
 * Brazilian Portuguese (**pt_BR**) translation by **Fabrix DoRoMo**
 * Spanish (**es_ES**) translation by **David R. Rojas** 
-* Dutch (**nl_NL**)  translation by **Bas de Haan**
+* Dutch (**nl_NL**) translation by **Bas de Haan**
+* Italian (**it_IT**) translation by **Francesco Scotti**
+* Russian (**ru_RU**) translation by **Александр Ческов**
+
 
 
 = How To Contribute =
@@ -127,6 +130,11 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 
 == Changelog ==
+* 1.9.2
+    * Adds Italian translation.
+    * Adds Russian translation.
+
+
 * 1.9.1
     * Minor bug fixes
 
