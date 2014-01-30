@@ -3,7 +3,9 @@
 *------------------------------------------------------------*/
 $options_default = array(
 		'fdx_email_contato' => 'email@email.com',
-        'fdx_logo_url' => FDX3_PLUGIN_URL .'/images/logob.png',
+        'fdx_logo_url' => FDX3_PLUGIN_URL .'images/logob.png',
+        'fdx_favicon_url' => FDX3_PLUGIN_URL .'images/favicon.ico',
+        'fdx_apple_url' => FDX3_PLUGIN_URL .'images/touch_icon.png',
 		'fdx_feed_url' => 'http://',
         'fdx_twitter_url' => '',
         'fdx_facebook_url' => '',
@@ -70,16 +72,43 @@ echo '<br />';
 
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Logo', 'wp-mobile-edition') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Logo', 'wp-mobile-edition') ?>, Favicon, Apple Touch Icon</th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <p><strong><?php _e('Enter your Logo URL', 'wp-mobile-edition') ?> </strong> <span class="description">(PNG, GIF, JPG: 170x30px)</span></p>
 <?php
 $options = get_option('fdx3_updater_options');
 echo "<p> <input id='upload_image' type='text' size='60' maxlength='100' name='fdx3_updater_options[fdx_logo_url]' value='{$options['fdx_logo_url']}' /> <input id=\"upload_image_button\" type=\"button\" value=\"Upload\" class=\"button\" /></p>";
+?>
 
+</td>
+ </tr>
+
+
+
+<tr><td>
+<p><strong>Favicon </strong> <span class="description">(ico: 32x32px)</span></p>
+<?php
+$options = get_option('fdx3_updater_options');
+echo "<p> <input id='upload_image2' type='text' size='60' maxlength='100' name='fdx3_updater_options[fdx_favicon_url]' value='{$options['fdx_favicon_url']}' /> <input id=\"upload_image_button2\" type=\"button\" value=\"Upload\" class=\"button\" /></p>";
 ?>
 </td>
  </tr>
+
+
+<tr class="alternate"><td>
+<p><strong>Apple Touch Icon </strong> <span class="description">(PNG: 57x57px)</span></p>
+<?php
+$options = get_option('fdx3_updater_options');
+echo "<p> <input id='upload_image3' type='text' size='60' maxlength='100' name='fdx3_updater_options[fdx_apple_url]' value='{$options['fdx_apple_url']}' /> <input id=\"upload_image_button3\" type=\"button\" value=\"Upload\" class=\"button\" /></p>";
+?>
+
+</td>
+ </tr>
+
+
+
+
+
  </tbody>
  </table>
 
@@ -305,6 +334,10 @@ function fdx3_updater_options_validate($input)
 	if( isset( $input['fdx_email_contato'] ) ) 	{ $options['fdx_email_contato'] = 	$input['fdx_email_contato']; }
     if( isset( $input['fdx_feed_url'] ) ) 	{ $options['fdx_feed_url'] = 	$input['fdx_feed_url']; }
     if( isset( $input['fdx_logo_url'] ) ) 	{ $options['fdx_logo_url'] = 	$input['fdx_logo_url']; }
+
+    if( isset( $input['fdx_favicon_url'] ) ) 	{ $options['fdx_favicon_url'] = 	$input['fdx_favicon_url']; }
+     if( isset( $input['fdx_apple_url'] ) ) 	{ $options['fdx_apple_url'] = 	$input['fdx_apple_url']; }
+
     if( isset( $input['fdx_twitter_url'] ) ) 	{ $options['fdx_twitter_url'] = 	$input['fdx_twitter_url']; }
     if( isset( $input['fdx_facebook_url'] ) ) 	{ $options['fdx_facebook_url'] = 	$input['fdx_facebook_url']; }
     if( isset( $input['fdx_google_url'] ) ) 	{ $options['fdx_google_url'] = 	$input['fdx_google_url']; }

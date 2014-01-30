@@ -4,8 +4,8 @@ Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
 Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.9.2
+Tested up to: 3.8.1
+Stable tag: 1.9.3
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
@@ -71,7 +71,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
 
 * **Users** - download the latest development version of the plugin, and submit bug/feature requests. 
-* **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface - no technical knowledge required ([how to](http://translate.fabrix.net/projects/wp-mobile-edition)).
+* **Non-English Speaking Users** - Contribute a translation using web interface - no technical knowledge required ([how to](https://poeditor.com/join/project?hash=1b623dfa9f823c91019e8374c47145c8)).
 * **Developers** - Fork the development version and submit a pull request. 
 
 
@@ -130,6 +130,10 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 
 == Changelog ==
+
+* 1.9.3
+    * mTheme - cosmetic fixes and option for Favicon and "Apple Touch Icon".
+
 * 1.9.2
     * Adds Italian translation.
     * Adds Russian translation.

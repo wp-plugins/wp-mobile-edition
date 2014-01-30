@@ -23,7 +23,7 @@ span.tags a {text-decoration: none;}
 .fdx_postfooter .fdx_prev{border-right:1px solid #151515;float:left;height:35px;line-height:35px;position:relative;vertical-align:middle;padding:0 11px}
 .fdx_postfooter .fdx_next{border-right:1px solid #151515;color:#FFF;float:left;height:35px;line-height:35px;text-decoration:none;text-shadow:0 1px 0 #151515;vertical-align:middle;padding:0 14px 0 16px}
 .fdx_top{border-left:1px solid #151515;position:absolute;right:0;top:0;padding:0 16px 0 13px}
-.fdx_article_pagination .fdx_prev{float:right;height:35px;line-height:35px;position:relative;text-shadow:0 1px 0 #151515;vertical-align:middle;padding:0 11px}
+.fdx_article_pagination .fdx_prev{float:right;height:35px;line-height:35px;position:relative;text-shadow:0 1px 0 #151515;vertical-align:middle;padding:0}
 .fdx_article_pagination .fdx_next{border-left:1px solid #151515;color:#FFF;float:right;height:35px;line-height:35px;text-decoration:none;text-shadow:0 1px 0 #151515;vertical-align:middle;padding:0 10px 0 11px}
 .fdx_article_pagination .fdx_date_link{border-right:1px solid #151515;left:0;position:absolute;text-shadow:0 1px 0 #151515;top:0;padding:0 11px}
 

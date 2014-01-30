@@ -22,11 +22,35 @@ jQuery('#upload_image_button').click(function() {
  tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
  return false;
 });
-
 window.send_to_editor = function(html) {
  imgurl = jQuery('img',html).attr('src');
  jQuery('#upload_image').val(imgurl);
  tb_remove();
 }
+});
 
+jQuery(document).ready(function() {
+jQuery('#upload_image_button2').click(function() {
+ formfield = jQuery('#upload_image2').attr('name');
+ tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
+ return false;
+});
+window.send_to_editor = function(html) {
+ imgurl = jQuery('img',html).attr('src');
+ jQuery('#upload_image2').val(imgurl);
+ tb_remove();
+}
+});
+
+jQuery(document).ready(function() {
+jQuery('#upload_image_button3').click(function() {
+ formfield = jQuery('#upload_image3').attr('name');
+ tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
+ return false;
+});
+window.send_to_editor = function(html) {
+ imgurl = jQuery('img',html).attr('src');
+ jQuery('#upload_image3').val(imgurl);
+ tb_remove();
+}
 });

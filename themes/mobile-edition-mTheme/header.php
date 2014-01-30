@@ -1,3 +1,4 @@
+<?php $options = get_option('fdx3_updater_options'); ?>
 <!doctype html>
 <html>
     <head>
@@ -14,8 +15,9 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="cleartype" content="on" />
 
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico"  type="image/x-icon" />
-<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/images/touch_icon.png" />
+<?php if ( $options['fdx_favicon_url'] <> "" ) { echo '<link rel="shortcut icon" href="'.$options['fdx_favicon_url'].'" type="image/x-icon" />'. "\n";}?>
+<?php if ( $options['fdx_apple_url'] <> "" ) { echo '<link rel="apple-touch-icon" href="'.$options['fdx_apple_url'].'" />';}?>
+
 
 <?php if(is_single() || is_page()) { // post e paginas ?>
 <meta name="keywords" content="<?php if(function_exists('csv_tags_m')) { csv_tags_m(); } ?>" />
@@ -30,7 +32,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-   <?php $options = get_option('fdx3_updater_options');
+   <?php
    echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.$options['dark_clean'].'.css" type="text/css" />'."\n";
    echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.$options['fdx_color'].'/style-c.css" type="text/css" />';
    ?>
@@ -107,7 +109,6 @@
 ?>
 
 <?php
-$options = get_option('fdx3_updater_options');
 if ( $options['fdx_text_head'] <> "" ) {
 echo stripslashes($options['fdx_text_head']) . "\n";
 }
@@ -119,13 +120,12 @@ echo stripslashes($options['fdx_text_head']) . "\n";
 
 <div class="fdx_header">
 <div class="fdx_logo">
-<?php $options = get_option('fdx3_updater_options');
-if ( $options['fdx_logo_url'] <> "" ) { echo '<a href="'.get_bloginfo('url').'"><img alt="*" border="0" width="170" height="30" src="'.$options['fdx_logo_url'].'" /></a>';}
+<?php if ( $options['fdx_logo_url'] <> "" ) { echo '<a href="'.get_bloginfo('url').'"><img alt="*" border="0" width="170" height="30" src="'.$options['fdx_logo_url'].'" /></a>';}
 ?>
 </div>
 
 <div class="fdx_social">
-<?php $options = get_option('fdx3_updater_options');
+<?php
 if ( $options['fdx_google_url'] <> "" ) { echo '<a href="'.$options['fdx_google_url'].'"><img alt="*" border="0" width="24" height="24" src="'. get_template_directory_uri(). '/images/icons/google.png" /></a>';}
 if ( $options['fdx_ink_url'] <> "" ) { echo '<a href="'.$options['fdx_ink_url'].'"><img alt="*" border="0" width="24" height="24" src="'. get_template_directory_uri(). '/images/icons/in.png" /></a>';}
 if ( $options['fdx_facebook_url'] <> "" ) {echo '<a href="'.$options['fdx_facebook_url'].'"><img alt="*" border="0" width="24" height="24" src="'. get_template_directory_uri(). '/images/icons/face.png" /></a>';}
