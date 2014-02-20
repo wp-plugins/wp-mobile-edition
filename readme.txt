@@ -71,7 +71,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
 
 * **Users** - download the latest development version of the plugin, and submit bug/feature requests. 
-* **Non-English Speaking Users** - Contribute a translation using web interface - no technical knowledge required ([how to](https://poeditor.com/join/project?hash=1b623dfa9f823c91019e8374c47145c8)).
+* **Non-English Speaking Users** - Contribute a translation using web interface - no technical knowledge required ([how to](http://i.fabrix.net/lIjlj)).
 * **Developers** - Fork the development version and submit a pull request. 
 
 

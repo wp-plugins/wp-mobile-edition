@@ -30,7 +30,7 @@ define('FDX3_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 define('FDX3_WPPAGE', 'http://wordpress.org/extend/plugins/wp-mobile-edition');
 define('FDX3_PLUGINPAGE', 'http://fabrix.net/wp-mobile-edition');
-define('FDX3_GLOTPRESS', 'https://poeditor.com/join/project?hash=1b623dfa9f823c91019e8374c47145c8');
+define('FDX3_GLOTPRESS', 'http://i.fabrix.net/lIjlj');
 define('FDX3_SUPFORUM', 'http://wordpress.org/support/plugin/wp-mobile-edition');
 define('FDX3_DONATELINK', 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW');
 
