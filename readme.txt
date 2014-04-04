@@ -43,7 +43,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * Mobile-friendly: an extensible theme that is ready for display on mobile devices. The theme is XHTML-MP compliant and scores highly on [W3C mobileOK Checker](http://validator.w3.org/mobile/). 
 
 = DEMO =
-* To see mTheme in action visit [http://m.webmais.com](http://m.webmais.com) on your mobile device.
+* To see mTheme in action visit [http://mblog.webmais.com](http://mblog.webmais.com) on your mobile device.
 * Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
 
 
