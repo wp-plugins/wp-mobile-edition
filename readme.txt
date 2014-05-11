@@ -58,6 +58,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 2. Mobile theme (General Settings)
 3. Mobile theme (Advanced Settings)
 4. Mobile Emulator
+4. mTheme-Unus
 
 
 == Installation ==
