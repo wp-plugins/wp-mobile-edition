@@ -2,28 +2,28 @@
 Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
-Tags: Sitemap, iPhone, Android, Windows Phone, Blackberry, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
+Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 1.9.3
+Tested up to: 3.9.1
+Stable tag: 2.0
 License: GPLv2 or later
 
-Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher, themes, and mobile XML Sitemap Generator.
+Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
 
 == Description ==
-Fully optimized for the best performance on smartphones, compatible with: iPhone, Android, Windows Phone, Blackberry. Simple and easy to use: An Intuitive setting page gives you complete control. The pack contains the following functionality:
+Fully optimized for the best performance on smartphones, compatible with: iPhone, Android, Windows Phone. Simple and easy to use: An Intuitive setting page gives you complete control. The pack contains the following functionality:
 
 = Mobile switcher =
-* The mobile switcher automatically detects whether the visitor to the site is mobile or not, and switches between the primary WordPress theme (for desktop users) or loads a mobile theme. 
+* The mobile switcher automatically detects whether the visitor to the site is mobile or not, and switches between the primary WordPress theme (for desktop users) or loads a mobile theme.
 
 * Includes the ability for visitors to switch between mobile view and your site's regular theme (and remembers their choice).
 
-= Mobile XML Sitemap Generator =
+* Manual Switcher - to allow your user to manually switch between desktop and mobile versions. Available in 3 versions: shortcodes, option to automatically insert into footer, or template tag.
 
-* It will create a mobile xml sitemap, to maximize the mobile version in mobile search engines like google, Bing, and other.
+* Based detector on [mobiledetect](http://mobiledetect.net/) project, meaning device detection will stay up to date with latest mobile devices.
 
 
-= A standard mobile theme = 
+= A standard mobile theme =
 * Was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, categories, tags, comments etc.
 
 * Device adaptation, including the rescaling of images, intelligent splitting of articles and posts into multiple pages, the simplifaction styles, and the removal of non-supported media.
@@ -32,7 +32,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 * Full Comments System: Default wordpressor or DISQUS.
 
-* You can choose from 16 different color schemes in the settings panel.
+* You can choose from 8 different color schemes in the settings panel.
 
 * Easily customize your mobile theme logo with our easy uploader.
 
@@ -40,60 +40,53 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 * Equipped with a mobile ad, you can put any ads scripts (Adsense, admob, or banner ads of your own) and it will appear on your mobile version.
 
-* Mobile-friendly: an extensible theme that is ready for display on mobile devices. The theme is XHTML-MP compliant and scores highly on [W3C mobileOK Checker](http://validator.w3.org/mobile/). 
+* Mobile-friendly: an extensible theme that is ready for display on mobile devices.
 
 = DEMO =
-* To see mTheme in action visit [http://mblog.webmais.com](http://mblog.webmais.com) on your mobile device.
+* To see mTheme in action visit [This demo](http://dev.fabrix.net/run/demo/).
 * Look: Gallery page, Contact form, comments in levels, and all functionality like a theme for desktop.
-
-
-= Used With Subdomain =
-* **Best cookie support:** If you logged into a mobile website but needed to view the desktop website and wanted to switch to that mode, using `"m.domain.com"` would be best so you can stay logged in between both versions.
-
-* **Best SEO:** Allows more pages to be indexed in search engines and it much more easier to find you on internet specially on mobile search engine.
-
-* **Best cache support:** Compatible with all caching plugins. (separately cache: `domain.com/post1/` for dektop and `m.domain.com/post1/` for mobile devices)
-
-> Companies such as : `m.yahoo.com`, `m.twitter.com`, `m.google.com`, `m.youtube.com`, `m.facebook.com`, have adopted this method. 
 
 
 = Languages Available =
 * English (default)
-* Brazilian Portuguese (**pt_BR**) translation by **Fabrix DoRoMo**
-* Spanish (**es_ES**) translation by **David R. Rojas** 
-* Dutch (**nl_NL**) translation by **Bas de Haan**
-* Italian (**it_IT**) translation by **Francesco Scotti**
-* Russian (**ru_RU**) translation by **Александр Ческов**
 
-
-
-= How To Contribute =
-We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated.
-
-* **Users** - download the latest development version of the plugin, and submit bug/feature requests. 
-* **Non-English Speaking Users** - Contribute a translation using web interface - no technical knowledge required ([how to](http://i.fabrix.net/lIjlj)).
-* **Developers** - Fork the development version and submit a pull request. 
+* **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
 
 
 == Screenshots ==
-1. mTheme options
-2. Basic Settings
-3. Front end (16 theme options)
+1. Core Settings
+2. Mobile theme (General Settings)
+3. Mobile theme (Advanced Settings)
+4. Mobile Emulator
 
 
 == Installation ==
-1. Upload the `wp-mobile-edition` folder to your `/wp-content/plugins/` directory
-1. Activate the `WP Mobile Edition` plugin in your WordPress admin `Plugins`
-1. Submit your subdomain, e select o Mobile Theme (mTheme) Done!
 
-You can install **WP Mobile Edition** directly from the WordPress admin! Visit the Plugins - > Add New page and search for **WP Mobile Edition**. Click to install.
+= Using The WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Search for `WP Mobile Edition`
+3. Click 'Install Now'
+4. Activate the plugin on the Plugin dashboard
+
+= Uploading in WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `wp-mobile-edition.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+
+= Using FTP =
+
+1. Download `wp-mobile-edition.zip`
+2. Extract the `wp-mobile-edition` directory to your computer
+3. Upload the `wp-mobile-edition` directory to the `/wp-content/plugins/` directory
+4. Activate the plugin in the Plugin dashboard
+
 
 = To add a switch link in your default theme =
-`<a href="<?php if( defined('FDX_MLINK') ) { echo FDX_MLINK; } ?>">Mobile Version</a>`
-
-
-> **IMPORTANT** After upgrade, disable and enable the plugin to update the files of mobile theme (mTheme). **Clear Your Browser's Cache.**
-
+`<?php echo do_shortcode('[fdx-switch-link]'); ?>`
 
 
 = SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
@@ -108,28 +101,29 @@ Type your subdomain (m), that will be your mobile subdomain, then point for your
 To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
 
 = TESTING YOUR INSTALLATION (after enable the plugin) =
-Ideally, use a real mobile device to access your (public) site address and check that the switching and theme work correctly. 
+* Ideally, use a real mobile device to access your (public) site address and check that the witching and theme work correctly.
 
-In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
+* Use the Mobile emulator in admin dashboard.
 
-You can also download a number of mobile emulators that can run on a desktop PC and simulate mobile devices. 
+* In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
+
 
 == Frequently Asked Questions ==
-= Does this create a mobile admin interface too? =
-No, it does not. for this, install ([Mobile Apps](http://wordpress.org/extend/mobile/)).
 
+= Why desktop-view link did not redirect me to the desktop version? =
+This plugin requires cookie, so you need to enable the cookie's setting.
 
-= How can I submit my mobile sitemap to Google? =
-Once you have created your Sitemap, you can submit it to Google using Webmaster Tools.
-
-= Where's the sitemap file stored? =
-You can find the `msitemap.xml` file in your blog's root folder.
-
-= I am getting Permission Denied like errors =
-It implies that you don't have write permissions on your blog's root folder.  Please use chmod or your FTP manager to set the necessary permissions to 0666.
+= I have created a mobile subdomain, but I still can't access my mobile version? =
+Did you point a mobile domain document root to the root of wordpress installation? if you did not, login to your cpanel, point the document root into the root of wordpress installation.
 
 
 == Changelog ==
+* 2.0
+    * NEW FEATURE - Switcher Mode (Normal Site or Mobile Sub domain)
+    * IMPROVED - Admin styling cleaned up.
+    * IMPROVED - Code refactored.
+    * IMPROVED - Mobile Theme - Various cosmetic fixes.
+
 
 * 1.9.3
     * mTheme - cosmetic fixes and option for Favicon and "Apple Touch Icon".
@@ -152,7 +146,7 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 * 1.7
     * Replacement of the deactivation, by uninstalling, to reset settings.
-    * Improvement of performance 
+    * Improvement of performance
 
 * 1.6
     * Minor bug fixes
@@ -183,5 +177,5 @@ It implies that you don't have write permissions on your blog's root folder.  Pl
 
 == Upgrade Notice ==
 
-= 1.8 =
-IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme (mTheme). 
+= 2.0 =
+IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
