@@ -2,7 +2,7 @@
 # Donation Message #
 if( get_site_option( 'fdx1_hidden_time_2' ) && get_site_option( 'fdx1_hidden_time_2' ) < time() ) {
 echo '<div class="updated"><form method="post" action=""><input type="hidden" name="fdx_page_2" value="hide_message_2" /><p>';
-echo '<strong>Rate the plugin 5 star on WordPress.</strong> &nbsp;&nbsp;<input type="button" class="button button-primary" onClick="location.href=\''. $this->sbar_wpratelink . '\'" value="' . __( 'Vote & Rate Now', $this->plugin_slug ) . '">&nbsp;&nbsp;&nbsp;';
+echo '<strong>'.__('Do you like this Plugin? Rate', $this->plugin_slug).' <span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span> '.__('on', $this->plugin_slug).' WordPress.org</strong> &nbsp;&nbsp;<input type="button" class="button button-primary" onClick="location.href=\''. $this->sbar_wpratelink . '\'" value="' . __( 'Vote & Rate Now', $this->plugin_slug ) . '">&nbsp;&nbsp;&nbsp;';
 submit_button( __('Hide this message', $this->plugin_slug ), 'secondary', 'Submit', false, array( 'id' => '' ) ) ;
 echo '</p></form></div>';
 }
@@ -12,7 +12,7 @@ echo '<div id="side-sortables" class="meta-box-sortables">';
 
 /* class="postbox closed"
 ----------------------------------------*/
-echo '<div class="postbox"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. $this->pluginname . ' <small style="float: right">v'. WP_Mobile_Edition::VERSION . '</small></span></h3>';
+echo '<div class="postbox fdx-responsive"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. $this->pluginname . ' <small style="float: right">v'. WP_Mobile_Edition::VERSION . '</small></span></h3>';
 echo '<div class="inside">';
 echo '<a href="'. $this->sbar_homepage . '" target="_blank"><div id="logo"></div></a>';
 echo '<a class="sm_button sm_code" href="'. $this->sbar_homepage . '" target="_blank">' . __( 'Suggest a Feature', $this->plugin_slug ) . '</a>';
@@ -26,7 +26,7 @@ echo '<a href="http://api.addthis.com/oexchange/0.8/offer?title='. $this->plugin
 echo '</div></div>';
 
 //----------------------------------------
-echo '<div class="postbox"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. __( 'Translation', $this->plugin_slug ) . '</span></h3>';
+echo '<div class="postbox fdx-responsive"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. __( 'Translation', $this->plugin_slug ) . '</span></h3>';
 echo '<div class="inside">';
 if (WPLANG == '' || WPLANG == 'en' || WPLANG == 'en_US'  ){
 echo '<strong>Would you like to help translating this plugin?</strong><br/> Contribute a translation using the GlotPress web interface - no technical knowledge required (<strong><a href="' . $this->sbar_glotpress . '" target="_blank">how to</a></strong>)';
@@ -37,7 +37,7 @@ echo '<p>' . __( 'If you find any spelling error in this translation or would li
 echo '</div></div>';
 
 //----------------------------------------
-echo '<div class="postbox"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. __( 'Notices', $this->plugin_slug ) . '</span></h3>';
+echo '<div class="postbox fdx-responsive"><div class="handlediv" title="'.__('Click to toggle', $this->plugin_slug) .'"><br /></div><h3 class="hndle"><span>'. __( 'Notices', $this->plugin_slug ) . '</span></h3>';
 echo '<div class="inside">';
 
 $rss = @fetch_feed( $this->sbar_rss );

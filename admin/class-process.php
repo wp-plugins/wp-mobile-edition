@@ -22,8 +22,8 @@ function fdx_update_post_settings() {
 					break;
 
                     case 'hide_message_2':
-				    # Hide donation message for 33 days
-                    $time = time() + 33 * 24 * 60 * 60;
+				    # Hide message for 15 days
+                    $time = time() + 10 * 24 * 60 * 60;
                     update_option('fdx1_hidden_time_2', $time );
 					break;
     }

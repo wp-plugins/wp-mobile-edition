@@ -2,7 +2,7 @@
 echo '<div class="wrap">';
 echo '<h2>'. esc_html( get_admin_page_title() ) . '</h2>';
 ?>
-<h2 class="nav-tab-wrapper">
+<h2 class="nav-tab-wrapper fdx-responsive">
 <a class="nav-tab" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug); ?>"><?php _e('Dashboard', $this->plugin_slug); ?></a>
 <a class="nav-tab nav-tab-active" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>
 <a class="nav-tab" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p3); ?>"><?php _e('Theme Settings', $this->plugin_slug ); ?></a>
@@ -56,7 +56,7 @@ echo '</h3><div class="inside">'; ?>
 <table style="width:100%;" class="widefat fdx_mobile_domain">
 <thead><tr class='fdx_desktop_domain'><th><strong><?php _e('Mobile Subdomain', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody>
-<tr><td><?php _e('Subdomain for your mobile site', $this->plugin_slug); ?> (<?php _e('i.e.', $this->plugin_slug); ?> <strong>m.domain.com</strong>, <a href="http://wordpress.org/plugins/wp-mobile-edition/installation/" title="Setting up a subdomain is done through your hosting provider" target="_blank"><?php _e('learn more', $this->plugin_slug); ?></a>)</td></tr>
+<tr><td><?php _e('Subdomain for your mobile site', $this->plugin_slug); ?> (<?php _e('i.e.', $this->plugin_slug); ?> <strong>m.domain.com</strong>, <a href="http://wordpress.org/plugins/wp-mobile-edition/installation/" title="<?php _e('Setting up a subdomain is done through your hosting provider', $this->plugin_slug); ?>" target="_blank"><?php _e('learn more', $this->plugin_slug); ?></a>)</td></tr>
 <tr class="alternate"><td>
 <p><?php print WP_Mobile_Edition::fdx_switcher_option('fdx_switcher_mobile_domains'); ?>  <?php if (strpos(get_option('fdx_switcher_mode'), 'domain')!==false && WP_Mobile_Edition::fdx_switcher_domains('desktop', true) == WP_Mobile_Edition::fdx_switcher_domains('mobile', true)) {
               echo "<span style='color:#770000'>". __("<strong>Warning:</strong> your primary desktop and mobile domains are the same. The switcher will default to 'browser detection' mode unless one is changed.", $this->plugin_slug).'</span>';
@@ -75,7 +75,7 @@ echo '</h3><div class="inside">'; ?>
 <table style="width:100%;" class="widefat fdx_links">
 <thead><tr><th><strong><?php _e('Theme Switch Link', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody><tr class="alternate"><td>
-<p><?php print WP_Mobile_Edition::fdx_switcher_option('fdx_switcher_footer_links'); ?> <?php _e('Places a switch link in the theme footer', $this->plugin_slug); ?>.</p>
+<p><?php print WP_Mobile_Edition::fdx_switcher_option('fdx_switcher_footer_links'); ?> <?php _e('Enable Manual Switcher Link whilst on Desktop', $this->plugin_slug); ?>.</p>
 </td>
 </tr>
 </tbody>
