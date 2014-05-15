@@ -1,0 +1,913 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Twitter\n"
+"POT-Creation-Date: 2014-05-15 14:49-0300\n"
+"PO-Revision-Date: 2014-05-15 15:08-0300\n"
+"Last-Translator: Fabrix <webmaster@fabrix.net>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: E:\\[REPOSITORY]\\wp-mobile-edition\\trunk\n"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:142
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:168
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:8
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:6
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:9
+msgid "Dashboard"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:151
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:152
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:9
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:69
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:7
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:23
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:10
+msgid "Core Settings"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:159
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-admin.php:160
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:10
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:8
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:11
+#, fuzzy
+msgid "Theme Settings"
+msgstr "Tema Laranja"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:168
+#, php-format
+msgid "Critical <strong>%s</strong> Issue"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:170
+#, php-format
+msgid "Deactivate and re-activate the <strong>%s</strong> once resolved."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:175
+#, php-format
+msgid "Important <strong>%s</strong> Notice"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:229
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:247
+#, fuzzy
+msgid "Switch to Mobile Version"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:244
+msgid "Switch to Desktop Version"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:434
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:17
+msgid "Settings Updated"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:467
+msgid ""
+"You must provide clean domain names without any leading or trailing syntax. "
+"We fixed them for you."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:479
+msgid ""
+"You must provide both desktop and mobile domains. Switching has been "
+"disabled."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:492
+msgid "Disabled"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:493
+msgid "Browser Detection"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:494
+#, fuzzy
+msgid "Subdomain"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:592
+#, php-format
+msgid ""
+"<strong>PHP</strong> versions less than <code>%1s</code> are not supported "
+"by this plugin, and you have version <code>%2s</code>"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:597
+#, php-format
+msgid ""
+"<strong>WordPress</strong> versions less than <code>%1s</code> are not "
+"supported by this plugin, and you have version <code>%2s</code>"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:603
+msgid "That directory does not exist."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:605
+msgid "That directory is not writable."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:607
+msgid "That directory is not executable."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:611
+#, php-format
+msgid "<strong>Not able to install theme files</strong> to %s."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:611
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:634
+msgid "Please ensure that the web server has write- and execute-access to it."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:634
+msgid "<strong>Could not install theme files</strong> to "
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:659
+#, php-format
+msgid "<strong>Could not install file</strong> to %s."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:659
+msgid "Please ensure that the web server has write- access to that file."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:677
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/class-public.php:685
+msgid "This page is required for plugin WP Mobile Edition."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:55
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:66
+#, fuzzy
+msgid "Mobile Pages"
+msgstr "Multi Fóruns "
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:56
+#, fuzzy
+msgid "Mobile Page"
+msgstr "Multi Fóruns "
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:57
+msgid "Add New"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:58
+msgid "Add New Mobile Page"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:59
+#, fuzzy
+msgid "Edit Mobile Page"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:60
+#, fuzzy
+msgid "New Mobile Page"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:61
+#, fuzzy
+msgid "View Mobile Page"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:62
+#, fuzzy
+msgid "Search Mobile Page"
+msgstr "Busca por"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:63
+msgid "Nothing found"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/fdx-functions.php:64
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:25
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:60
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:114
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:23
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:35
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:57
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:171
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:15
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:29
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:40
+msgid "Click to toggle"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:25
+#, fuzzy
+msgid "Mobile Emulator"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:60
+msgid "Overview"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:65
+msgid "Switching Shortcodes"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:67
+msgid "Use the following shortcode to show the theme switch link"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:68
+msgid ""
+"Or use the following shortcode in templates themes to show the theme switch "
+"link"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:69
+msgid "Or auto added in"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:69
+msgid ""
+"Regardless of this setting, the switcher link will always appear on the "
+"mobile theme"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:79
+#, fuzzy
+msgid "Mobile Themes Compatibles"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:79
+#, fuzzy
+msgid "Version"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:102
+msgid "Sorry, no theme found."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p1.php:114
+#, fuzzy
+msgid "Mobile Themes"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:29
+msgid "Switcher Mode"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:34
+msgid "Enable Switcher mode for tablets"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:42
+#, fuzzy
+msgid "Mobile Theme"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:44
+msgid "The theme that will be sent to a mobile user."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:46
+msgid "Desktop users will receive "
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:57
+#, fuzzy
+msgid "Mobile Subdomain"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:59
+msgid "Subdomain for your mobile site"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:59
+msgid "i.e."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:59
+#, fuzzy
+msgid "learn more"
+msgstr "Saiba mais"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:62
+msgid ""
+"<strong>Warning:</strong> your primary desktop and mobile domains are the "
+"same. The switcher will default to 'browser detection' mode unless one is "
+"changed."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:76
+#, fuzzy
+msgid "Theme Switch Link"
+msgstr "Tema Laranja"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:78
+msgid "Places a switch link in the theme footer"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:94
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:221
+msgid "Save all options"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:98
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:228
+msgid "Restore Defaults"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p2.php:98
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:228
+msgid "Restore Default Settings?"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:35
+msgid "Settings"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:41
+msgid "This theme is incompatible!"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:57
+msgid "General"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:62
+msgid "Front page displays"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:65
+msgid "Your latest posts"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:66
+msgid "Custom"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:81
+msgid "Site Logo / Bookmark Icons"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:83
+msgid "Site Logo"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:83
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:90
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:96
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:97
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:103
+msgid "pixels"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:83
+msgid "or less"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:96
+msgid "iPhone & iPod Touch Icon"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:97
+msgid "Auto resizable for"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:103
+msgid "icon"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:103
+msgid "tile color"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:116
+msgid "Social Links"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:118
+msgid "Enter your URL if you have one. (include http://)"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:118
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:149
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:177
+msgid "Leave blank to disable"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:134
+msgid "Compatibility"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:136
+msgid "Remove these Shortcodes"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:137
+msgid "Enter a comma separated list of shortcodes to remove, without"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:147
+msgid "Ads"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:149
+msgid ""
+"You can enter your Mobile AdSense here or insert your own banner ad code. "
+"These boxes accept both javascript & html. We suggest sizing ads either "
+"298x70px or below."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:150
+msgid "Top Advertisement"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:156
+msgid "Bottom Advertisement"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:171
+msgid "Advanced"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:175
+msgid "Custom Code"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:177
+msgid "Statistics"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:179
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:185
+msgid "End of"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:198
+msgid "WP Themes Function"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:200
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/page-p3.php:202
+msgid "Enable the Function"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:5
+msgid "Vote & Rate Now"
+msgstr "Vote e claasifique"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:6
+msgid "Hide this message"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:18
+msgid "Suggest a Feature"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:19
+msgid "Report a Bug"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:20
+msgid "Help translating it"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:21
+msgid "Rate the plugin 5 star on WordPress"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:22
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:23
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:24
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:25
+msgid "Share on"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:29
+msgid "Translation"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:34
+#, php-format
+msgid "Translated by: <a href=\"%s\">YOUR NAME</a>"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:34
+msgid "http://YOUR-LINK.COM"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:35
+msgid ""
+"If you find any spelling error in this translation or would like to "
+"contribute"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:35
+msgid "click here"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:40
+msgid "Notices"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/sidebar-left.php:56
+msgid "Untitled"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/404.php:4
+msgid "Page not found"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/attachment.php:3
+msgid "return"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:8
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:50
+msgid "Comments are closed"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:65
+msgid "You must be"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:65
+msgid "logged in"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:65
+msgid "to post a comment"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:73
+msgid "Welcome"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:73
+msgid "Logout"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:78
+msgid "Name"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:82
+#, fuzzy
+msgid "E-mail"
+msgstr "E-mail @ Grátis!"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:87
+msgid "Website"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:91
+msgid "Comment"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/comments.php:94
+msgid "Post Comment"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/footer.php:5
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single-mobile.php:33
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:3
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:37
+msgid "next"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/footer.php:5
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single-mobile.php:29
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:3
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:33
+msgid "prev"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/footer.php:9
+msgid "top"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:25
+msgid "Results for"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:27
+msgid "Category"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:29
+msgid "Tag"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:31
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:33
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:35
+msgid "Archive"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:39
+msgid "Author"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:155
+msgid "Pingback:"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:175
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/functions.php:181
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/header.php:21
+#, php-format
+msgid "P&aacute;gina %s"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/header.php:37
+msgid "Mobile Version"
+msgstr "Versão Mobile"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/header.php:95
+msgid "Search"
+msgstr "Buscar"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/header.php:107
+msgid "Menu"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/header.php:126
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:33
+msgid "Categories"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page-fdx-contact.php:64
+msgid "Contact"
+msgstr "Contato"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page-fdx-contact.php:69
+msgid "Thanks"
+msgstr "Obrigado"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page-fdx-contact.php:70
+msgid "Your message has been sent successfully"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page-fdx-contact.php:96
+msgid "Send message"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page-fdx-index.php:2
+msgid "Index"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/page.php:9
+msgid "pages"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:10
+msgid "comments"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:19
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/single.php:46
+msgid "Comments"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-blog.php:28
+msgid "Nothing found for"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-blog.php:29
+msgid "Try performing a different search"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-blog.php:34
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-mobile.php:52
+msgid "No items found"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-blog.php:35
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/includes/mobile_themes/mTheme-Unus/inc/index-mobile.php:53
+msgid "There are currently no items to display. Please check back soon."
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:3
+msgid "Theme Choices"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:32
+msgid "Custom navigation menus"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:34
+#, fuzzy
+msgid "Site Search"
+msgstr "Buscar"
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:35
+msgid "Blog Index"
+msgstr ""
+
+#: E:\[REPOSITORY]\wp-mobile-edition\trunk/admin/p3/mTheme-Unus.php:36
+#, fuzzy
+msgid "Contact Page"
+msgstr "Contato"
+
+#, fuzzy
+#~ msgid "Mobile theme"
+#~ msgstr "Versão Mobile"
+
+#~ msgid "Subject"
+#~ msgstr "Assunto"
+
+#, fuzzy
+#~ msgid "Mobile Posts"
+#~ msgstr "Multi Fóruns "
+
+#~ msgid "Register"
+#~ msgstr "Registrar"
+
+#, fuzzy
+#~ msgid "Widgets"
+#~ msgstr "Orçamento"
+
+#, fuzzy
+#~ msgid "Profile Widget"
+#~ msgstr "Perfil: ver / editar"
+
+#, fuzzy
+#~ msgid "URL Shortener Account Settings"
+#~ msgstr "Redutor de URL"
+
+#, fuzzy
+#~ msgid "Selected Services"
+#~ msgstr "Produtos & Serviços"
+
+#~ msgid "Valid HTML5"
+#~ msgstr "HTML5 Válido"
+
+#~ msgid "Valid CSS3"
+#~ msgstr "CSS3 Válido"
+
+#~ msgid "Simplicity is the ultimate sophistication."
+#~ msgstr "Simplicidade é o último grau de sofisticação."
+
+#~ msgid "Theme Teal"
+#~ msgstr "Tema Teal"
+
+#~ msgid "Theme Purple"
+#~ msgstr "Tema Lilas"
+
+#~ msgid "Theme Gold"
+#~ msgstr "Tema Gold"
+
+#~ msgid "Contact Us"
+#~ msgstr "Fale Conosco"
+
+#~ msgid "Submit"
+#~ msgstr "Enviar"
+
+#~ msgid "Hire Us"
+#~ msgstr "Nos Contratar"
+
+#~ msgid ""
+#~ "When you fill out our request for a quote form, we will get back to you "
+#~ "quickly with an estimated cost for your project based on your specific "
+#~ "needs."
+#~ msgstr ""
+#~ "Quando preencher o nosso formulário de orçamento, nós entraremos em "
+#~ "contato com você rapidamente, com um custo estimado para o projeto com "
+#~ "base em suas necessidades específicas."
+
+#~ msgid "How can we help you?"
+#~ msgstr "Como podemos ajudá-lo?"
+
+#~ msgid ""
+#~ "Use the form on the side to send your message, or if you prefer send an "
+#~ "email to"
+#~ msgstr ""
+#~ "Utilize o formulário ao lado para enviar sua mensagem, ou se preferir "
+#~ "mande um e-mail para"
+
+#~ msgid "Web Design & Development"
+#~ msgstr "Web Design & Desenvolvimento"
+
+#~ msgid "General Support & Consulting"
+#~ msgstr "Suporte  &  Consultoria"
+
+#~ msgid "E-commerce"
+#~ msgstr "E-commerce"
+
+#~ msgid "Web Systems"
+#~ msgstr "Sistemas Web"
+
+#, fuzzy
+#~ msgid "Get a Quote"
+#~ msgstr "Solicitar um orçamento"
+
+#~ msgid "Request a Quote"
+#~ msgstr "Solicitar um orçamento"
+
+#~ msgid "All"
+#~ msgstr "Todos"
+
+#~ msgid "Change Language"
+#~ msgstr "Alterar o idioma"
+
+#~ msgid "FDX Themes"
+#~ msgstr "Temas FDX"
+
+#~ msgid "Contact us"
+#~ msgstr "Fale conosco"
+
+#~ msgid "NAME"
+#~ msgstr "NOME"
+
+#~ msgid "SUBJECT"
+#~ msgstr "ASSUNTO"
+
+#~ msgid "MESSAGE"
+#~ msgstr "MENSAGEM"
+
+#~ msgid "FDX Framework"
+#~ msgstr "FDX Framework"
+
+#~ msgid "General WordPress Consultation"
+#~ msgstr "Consultoria WordPress"
+
+#~ msgid "Development and Conversion"
+#~ msgstr "Desenvolvimento e Conversões"
+
+#~ msgid "Mobile Version: Click! or use the QR code reader."
+#~ msgstr "Versão Mobile: Clique! ou utilize um leitor de código QR."
+
+#~ msgid ""
+#~ "We think basically you watch television to turn your brain off, and you "
+#~ "work on your computer when you want to turn your brain on"
+#~ msgstr "As pessoas ligam a televisão quando querem desligar o cérebro"
+
+#~ msgid "Wordpres Total"
+#~ msgstr "Wordpres Total"
+
+#~ msgid ""
+#~ "E-mail and Microsoft account ( ...@webmais.com ) or ( ..@wmais.in )  free!"
+#~ msgstr ""
+#~ "E-mail e Conta da Microsoft (...@webmais.com) ou (...@wmais.in) grátis!"
+
+#~ msgid "Free!"
+#~ msgstr "Grátis!"
+
+#~ msgid "Top Galleries"
+#~ msgstr "Top Galerias"
+
+#~ msgid "Exit"
+#~ msgstr "Sair"
+
+#~ msgid "List all registered members"
+#~ msgstr "Listar todos os membros registados"
+
+#~ msgid "Members"
+#~ msgstr "Membros"
+
+#~ msgid "Frequently Asked Questions"
+#~ msgstr "Perguntas Frequentes"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "Tools & Apps"
+#~ msgstr "Ferramentas & App."
+
+#~ msgid "We found no results containing your search terms."
+#~ msgstr ""
+#~ "Não foram encontradas resultados contendo os termos de sua pesquisa."
+
+#~ msgid "Latest registered users"
+#~ msgstr "Últimos usuários registrados"
+
+#~ msgid "User Online"
+#~ msgstr "Usuários Online"

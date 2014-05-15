@@ -89,26 +89,6 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 = To add a switch link in your default theme =
 `<?php echo do_shortcode('[fdx-switch-link]'); ?>`
 
-
-= SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER =
-You need to create a CName, and unfortunately the way you do this differs from one host to another, with some it's a drop down box and it takes two seconds to do, with others the process will be a little bit more complicated.
-
-If you use an external host somewhere there will be a section where you can edit your DNS details - if your service doesn't allow it then it's probably time to move to another host.
-
-When you create a subdomain, you will need two things, the domain the subdomain is for and the location from which the new subdomain will load it's content.
-
-Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
-
-To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
-
-= TESTING YOUR INSTALLATION (after enable the plugin) =
-* Ideally, use a real mobile device to access your (public) site address and check that the witching and theme work correctly.
-
-* Use the Mobile emulator in admin dashboard.
-
-* In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
-
-
 == Frequently Asked Questions ==
 
 = Why desktop-view link did not redirect me to the desktop version? =
@@ -180,3 +160,24 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 = 2.0 =
 IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
+
+
+== SETTING UP A SUBDOMAIN IS DONE THROUGH YOUR HOSTING PROVIDER ==
+
+You need to create a CName, and unfortunately the way you do this differs from one host to another, with some it's a drop down box and it takes two seconds to do, with others the process will be a little bit more complicated.
+
+If you use an external host somewhere there will be a section where you can edit your DNS details - if your service doesn't allow it then it's probably time to move to another host.
+
+When you create a subdomain, you will need two things, the domain the subdomain is for and the location from which the new subdomain will load it's content.
+
+Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
+
+To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
+
+= TESTING YOUR INSTALLATION (after enable the plugin) =
+
+* Ideally, use a real mobile device to access your (public) site address and check that the witching and theme work correctly.
+
+* Use the Mobile emulator in admin dashboard.
+
+* In Firefox Browser, the [User-Agent Switcher](https://addons.mozilla.org/pt-br/firefox/addon/user-agent-switcher/) add-on can be configured to send mobile headers and crudely simulate a mobile device's request.
