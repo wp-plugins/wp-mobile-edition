@@ -56,7 +56,7 @@ echo '</h3><div class="inside">'; ?>
 <table style="width:100%;" class="widefat fdx_mobile_domain">
 <thead><tr class='fdx_desktop_domain'><th><strong><?php _e('Mobile Subdomain', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody>
-<tr><td><?php _e('Subdomain for your mobile site', $this->plugin_slug); ?> (<?php _e('i.e.', $this->plugin_slug); ?> <strong>m.domain.com</strong>, <a href="http://wordpress.org/plugins/wp-mobile-edition/installation/" title="<?php _e('Setting up a subdomain is done through your hosting provider', $this->plugin_slug); ?>" target="_blank"><?php _e('learn more', $this->plugin_slug); ?></a>)</td></tr>
+<tr><td><?php _e('Subdomain for your mobile site', $this->plugin_slug); ?> (<?php _e('i.e.', $this->plugin_slug); ?> <strong>m.domain.com</strong>, <a href="http://wordpress.org/plugins/wp-mobile-edition/other_notes/" title="<?php _e('Setting up a subdomain is done through your hosting provider', $this->plugin_slug); ?>" target="_blank"><?php _e('learn more', $this->plugin_slug); ?></a>)</td></tr>
 <tr class="alternate"><td>
 <p><?php print WP_Mobile_Edition::fdx_switcher_option('fdx_switcher_mobile_domains'); ?>  <?php if (strpos(get_option('fdx_switcher_mode'), 'domain')!==false && WP_Mobile_Edition::fdx_switcher_domains('desktop', true) == WP_Mobile_Edition::fdx_switcher_domains('mobile', true)) {
               echo "<span style='color:#770000'>". __("<strong>Warning:</strong> your primary desktop and mobile domains are the same. The switcher will default to 'browser detection' mode unless one is changed.", $this->plugin_slug).'</span>';
