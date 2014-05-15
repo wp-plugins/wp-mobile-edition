@@ -86,9 +86,6 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 4. Activate the plugin in the Plugin dashboard
 
 
-= To add a switch link in your default theme =
-`<?php echo do_shortcode('[fdx-switch-link]'); ?>`
-
 == Frequently Asked Questions ==
 
 = Why desktop-view link did not redirect me to the desktop version? =
@@ -172,7 +169,7 @@ When you create a subdomain, you will need two things, the domain the subdomain 
 
 Type your subdomain (m), that will be your mobile subdomain, then point for your website root. (don't create a extra folder) this plugin will not work if you point it to be different from the directory you installed WordPress.
 
-To confirm that the preocesso was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
+To confirm that the process was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
 
 = TESTING YOUR INSTALLATION (after enable the plugin) =
 
