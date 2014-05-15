@@ -24,17 +24,15 @@ endwhile;
 
 <?php if ( is_search() ) { ?>
 
-<div style="padding:5px">
-<?php _e('Nothing found for ', 'wp-mobile-edition'); echo '<strong style="color:red">'. get_search_query();?></strong></p>
-<p>&nbsp;</p>
+<div style="padding:5px; text-align: center">
+<h1><?php _e('Nothing found for', 'wp-mobile-edition'); echo ' <strong><a>'. get_search_query();?></a></h1>
 <p><strong><?php _e('Try performing a different search', 'wp-mobile-edition') ?>. </strong></p>
 </div>
 
 <?php } else { ?>
-<div style="padding:5px">
-
-<h2>No items found</h2>
-<p>There are currently no items to display. Please check back soon.</p>
+<div style="padding:5px; text-align: center ">
+<h1><?php _e('No items found', 'wp-mobile-edition'); ?></h1>
+<p><?php _e('There are currently no items to display. Please check back soon.', 'wp-mobile-edition'); ?></p>
 </div>
 <?php } ?>
 

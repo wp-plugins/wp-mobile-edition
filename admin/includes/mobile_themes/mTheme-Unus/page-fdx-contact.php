@@ -65,8 +65,8 @@ if(isset($_POST['submitted'])) {
 <div class="fdx_content" style="padding: 10px">
  <?php if(isset($emailSent) && $emailSent == true) { ?>
 
-	<div class="thanks">
-		<h1><?php _e('Thanks', 'wp-mobile-edition') ?>, <?=$name;?></h1>
+	<div style="text-align: center">
+		<h1><?php _e('Thanks', 'wp-mobile-edition') ?>, <a><?=$name;?></a></h1>
 		<p><?php _e('Your message has been sent successfully', 'wp-mobile-edition') ?>!</p>
 	</div>
 

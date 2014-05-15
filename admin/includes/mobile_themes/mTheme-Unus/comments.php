@@ -75,20 +75,20 @@ paginate_comments_links( array('prev_text' => '&lsaquo;&lsaquo;', 'next_text' =>
 <?php else : ?>
 
 <div class="input-group">
-<span class="input-group-addon">&rarr;</span><input class="form-control" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" type="text" placeholder="Name<?php if ($req) { ?>*<?php } ?>">
+<span class="input-group-addon">&rarr;</span><input class="form-control" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" type="text" placeholder="<?php _e('Name', 'wp-mobile-edition'); ?><?php if ($req) { ?>*<?php } ?>">
 </div>
  <br>
 <div class="input-group">
-<span class="input-group-addon">&rarr;</span><input class="form-control" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" type="text" placeholder="E-mail<?php if ($req) { ?>*<?php } ?>">
+<span class="input-group-addon">&rarr;</span><input class="form-control" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" type="text" placeholder="<?php _e('E-mail', 'wp-mobile-edition'); ?><?php if ($req) { ?>*<?php } ?>">
 </div>
 
 <br>
 <div class="input-group">
-<span class="input-group-addon">&rarr;</span><input class="form-control" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" type="text" placeholder="Website">
+<span class="input-group-addon">&rarr;</span><input class="form-control" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" type="text" placeholder="<?php _e('Website', 'wp-mobile-edition'); ?>">
 </div>
 <?php endif; ?>
 <br />
-<textarea name="comment" id="comment" class="form-control" rows="3" placeholder="Comment"></textarea>
+<textarea name="comment" id="comment" class="form-control" rows="3" placeholder="<?php _e('Comment', 'wp-mobile-edition'); ?>"></textarea>
 
 <div style="text-align: center; margin-top: 10px">
 <input type="submit" id="submit" style="padding: 5px" value="<?php _e( 'Post Comment', 'wp-mobile-edition' ); ?>" />
