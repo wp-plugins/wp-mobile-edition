@@ -52,16 +52,16 @@ add_image_size( 'cat-thumb', 60, 60, true );
 
 function fdx_mobile_itens() {
 	$labels = array(
-		'name' => __('Mobile Pages', 'fdx-lang'),
-		'singular_name' => __('Mobile Page', 'fdx-lang'),
-		'add_new' => __('Add New','fdx-lang'),
-		'add_new_item' => __('Add New Mobile Page', 'fdx-lang'),
-		'edit_item' => __('Edit Mobile Page', 'fdx-lang'),
-		'new_item' => __('New Mobile Page', 'fdx-lang'),
-		'view_item' => __('View Mobile Page', 'fdx-lang'),
-		'search_items' => __('Search Mobile Page', 'fdx-lang'),
-		'not_found' =>  __('Nothing found', 'fdx-lang'),
-		'not_found_in_trash' => __('Nothing found in Trash', 'fdx-lang'),
+		'name' => __('Mobile Pages', 'wp-mobile-edition'),
+		'singular_name' => __('Mobile Page', 'wp-mobile-edition'),
+		'add_new' => __('Add New','wp-mobile-edition'),
+		'add_new_item' => __('Add New Mobile Page', 'wp-mobile-edition'),
+		'edit_item' => __('Edit Mobile Page', 'wp-mobile-edition'),
+		'new_item' => __('New Mobile Page', 'wp-mobile-edition'),
+		'view_item' => __('View Mobile Page', 'wp-mobile-edition'),
+		'search_items' => __('Search Mobile Page', 'wp-mobile-edition'),
+		'not_found' =>  __('Nothing found', 'wp-mobile-edition'),
+		'not_found_in_trash' => __('Nothing found in Trash', 'wp-mobile-edition'),
 		'parent_item_colon' => ''
 	);
 

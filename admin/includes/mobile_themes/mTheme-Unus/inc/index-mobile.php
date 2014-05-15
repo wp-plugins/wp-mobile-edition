@@ -48,9 +48,9 @@ if ('fdx_odd' == @$odd_or_even){
 endwhile;
  else : ?>
 
-<div style="padding:5px">
-<h2>No items found</h2>
-<p>There are currently no items to display. Please check back soon.</p>
+<div style="padding:5px; text-align: center ">
+<h1><?php _e('No items found', 'wp-mobile-edition'); ?></h1>
+<p><?php _e('There are currently no items to display. Please check back soon.', 'wp-mobile-edition'); ?></p>
 </div>
 <?php endif; ?>
 

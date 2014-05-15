@@ -202,7 +202,8 @@ public static function fdx_switcher_trim_domain($domain) {
 	 * @since  2.0
 	 */
     function fdx_switcher_link($type, $label) {
-        $cookie = $this->p1_cookie_var . "=$type;path=/;expires=Tue, 01-01-2130 00:00:00 GMT";
+       //cookie expires when the user closes his browser
+        $cookie = $this->p1_cookie_var . "=$type;path=/;expires=";
         $target_url = esc_url("http://" . self::fdx_switcher_domains($type, true) . self::fdx_switcher_current_path_plus_cgi('', $type));
     if ($target_url) {
      $switchpng = plugins_url( 'assets/images/switch.png', dirname(__FILE__));
@@ -673,7 +674,7 @@ Public static function fdx_insert_post() {
 $my_post1 = array(
   'post_title'    => '*WP Mobile Edition (Contact)',
   'post_name'     => 'fdx-contact',
-  'post_content'  => 'This page is required for plugin WP Mobile Edition.',
+  'post_content'  => __('This page is required for plugin WP Mobile Edition.', 'wp-mobile-edition'),
   'post_status'   => 'publish',
   'post_type'     => 'page'
 );
@@ -681,7 +682,7 @@ $my_post1 = array(
 $my_post2 = array(
   'post_title'    => '*WP Mobile Edition (Blog Index)',
   'post_name'     => 'fdx-index',
-  'post_content'  => 'This page is required for plugin WP Mobile Edition.',
+  'post_content'  => __('This page is required for plugin WP Mobile Edition.', 'wp-mobile-edition'),
   'post_status'   => 'publish',
   'post_type'     => 'page'
 );
@@ -753,24 +754,22 @@ if(!$mobile_cookie && !$desktop_cookie){
 
 include_once( 'includes/Mobile_Detect.php' );
 $detect = new Mobile_Detect();
-$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
-
 $target_url = "http://" . self::fdx_switcher_domains('mobile', true) . self::fdx_switcher_current_path_plus_cgi();
 
 if (get_option('fdx_switcher_tablet') != 'true') {
-     if ($deviceType == "phone" ){
+     if ($detect->isMobile() && !$detect->isTablet()){
       self::fdx_switcher_set_cookie('mobile');
-      header("Location: $target_url");
+      wp_redirect( $target_url );
       exit;
       }
   } else {
-   if ($deviceType == "phone" || $deviceType == "tablet"){
+   if ($detect->isMobile()){
       self::fdx_switcher_set_cookie('mobile');
-      header("Location: $target_url");
+      wp_redirect( $target_url );
       exit;
-      }
-  }
- }
+        }
+     }
+   }
 }
 
 

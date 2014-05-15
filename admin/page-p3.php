@@ -63,7 +63,7 @@ echo '</h3><div class="inside">'; ?>
 <tbody><tr class="alternate"><td>
 
 <p><input name="p3_rad1" id="p3_rad1" type="radio" value="0" <?php checked($settings['p3_rad1'], 0); ?> /> <?php _e('Your latest posts', $this->plugin_slug) ?> </p>
-<p><input name="p3_rad1" id="p3_rad1" type="radio" value="1" <?php checked($settings['p3_rad1'], 1); ?> /> <?php _e('Custom', $this->plugin_slug) ?> <a href="<?php echo admin_url('edit.php?post_type=mobile');?>">Mobile Pages</a></p>
+<p><input name="p3_rad1" id="p3_rad1" type="radio" value="1" <?php checked($settings['p3_rad1'], 1); ?> /> <?php _e('Custom', $this->plugin_slug) ?> <a href="<?php echo admin_url('edit.php?post_type=mobile');?>"><?php _e('Mobile Pages', 'wp-mobile-edition'); ?></a></p>
 
 </td>
  </tr>
@@ -78,29 +78,29 @@ echo '</h3><div class="inside">'; ?>
 
 
 <table style="width:100%;" class="widefat">
-<thead><tr><th>Site Logo / Bookmark Icons</th> </tr></thead>
+<thead><tr><th><?php _e('Site Logo / Bookmark Icons', $this->plugin_slug); ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
-<p><strong>Site Logo </strong> <span class="description">(PNG: 100x30 pixels, or less. )</span></p>
+<p><strong><?php _e('Site Logo', $this->plugin_slug); ?> </strong> <span class="description">(PNG: 100x30 <?php _e('pixels', $this->plugin_slug); ?>, <?php _e('or less', $this->plugin_slug); ?>. )</span></p>
 <p><input id="p3_opl1" type="text" name="p3_opl1" value="<?php echo $settings['p3_opl1']; ?>" /><input id="upload_image_button1" type="button" value="Upload" class="button" /></p>
 </td>
 </tr>
 
 
 <tr><td>
-<p><strong>Favicon </strong> <span class="description">(ico: 32x32 pixels)</span></p>
+<p><strong>Favicon </strong> <span class="description">(ico: 32x32 <?php _e('pixels', $this->plugin_slug); ?>)</span></p>
 <p><input id="p3_opl2" type="text" name="p3_opl2" value="<?php echo $settings['p3_opl2']; ?>" /><input id="upload_image_button2" type="button" value="Upload" class="button" /></p>
 </td>
  </tr>
 
 <tr class="alternate"><td>
-<p><strong>iPhone & iPod Touch Icon </strong> <span class="description">(PNG: 152x152 pixels)</span></p>
-<p><input id="p3_opl3" type="text" name="p3_opl3" value="<?php echo $settings['p3_opl3']; ?>" /><input id="upload_image_button3" type="button" value="Upload" class="button" /><br><small>Auto resizable for: 114x114 / 72x72 / 57x57 pixels</small></p>
+<p><strong><?php _e('iPhone & iPod Touch Icon', $this->plugin_slug); ?> </strong> <span class="description">(PNG: 152x152 <?php _e('pixels', $this->plugin_slug); ?>)</span></p>
+<p><input id="p3_opl3" type="text" name="p3_opl3" value="<?php echo $settings['p3_opl3']; ?>" /><input id="upload_image_button3" type="button" value="Upload" class="button" /><br><small><?php _e('Auto resizable for', $this->plugin_slug); ?>: 114x114 / 72x72 / 57x57 <?php _e('pixels', $this->plugin_slug); ?></small></p>
 </td>
  </tr>
 
 
 <tr><td>
-<p><strong>Win8 icon </strong> <span class="description">(PNG: 144x144pixels + tile color)</span></p>
+<p><strong>Win8 <?php _e('icon', $this->plugin_slug); ?> </strong> <span class="description">(PNG: 144x144 <?php _e('pixels', $this->plugin_slug); ?> + <?php _e('tile color', $this->plugin_slug); ?>)</span></p>
 <p><input id="p3_opl4" type="text" name="p3_opl4" value="<?php echo $settings['p3_opl4']; ?>" /><input id="upload_image_button4" type="button" value="Upload" class="button" /></p>
 
 <p> <input type="text" value="<?php echo $settings['p3_opl5']; ?>" id="p3_opl5" name="p3_opl5" class="fdx-color-field" /> </p>
@@ -134,7 +134,7 @@ echo '</h3><div class="inside">'; ?>
  <thead><tr><th><?php _e('Compatibility', 'wp-mobile-edition') ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <strong><?php _e('Remove these Shortcodes', $this->plugin_slug) ?> </strong><br>
-<p> <input id='p3_txt6' type='text' name='p3_txt6' value='<?php echo $settings['p3_txt6']; ?>' /> &larr;Enter a comma separated list of shortcodes to remove, without "[&nbsp;]".</p>
+<p> <input id='p3_txt6' type='text' name='p3_txt6' value='<?php echo $settings['p3_txt6']; ?>' /> &larr;<?php _e('Enter a comma separated list of shortcodes to remove, without', $this->plugin_slug); ?> "[&nbsp;]".</p>
 </td>
  </tr>
  </tbody>
@@ -144,16 +144,16 @@ echo '</h3><div class="inside">'; ?>
 
 <br>
 <table style="width:100%;" class="widefat">
-<thead><tr><th><strong>Ads</strong></th> </tr></thead>
+<thead><tr><th><strong><?php _e('Ads', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody>
 <tr><td><?php _e('You can enter your Mobile AdSense here or insert your own banner ad code. These boxes accept both javascript & html. We suggest sizing ads either 298x70px or below.', 'wp-mobile-edition') ?> <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong></td></tr>
-<tr class="alternate"><td><strong>Top Advertisement:</strong><br>
+<tr class="alternate"><td><strong><?php _e('Top Advertisement', $this->plugin_slug); ?>:</strong><br>
 <textarea id='p3_tex1' name='p3_tex1' style='width:100%;height:100px;'/>
 <?php echo $settings['p3_tex1']; ?>
 </textarea>
 </td>
  </tr>
-<tr class="alternate"><td><strong>Bottom Advertisement:</strong><br>
+<tr class="alternate"><td><strong><?php _e('Bottom Advertisement', $this->plugin_slug); ?>:</strong><br>
 
 <textarea id='p3_tex2' name='p3_tex2' style='width:100%;height:100px;'/>
 <?php echo $settings['p3_tex2']; ?>
@@ -172,9 +172,9 @@ echo '<div class="handlediv" title="' . __('Click to toggle', $this->plugin_slug
 echo '</h3><div class="inside">'; ?>
 <br>
 <table style="width:100%;" class="widefat">
-<thead><tr><th><strong>Custom Code</strong></th></tr></thead>
+<thead><tr><th><strong><?php _e('Custom Code', $this->plugin_slug); ?></strong></th></tr></thead>
 <tbody>
-<tr><td>HTML, CSS, JavaScript, Statistics, <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong></td></tr>
+<tr><td>HTML, CSS, JavaScript, <?php _e('Statistics', $this->plugin_slug); ?>, <strong><?php _e('Leave blank to disable', 'wp-mobile-edition') ?></strong></td></tr>
 <tr class="alternate"><td>
 <strong><?php _e('End of', 'wp-mobile-edition') ?> <em>&lt;/head&gt;</em></strong> <br>
 <textarea id='p3_tex3' name='p3_tex3' style='width:100%;height:100px;'/>
@@ -195,7 +195,7 @@ echo '</h3><div class="inside">'; ?>
 
 
  <table style="width:100%;" class="widefat">
- <thead><tr><th>WP Themes Function</th> </tr></thead>
+ <thead><tr><th><?php _e('WP Themes Function', $this->plugin_slug); ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <p><input name="p3_check_1" id="p3_check_1" type="checkbox" value="1" <?php checked($settings['p3_check_1'], 1); ?> /> <?php _e('Enable the Function', $this->plugin_slug) ?> <code>wp_head();</code> [<a href="https://codex.wordpress.org/Plugin_API/Action_Reference/wp_head" target="_blank">?</a>]</p>
 

@@ -62,11 +62,11 @@ echo '</h3><div class="inside">';
 ?>
 <br>
 <table style="width:100%;" class="widefat">
-<thead><tr><th><strong><?php _e('Switching Shortcodes', 'wpmp'); ?></strong></th> </tr></thead>
+<thead><tr><th><strong><?php _e('Switching Shortcodes', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody><tr><td>
-<p>Use the following shortcode to show the theme switch link:<br><code>[fdx-switch-link]</code></p>
-<p>Or use the following shortcode in templates themes to show the theme switch link:<br><code>&lt;?php echo do_shortcode('[fdx-switch-link]'); ?&gt;</code> </p>
-<p>Or auto added in <a href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>. Regardless of this setting, the switcher link will always appear on the mobile theme.</p>
+<p><?php _e('Use the following shortcode to show the theme switch link', $this->plugin_slug); ?>:<br><code>[fdx-switch-link]</code></p>
+<p><?php _e('Or use the following shortcode in templates themes to show the theme switch link', $this->plugin_slug); ?>:<br><code>&lt;?php echo do_shortcode('[fdx-switch-link]'); ?&gt;</code> </p>
+<p><?php _e('Or auto added in', $this->plugin_slug); ?> <a href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>. <?php _e('Regardless of this setting, the switcher link will always appear on the mobile theme', $this->plugin_slug); ?>.</p>
 </td>
 </tr>
 </tbody>
