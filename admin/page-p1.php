@@ -4,7 +4,7 @@
 echo '<div class="wrap">';
 echo '<h2>'. esc_html( get_admin_page_title() ) . '</h2>';
 ?>
-<h2 class="nav-tab-wrapper">
+<h2 class="nav-tab-wrapper fdx-responsive">
 <a class="nav-tab nav-tab-active" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug); ?>"><?php _e('Dashboard', $this->plugin_slug); ?></a>
 <a class="nav-tab" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>
 <a class="nav-tab" href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p3); ?>"><?php _e('Theme Settings', $this->plugin_slug ); ?></a>
