@@ -174,6 +174,10 @@ Type your subdomain (m), that will be your mobile subdomain, then point for your
 
 To confirm that the process was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
 
+
+https://www.youtube.com/watch?v=VNOPU3WiVd8
+
+
 = TESTING YOUR INSTALLATION (after enable the plugin) =
 
 * Ideally, use a real mobile device to access your (public) site address and check that the witching and theme work correctly.
