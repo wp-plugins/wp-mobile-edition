@@ -65,8 +65,9 @@ echo '</h3><div class="inside">';
 <thead><tr><th><strong><?php _e('Switching Shortcodes', $this->plugin_slug); ?></strong></th> </tr></thead>
 <tbody><tr><td>
 <p><?php _e('Use the following shortcode to show the theme switch link', $this->plugin_slug); ?>:<br><code>[fdx-switch-link]</code></p>
-<p><?php _e('Or use the following shortcode in templates themes to show the theme switch link', $this->plugin_slug); ?>:<br><code>&lt;?php echo do_shortcode('[fdx-switch-link]'); ?&gt;</code> </p>
-<p><?php _e('Or auto added in', $this->plugin_slug); ?> <a href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>. <?php _e('Regardless of this setting, the switcher link will always appear on the mobile theme', $this->plugin_slug); ?>.</p>
+<p><?php _e('Use the following shortcode in templates themes to show the theme switch link', $this->plugin_slug); ?>:<br><code>&lt;?php echo do_shortcode('[fdx-switch-link]'); ?&gt;</code> </p>
+<p><?php _e('Or', $this->plugin_slug); ?> <a href="<?php echo admin_url('widgets.php'); ?>">Widgets</a>, <?php _e('or auto added in', $this->plugin_slug); ?> <a href="<?php echo admin_url('admin.php?page='.$this->plugin_slug . '-'.$this->_p2); ?>"><?php _e('Core Settings', $this->plugin_slug ); ?></a>.</p>
+ <?php _e('Regardless of this setting, the switcher link will always appear on the mobile theme', $this->plugin_slug); ?>
 </td>
 </tr>
 </tbody>

@@ -2,10 +2,10 @@
 Plugin Name: WP Mobile Edition
 Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
-Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus
+Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus, Widget, QR-Code
 Requires at least: 3.0
 Tested up to: 3.9.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
@@ -96,6 +96,9 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+* 2.1
+    * NEW FEATURE - Widget: A QR-Code used for navigating to a mobile URL and Switcher link.
+
 * 2.0
     * NEW FEATURE - Switcher Mode (Normal Site or Mobile Sub domain)
     * IMPROVED - Admin styling cleaned up.

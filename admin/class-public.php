@@ -1,6 +1,6 @@
 <?php
 class WP_Mobile_Edition {
-	const VERSION               = '2.0';  //
+	const VERSION               = '2.1';  //
 
     const PHP_MIN               = '5.0';  //
     const WP_MIN                = '3.0';  //
@@ -53,7 +53,11 @@ class WP_Mobile_Edition {
        //--------------------shortcode
        add_shortcode('fdx-switch-link', array( $this, 'fdx_show_theme_switch_link'));
 
-	}
+        add_action('widgets_init', array( $this, 'fdx_widgets_init'), 1 );
+
+        require_once( 'class-widgets.php' );
+        new FDX_Widget_1;
+}
 
 	/**
 	 * Return the plugin slug.
@@ -151,9 +155,15 @@ update_option( 'fdx_settings_2', $settingsdef );
      */
      public function fdx_includes() {
      include_once( 'fdx-functions.php' );
-     add_action( 'init', 'fdx_mobile_itens' );  
+     add_action( 'init', 'fdx_mobile_itens' );
      /* add_action( 'init', 'my_taxonomies_product', 0 );  */
      }
+
+
+function fdx_widgets_init() {
+	register_widget('FDX_Widget_1');
+}
+
 
 #################################################################################################
 
