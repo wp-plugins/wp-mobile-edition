@@ -108,12 +108,11 @@ echo stripslashes(fdx_option('p3_tex3')) . "\n";
 <div class="fdx_categories" style="display: inline !important">
 <ul>
 <?php
+//http://codex.wordpress.org/Function_Reference/wp_nav_menu
 wp_nav_menu(array(
 	'theme_location'  => 'fdx_menu',
-	'link_before'     => '<div class="togle">',
-	'link_after'      => '</div>',
 	'items_wrap'      => '%3$s',
-	'depth'           => 1,
+	'depth'           => 0,
 	'walker'          => '')
 );
 ?>

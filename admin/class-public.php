@@ -1,6 +1,6 @@
 <?php
 class WP_Mobile_Edition {
-	const VERSION               = '2.1';  //
+	const VERSION               = '2.2';  //
 
     const PHP_MIN               = '5.0';  //
     const WP_MIN                = '3.0';  //
@@ -217,7 +217,7 @@ public static function fdx_switcher_trim_domain($domain) {
         $target_url = esc_url("http://" . self::fdx_switcher_domains($type, true) . self::fdx_switcher_current_path_plus_cgi('', $type));
     if ($target_url) {
      $switchpng = plugins_url( 'assets/images/switch.png', dirname(__FILE__));
-    return "<a onclick='document.cookie=\"$cookie\";' href='$target_url' title='$label'><img src='$switchpng' width='50' height='20' alt=''></a>";
+    return "<a onclick='document.cookie=\"$cookie\";' href='$target_url' title='$label' rel='nofollow'><img src='$switchpng' width='50' height='20' alt=''></a>";
     }
 }
 

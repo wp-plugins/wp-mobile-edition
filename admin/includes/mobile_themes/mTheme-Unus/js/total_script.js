@@ -22,6 +22,18 @@ $(document).ready(function() {
         $('.fdx_categories2,.fdx_search').slideUp();
 
 	});
+
+
+ //sun,enu
+	$('.menu-menu1-container').click(function(){
+	$("ul.sub-menu").slideToggle();
+	});
+
+
 //end
 });
-   
+
+
+
+
+
