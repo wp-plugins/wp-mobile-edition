@@ -11,15 +11,13 @@ die();
 <meta name="MobileOptimized" content="320"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="cleartype" content="on" />
-
-
     <title><?php global $page, $paged;
        wp_title( '|', true, 'right' );
     	bloginfo( 'name' );
-        echo ' (vers&atilde;o mobile)';
     	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'P&aacute;gina %s'), max( $paged, $page ) );?></title>
-
+		echo ' | ' . sprintf( __( 'Page %s', 'wp-mobile-edition'), max( $paged, $page ) );
+        echo ' | '.__('Mobile Version', 'wp-mobile-edition');
+        ?></title>
 
 <?php
 if ( fdx_option('p3_opl4') <> "" ) {echo '<meta name="msapplication-TileImage" content="'.fdx_option('p3_opl4').'">'. "\n";;
@@ -27,7 +25,6 @@ if ( fdx_option('p3_opl4') <> "" ) {echo '<meta name="msapplication-TileImage" c
 if ( fdx_option('p3_opl2') <> "" ) { echo '<link rel="shortcut icon" type="image/x-icon" href="'.fdx_option('p3_opl2').'" />'. "\n";}
 if ( fdx_option('p3_opl3') <> "" ) { echo '<link rel="apple-touch-icon" href="'.fdx_option('p3_opl3').'" />';}
 ?>
-
 
 <?php if(is_single() || is_page()) { // post e paginas ?>
 <meta name="keywords" content="<?php if(function_exists('csv_tags_m')) { csv_tags_m(); } ?>" />
@@ -105,7 +102,7 @@ echo stripslashes(fdx_option('p3_tex3')) . "\n";
 <?php  } if ( fdx_option('p3_check_t1') ){ ?>
 <div class="fdx_contact">
 <div class="fdx_topheading"><?php _e('Menu', 'wp-mobile-edition') ?></div>
-<div class="fdx_categories" style="display: inline !important">
+<div class="fdx_categories">
 <ul>
 <?php
 //http://codex.wordpress.org/Function_Reference/wp_nav_menu
