@@ -44,8 +44,9 @@ a { text-decoration: none }
 
 
 .fdx_contactlink{padding-left:10px}
+.fdx_categories {}
 .fdx_categories li,.fdx_search li,.fdx_contact li{list-style:none}
-.fdx_categories,.fdx_contact,.fdx_search{border-top:0;display:none;margin:0 0 10px 0}
+.fdx_categories,.fdx_contact,.fdx_search{border-top:0;margin:0 0 10px 0}
 .fdx_categories ul li:hover{background:#eee url(../images/icons/folder.png) no-repeat right 10px}
 .fdx_categories ul li{background:#f8f8f8 url(../images/icons/folder.png) no-repeat right 10px;border:1px solid #b0b0b0;border-top:0;color:#2F3E46;font-size:13px;font-weight:400;list-style:none;text-decoration:none;padding:8px 0 8px 5px;}
 .fdx_categories ul li a{color:#2F3E46!important;font-weight:700;text-decoration:none}
@@ -56,7 +57,6 @@ li.menu-item-has-children {background:#eee url(../images/icons/submenu.png) no-r
 li.menu-item-has-children:hover {background:#f8f8f8 url(../images/icons/submenu.png) no-repeat right 9px !important;}
 
 ul.sub-menu { padding: 10px 10px 5px 5px !important }
-ul.sub-menu li { }
 ul.sub-menu li:first-child  { border-top: 1px solid #b0b0b0 !important }
 
 /* -------------------------------------- */
