@@ -49,7 +49,8 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 = Languages Available =
 * English (default)
-* Brazilian Portuguese '(pt_BR)' by [Fabrix Doromo](http://fabrix.net/)
+* Brazilian Portuguese **(pt_BR)** by [Fabrix Doromo](http://fabrix.net/)
+
 
 * **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
 
@@ -98,7 +99,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Changelog ==
 * 2.2.1
-    IMPROVED - Brazilian Portuguese '(pt_BR)' Language pack added (thanks to Fabrix)
+    IMPROVED - Brazilian Portuguese **(pt_BR)** Language pack added (thanks to Fabrix)
 
 * 2.2
     * IMPROVED - Added 'nofollow' in all Switcher links.
