@@ -49,6 +49,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 
 = Languages Available =
 * English (default)
+* Brazilian Portuguese '(pt_BR)' by [Fabrix Doromo](http://fabrix.net/)
 
 * **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
 
