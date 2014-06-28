@@ -1,6 +1,6 @@
 <?php
 class WP_Mobile_Edition {
-	const VERSION               = '2.2';  //
+	const VERSION               = '2.2.1';  //
 
     const PHP_MIN               = '5.0';  //
     const WP_MIN                = '3.0';  //
@@ -473,9 +473,6 @@ public static function fdx_switcher_options_write() {
       foreach(explode(",", get_option($option)) as $domain) {
         $domain = trim($domain);
         $trimmed_domain = self::fdx_switcher_trim_domain($domain);
-        if ($trimmed_domain!=$domain) {
-          $message = __('You must provide clean domain names without any leading or trailing syntax. We fixed them for you.', 'wp-mobile-edition');
-        }
         $trimmed_domains[] = $trimmed_domain;
       }
       update_option($option, join(', ', $trimmed_domains));
@@ -486,7 +483,7 @@ public static function fdx_switcher_options_write() {
     switch(get_option('fdx_switcher_mode')) {
     case 'domain':
         update_option('fdx_switcher_mode', 'none');
-        $message = __('You must provide both desktop and mobile domains. Switching has been disabled.', 'wp-mobile-edition');
+        $message = __('You must provide the mobile domain. Switching has been disabled.', 'wp-mobile-edition');
         break;
     }
   }

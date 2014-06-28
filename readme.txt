@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus, Widget, QR-Code
 Requires at least: 3.0
 Tested up to: 3.9.1
-Stable tag: 2.2
+Stable tag: 2.2.1
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
@@ -96,6 +96,9 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+* 2.2.1
+    IMPROVED - Brazilian Portuguese '(pt_BR)' Language pack added (thanks to Fabrix)
+
 * 2.2
     * IMPROVED - Added 'nofollow' in all Switcher links.
     * IMPROVED - mTheme-Unus: If menu item has submenu items, toggle the submenu on click.
@@ -162,7 +165,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Upgrade Notice ==
 
-= 2.0 =
+= 2.2.1 =
 IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
 
 
