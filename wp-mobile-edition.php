@@ -3,7 +3,7 @@
  * Plugin Name: WP Mobile Edition
  * Plugin URI: http://wordpress.org/extend/plugins/wp-mobile-edition
  * Description: Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
- * Version: 2.2.5
+ * Version: 2.2.6
  * Author: Fabrix DoRoMo
  * Author URI: http://fabrix.net
  * License: GPL-2.0+
@@ -14,7 +14,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Public-Facing Functionality
+| Public-Facing Functionality (Version)
 |--------------------------------------------------------------------------
 */
 require_once( plugin_dir_path( __FILE__ ) . 'admin/class-public.php' );
