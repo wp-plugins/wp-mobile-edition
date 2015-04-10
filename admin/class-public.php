@@ -1,6 +1,6 @@
 <?php
 class WP_Mobile_Edition {
-	const VERSION               = '2.2.6';  //
+	const VERSION               = '2.2.7';  //
 
     const PHP_MIN               = '5.0';  //
     const WP_MIN                = '3.0';  //

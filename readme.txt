@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus, Widget, QR-Code
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 2.2.6
+Stable tag: 2.2.7
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
@@ -56,7 +56,7 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * French **(fr)** by Bons Plans
 * German **(de)** by prinwest
 * Chinese (Taiwan)  **(zh_TW)** by [cloudsgo](www.facebook.com/cloudsgo/)
-
+* Spanish  **(es_ES)** by [Kravenbcn](http://daxhordes.org/)
 
 
 * **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
@@ -105,6 +105,8 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+* 2.2.7
+    * IMPROVED - Spanish  **(es_ES)** Language pack added (thanks to Kravenbcn)
 
 * 2.2.6
     * IMPROVED - Chinese (Taiwan)  **(zh_TW)** Language pack added (thanks to cloudsgo)
@@ -191,7 +193,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Upgrade Notice ==
 
-= 2.2.5 =
+= 2.2.7 =
 IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
 
 
