@@ -33,7 +33,11 @@ if (extension_loaded('zilb'))
  */
 function addExtension($file)
 {
-	return $file;
+	if (substr($file, -4) !== '.css')
+	{
+		$file .= '.css';
+	}
+    return $file;
 }
 
 // Calculate an unique ID of requested files & their change time
