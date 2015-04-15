@@ -106,7 +106,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Changelog ==
 * 2.3
-   * FIX - mTheme-Unus: security fixes (thanks to Khwanchai Kaewyos)
+   * FIX - mTheme-Unus: security fixes
    * FIX - Mobile_Detect.php: upgraded
 
 * 2.2.7
