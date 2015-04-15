@@ -214,8 +214,6 @@ Type your subdomain (m), that will be your mobile subdomain, then point for your
 To confirm that the process was performed correctly visit your full site in `m.yousite.com` (before enable the plugin)
 
 
-https://www.youtube.com/watch?v=VNOPU3WiVd8
-
 
 = TESTING YOUR INSTALLATION (after enable the plugin) =
 
