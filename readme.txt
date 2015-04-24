@@ -4,8 +4,8 @@ Contributors: fdoromo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BABHNAQX4HLLW
 Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus, Widget, QR-Code
 Requires at least: 3.0
-Tested up to: 4.1.1
-Stable tag: 2.3
+Tested up to: 4.2
+Stable tag: 2.4
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
@@ -51,10 +51,10 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * English (default)
 * Brazilian Portuguese **(pt_BR)** by [Fabrix Doromo](http://fabrix.net/)
 * Ukrainian **(uk)** by [Віталій Ткач](http://www.kids-center.com.ua/)
-* Russian **(ru)** by [zerg959](http://100wines.net/)
-* Turkish **(tr)** by afsin78
-* French **(fr)** by Bons Plans
-* German **(de)** by prinwest
+* Russian **(ru_RU)** by [zerg959](http://100wines.net/)
+* Turkish **(tr_TR)** by afsin78
+* French **(fr_FR)** by [Bons Plans](http://www.bons-plans-malins.com)
+* German **(de_DE)** by [prinwest](http://prinwest.com)
 * Chinese (Taiwan)  **(zh_TW)** by [cloudsgo](www.facebook.com/cloudsgo/)
 * Spanish  **(es_ES)** by [Kravenbcn](http://daxhordes.org/)
 
@@ -105,6 +105,9 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+* 2.4
+   * FIX - Update ".mo" language files.
+
 * 2.3
    * FIX - mTheme-Unus: security fixes
    * FIX - Mobile_Detect.php: upgraded
@@ -144,14 +147,12 @@ Did you point a mobile domain document root to the root of wordpress installatio
     * IMPROVED - Code refactored.
     * IMPROVED - Mobile Theme - Various cosmetic fixes.
 
-
 * 1.9.3
     * mTheme - cosmetic fixes and option for Favicon and "Apple Touch Icon".
 
 * 1.9.2
     * Adds Italian translation.
     * Adds Russian translation.
-
 
 * 1.9.1
     * Minor bug fixes
@@ -197,7 +198,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Upgrade Notice ==
 
-= 2.3 =
+= 2.4 =
 IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
 
 
