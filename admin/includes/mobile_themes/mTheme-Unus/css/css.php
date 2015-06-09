@@ -11,6 +11,11 @@ if (!isset($_GET['files']) or strlen($_GET['files']) == 0)
 	exit();
 }
 
+if (strcmp(pathinfo($_GET['files'], PATHINFO_EXTENSION), "css") !== 0) {
+   exit();
+}
+
+
 // Cache folder
 $cachePath = '../_cache/';
 if (!file_exists($cachePath))
