@@ -38,7 +38,8 @@ if ( fdx_option('p3_opl3') <> "" ) { echo '<link rel="apple-touch-icon" href="'.
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<?php echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/css.php?files=normalize.css,core.css,style.css,'.fdx_option('p3_sel1').'.css" type="text/css" />'; ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/core.css" type="text/css" />
+<?php echo '<link rel="stylesheet" href="'. get_template_directory_uri(). '/css/'.fdx_option('p3_sel1').'.css" type="text/css" />'; ?>
 
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
