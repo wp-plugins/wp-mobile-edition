@@ -131,7 +131,7 @@ echo '</h3><div class="inside">'; ?>
   <br />
 
 <table style="width:100%;" class="widefat">
- <thead><tr><th><?php _e('Compatibility', 'wp-mobile-edition') ?></th> </tr></thead>
+ <thead><tr><th><?php _e('Compatibility', $this->plugin_slug) ?></th> </tr></thead>
 <tbody><tr class="alternate"><td>
 <strong><?php _e('Remove these Shortcodes', $this->plugin_slug) ?> </strong><br>
 <p> <input id='p3_txt6' type='text' name='p3_txt6' value='<?php echo $settings['p3_txt6']; ?>' /> &larr;<?php _e('Enter a comma separated list of shortcodes to remove, without', $this->plugin_slug); ?> "[&nbsp;]".</p>
@@ -162,6 +162,35 @@ echo '</h3><div class="inside">'; ?>
 </tr>
 </tbody>
 </table>
+
+<!-- ##################################################### -->
+<br>
+<table style="width:100%;" class="widefat">
+<thead><tr><th><?php _e('Contact Page', $this->plugin_slug); ?></th> </tr></thead>
+<tbody><tr class="alternate">
+<td colspan="2"><?php _e('Extra fields to Contact Form', $this->plugin_slug); ?>. <strong><?php _e('Leave blank to disable', $this->plugin_slug) ?></strong></td>  </tr>
+<tr class="alternate">
+<td>
+<p><input id='p3_txt7' type='text' name='p3_txt7' value='<?php echo $settings['p3_txt7']; ?>' />  &larr;<?php _e('Required fields', $this->plugin_slug) ?> #1</p>
+<p><input id='p3_txt8' type='text' name='p3_txt8' value='<?php echo $settings['p3_txt8']; ?>' />  &larr;<?php _e('Required fields', $this->plugin_slug) ?> #2</p>
+<p><input id='p3_txt12' type='text' name='p3_txt12' value='<?php echo $settings['p3_txt12']; ?>' />  &larr;<?php _e('Required fields', $this->plugin_slug) ?> #3</p>
+<p><input id='p3_txt9' type='text' name='p3_txt9' value='<?php echo $settings['p3_txt9']; ?>' />  &larr;<?php _e('Extra fields', $this->plugin_slug) ?> #1</p>
+<p><input id='p3_txt10' type='text' name='p3_txt10' value='<?php echo $settings['p3_txt10']; ?>' />  &larr;<?php _e('Extra fields', $this->plugin_slug) ?> #2</p>
+<p><input id='p3_txt11' type='text' name='p3_txt11' value='<?php echo $settings['p3_txt11']; ?>' />  &larr;<?php _e('Extra fields', $this->plugin_slug) ?> #3</p>
+</td>
+
+</tr>
+</tbody>
+</table>
+<!-- ##################################################### -->
+
+
+
+
+
+
+
+
 
 
 

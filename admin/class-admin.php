@@ -25,6 +25,12 @@ class WP_Mobile_Edition_Admin {
                  'p3_txt4'            => '',
                  'p3_txt5'            => '',
                  'p3_txt6'            => '',
+                 'p3_txt7'            => 'Name',
+                 'p3_txt8'            => 'Subject',
+                 'p3_txt9'            => '',
+                 'p3_txt10'           => '',
+                 'p3_txt11'           => '',
+                 'p3_txt12'           => 'Message',
                  'p3_opl1'            => '',
                  'p3_opl2'            => '', //Favicon
                  'p3_opl3'            => '',

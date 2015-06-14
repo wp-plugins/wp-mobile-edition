@@ -99,6 +99,25 @@ function fdx_process_all(){
             if ( isset($_POST['p3_txt6']) ) {
 			   $settings['p3_txt6'] = stripslashes($_POST['p3_txt6']);
 	  		}
+            if ( isset($_POST['p3_txt7']) ) {
+			   $settings['p3_txt7'] = stripslashes($_POST['p3_txt7']);
+	  		}
+            if ( isset($_POST['p3_txt8']) ) {
+			   $settings['p3_txt8'] = stripslashes($_POST['p3_txt8']);
+	  		}
+            if ( isset($_POST['p3_txt9']) ) {
+			   $settings['p3_txt9'] = stripslashes($_POST['p3_txt9']);
+	  		}
+            if ( isset($_POST['p3_txt10']) ) {
+			   $settings['p3_txt10'] = stripslashes($_POST['p3_txt10']);
+	  		}
+            if ( isset($_POST['p3_txt11']) ) {
+			   $settings['p3_txt11'] = stripslashes($_POST['p3_txt11']);
+	  		}
+            if ( isset($_POST['p3_txt12']) ) {
+			   $settings['p3_txt12'] = stripslashes($_POST['p3_txt12']);
+	  		}
+
 //----------textarea
             if ( isset($_POST['p3_tex1']) ) {
 			   $settings['p3_tex1'] = stripslashes($_POST['p3_tex1']);
