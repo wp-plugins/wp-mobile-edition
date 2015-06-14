@@ -35,7 +35,7 @@ echo '<div class="postbox">';//------------postbox 1
 echo '<div class="handlediv" title="' . __('Click to toggle', $this->plugin_slug) . '"><br /></div><h3 class="hndle"><span>'. __('Settings', $this->plugin_slug) . ' <code>'.$themeInuse.'</code></span>';
 echo '</h3><div class="inside">'; ?>
 
-<?php if ( $themeInuse == 'mTheme-Unus'  || $themeInuse == 'mTheme-Unus-demo' ) {
+<?php if ( $themeInuse == 'mTheme-Unus' ) {
 include_once( dirname(__FILE__) . '/p3/mTheme-Unus.php' );
 
 } else { echo '<div class="box-shortcode box-red"><strong>'.__('This theme is incompatible!', $this->plugin_slug).'</strong></div>';
