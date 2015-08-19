@@ -1,6 +1,6 @@
 <?php
 class WP_Mobile_Edition {
-	const VERSION               = '2.6';  //
+	const VERSION               = '2.8';  //
     const PHP_MIN               = '5.0';  //
     const WP_MIN                = '3.0';  //
 
@@ -95,9 +95,6 @@ if (self::fdx_readiness_audit()) {
 
 //carrega configurações padrao
 self::fdx_switcher_activate();
-
-//---------------
-self::fdx_insert_post();
 
 //grava mensagem de inicio
 $time = time();
@@ -670,41 +667,6 @@ public static function fdx_directory_copy_themes($source_dir, $destination_dir, 
   closedir($dir_handle);
 }
 
-/*
-|--------------------------------------------------------------------------
-| SETUP - Insert page
-|--------------------------------------------------------------------------
-*/
-Public static function fdx_insert_post() {
-// Create post object
-$my_post1 = array(
-  'post_title'    => '*WP Mobile Edition (Contact)',
-  'post_name'     => 'fdx-contact',
-  'post_content'  => __('This page is required for plugin WP Mobile Edition.', 'wp-mobile-edition'),
-  'post_status'   => 'publish',
-  'post_type'     => 'page'
-);
-
-$my_post2 = array(
-  'post_title'    => '*WP Mobile Edition (Blog Index)',
-  'post_name'     => 'fdx-index',
-  'post_content'  => __('This page is required for plugin WP Mobile Edition.', 'wp-mobile-edition'),
-  'post_status'   => 'publish',
-  'post_type'     => 'page'
-);
-
-$page_exists1 = get_page_by_title( $my_post1['post_title'] );
-$page_exists2 = get_page_by_title( $my_post2['post_title'] );
-
-if( $page_exists1 == null ) {
-// Insert the post into the database
-wp_insert_post( $my_post1 );
-}
-
-if( $page_exists2 == null ) {
-wp_insert_post( $my_post2 );
-}
-}
 
 /*
 |--------------------------------------------------------------------------

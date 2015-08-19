@@ -74,9 +74,9 @@ echo stripslashes(fdx_option('p3_tex3')) . "\n";
 <?php } if ( fdx_option('p3_check_t3') ){ ?>
 <li class="fdx_searchlink"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/search.png" border="0" alt="" width="26" height="26"/></a></li>
 <?php } if ( fdx_option('p3_check_t5') ){ ?>
-<li class="fdx_home2"><a href="<?php echo home_url('/fdx-index/'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/blog.png" border="0" alt="" width="26" height="26"/></a></li>
+<li class="fdx_home2"><a href="<?php echo home_url('?fdxvar1=index'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/blog.png" border="0" alt="" width="26" height="26"/></a></li>
 <?php }  if ( fdx_option('p3_check_t4') ){ ?>
-<li style="padding-top: 6px;"><a href="<?php echo home_url('/fdx-contact/'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/mail.png" border="0" alt="" width="26" height="26"/></a></li>
+<li style="padding-top: 6px;"><a href="<?php echo home_url('?fdxvar1=contact'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/mail.png" border="0" alt="" width="26" height="26"/></a></li>
 <?php } ?>
 
 </ul>

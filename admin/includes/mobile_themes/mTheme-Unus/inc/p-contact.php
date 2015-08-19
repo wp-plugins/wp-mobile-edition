@@ -90,7 +90,7 @@ $str = preg_replace('#^https?://#', '', $str);
 <!-- ====================================== -->
 
 
-<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
+<form action="<?php echo home_url('?fdxvar1=contact'); ?>" id="contactForm" method="post">
 
 <div class="input-group">
 <span class="input-group-addon">&rarr;</span><input class="form-control" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])) echo $_POST['contactName'];?>" type="text" <?php if(@$nameError != '') { ?>style="border: 1px solid #DD0000;"<?php } ?> placeholder="<?php if ( fdx_option('p3_txt7') <> "" ) { echo fdx_option('p3_txt7');}?>">

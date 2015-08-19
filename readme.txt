@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: iPhone, Android, Windows Phone, HTML5, Touch, Mobile detection, Mobile switcher, Mobilize, Switch Theme, Mobile Toolkit, Disqus, Widget, QR-Code
 Requires at least: 3.0
 Tested up to: 4.2
-Stable tag: 2.6
+Stable tag: 2.8
 License: GPLv2 or later
 
 Is a complete toolkit to mobilize your WordPress site. It has a mobile switcher and Mobile themes.
@@ -57,7 +57,9 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * German **(de_DE)** by [prinwest](http://prinwest.com)
 * Chinese (Taiwan)  **(zh_TW)** by [cloudsgo](www.facebook.com/cloudsgo/)
 * Spanish  **(es_ES)** by [Kravenbcn](http://daxhordes.org/)
-
+* Czech  **(cs)** by [Martin Lukac](http://www.mlook.cz)
+* Chinese (China) **(zh_CN) by jjtang
+* Dutch  **(nl_NL) by gvmelle
 
 * **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
 
@@ -105,6 +107,16 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+* 2.8
+   * IMPROVED - Contact and Index Page
+
+
+* 2.7
+   * IMPROVED - Chinese (China) **(zh_CN)** Language pack added (thanks to jjtang)
+   * IMPROVED - Czech  **(cs)** Language pack added (thanks to Martin Lukac)
+   * IMPROVED - Dutch  **(nl_NL)** Language pack added (thanks to gvmelle)
+   * FIX - Update ".mo" language files.
+
 * 2.6
    * NEW FEATURE - Extra fields to Contact Form.
 
@@ -204,7 +216,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 == Upgrade Notice ==
 
-= 2.6 =
+= 2.8 =
 IMPORTANT: After upgrade, Deactivate and Activate the plugin to update the files of mobile theme.
 
 
