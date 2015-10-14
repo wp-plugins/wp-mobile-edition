@@ -20,42 +20,7 @@ echo '<div id="poststuff"><div id="post-body" class="metabox-holder columns-2">'
 include('sidebar-left.php'); //include
 echo '<div class="postbox-container"><div class="meta-box-sortables">';
 
-//------------postbox 1
-echo '<div class="postbox closed">';//------------postbox 2
-echo '<div class="handlediv" title="' . __('Click to toggle', $this->plugin_slug) . '"><br /></div><h3 class="hndle"><span>'. __('Mobile Emulator', $this->plugin_slug) . '</span>';
-echo '</h3><div class="inside">'; ?>
-<div id="main-wrapper">
-
- <?php $urldemo = get_bloginfo('url'); ?>
-<div class="ot_iphone_preview">
-<div class="ot_loader"></div>
-<iframe id="iphone-iframe" name="iphone-iframe" src="<?php echo $urldemo; ?>" width="358" height="535" frameborder="0"></iframe>
-<div id="ot_iphone_refresh"><a href="javascript:location.reload(true)"><img width="60" height="60" src="<?php echo plugins_url( 'assets/images/demo/spacer.gif', dirname(__FILE__));?>" border="0" /></a></div>
-</div>
-<!-- ****************************************** -->
-<div class="clear"></div>
-
-          <div id="box_bg">
-            <div id="content">
-                  <div class="qrcodes">
-                <?php
-                 $width = $height = 100;
-                 $url = urlencode($urldemo);
-                 $error = "H"; // handle up to 30% data loss, or "L" (7%), "M" (15%), "Q" (25%)
-                 $border = 1;
-                 echo "<img src=\"http://chart.googleapis.com/chart?". "chs={$width}x{$height}&cht=qr&chld=$error|$border&chl=$url\" />";?>
-                 </div>
-              </div>
-               </div>
-        </div>
-
-
-
-
-
-<?php
 //------------postbox 2
-echo '</div></div>';
 echo '<div class="postbox">';
 echo '<div class="handlediv" title="' . __('Click to toggle', $this->plugin_slug) . '"><br /></div><h3 class="hndle"><span>'. __('Overview', $this->plugin_slug) . '</span>';
 echo '</h3><div class="inside">';

@@ -58,8 +58,8 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 * Chinese (Taiwan)  **(zh_TW)** by [cloudsgo](www.facebook.com/cloudsgo/)
 * Spanish  **(es_ES)** by [Kravenbcn](http://daxhordes.org/)
 * Czech  **(cs)** by [Martin Lukac](http://www.mlook.cz)
-* Chinese (China) **(zh_CN) by jjtang
-* Dutch  **(nl_NL) by gvmelle
+* Chinese (China) **(zh_CN)** by jjtang
+* Dutch  **(nl_NL)** by gvmelle
 
 * **Non-English Speaking Users** - Contribute a translation using the GlotPress web interface – no technical knowledge required ([how to](http://dev.fabrix.net/translate/projects/wp-mobile-edition)).
 
@@ -68,7 +68,6 @@ Fully optimized for the best performance on smartphones, compatible with: iPhone
 1. Core Settings
 2. Mobile theme (General Settings)
 3. Mobile theme (Advanced Settings)
-4. Mobile Emulator
 4. mTheme-Unus
 
 
@@ -107,9 +106,9 @@ Did you point a mobile domain document root to the root of wordpress installatio
 
 
 == Changelog ==
+
 * 2.8
    * IMPROVED - Contact and Index Page
-
 
 * 2.7
    * IMPROVED - Chinese (China) **(zh_CN)** Language pack added (thanks to jjtang)
@@ -166,7 +165,7 @@ Did you point a mobile domain document root to the root of wordpress installatio
     * IMPROVED - Mobile Theme - Various cosmetic fixes.
 
 * 1.9.3
-    * mTheme - cosmetic fixes and option for Favicon and "Apple Touch Icon".
+    * mTheme - Cosmetic fixes and option for Favicon and "Apple Touch Icon".
 
 * 1.9.2
     * Adds Italian translation.

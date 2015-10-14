@@ -95,44 +95,8 @@ ul.sidebnews { margin: 0 0 0 10px}
 .fdx-hover-s{-moz-transition:transform .15s ease-out 0ms;-o-transition:transform .15s ease-out 0ms;-webkit-transition:transform .15s ease-out 0ms;transition:transform .15s ease-out 0ms}
 .fdx-hover-s:hover {-moz-transform:scale(1.07);-ms-transform:scale(1.07);-o-transform:scale(1.07);-webkit-transform:scale(1.07);transform:scale(1.07)}
 #fdx-tablegrid ul  { margin: 0; padding: 0; margin-left: auto; margin-right: auto; width: auto;}
-#fdx-tablegrid li { float: left !important; width: 200px; margin: 20px;}
+#fdx-tablegrid li { float: left !important; width: 200px; margin:33px;}
 #fdx-tablegrid th { text-align: center; }
 
 
-
-/*
-|--------------------------------------------------------------------------
-| demo iphone
-|--------------------------------------------------------------------------
-*/
-#main-wrapper{
-position:relative;
-height: 100%;
-min-width: 540px;
-width: 550px ;
-padding-top:0;
-margin: 0 auto;
-}
-
-
-#box_bg {
-	border: 1px solid #D1D1D1;
-	background: #F7F7F7;
-	width: 120px;
-	display: block;
-	margin-top:-612px;
-	border-radius: 3px;
-    float: right;
-    border-radius: 10px
-
-  }
-
-#content {padding: 10px; text-align: center; }
-
-.qrcodes { text-align: center; margin: 10px 0 10px 0}
-.ot_loader {background: url(../images/demo/ajax-loader.gif) no-repeat center center; position:absolute; height:100px; width:100px; z-index:2; left:155px; top:340px; }
-.ot_iphone_preview { width:420px; height:776px; position:relative; background:url(../images/demo/iphone.png) no-repeat; }
-.ot_iphone_preview iframe { position:absolute; top:109px; left:31px; z-index:2; }
-#ot_iphone_refresh { height: 70px;  width: 70px; z-index: 4; position: absolute; top: 665px; left: 175px  }
-
-
+.qrcodes  {text-align: center;}
