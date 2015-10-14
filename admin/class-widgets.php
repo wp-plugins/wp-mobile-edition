@@ -6,7 +6,7 @@ function __construct() {
 parent::__construct(
 'fdx_widget1', // widget ID
 __('QR-Code | Switcher Link', 'wp-mobile-edition'), // Widget name
-array( 'description' => __( 'A QR-Code used for navigating to a mobile URL. A link that allows users to toggle between desktop and mobile sites.', 'wp-mobile-edition' ), ) // Widget description
+array( 'description' => __( 'A QR-Code used for navigating to a mobile URL. A link that allows users to toggle between desktop and mobile sites.', $this->plugin_slug ), ) // Widget description
 );
 }
 
